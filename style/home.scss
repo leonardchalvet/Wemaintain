@@ -1,0 +1,354 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*================================
+=            PAGE HOME           =
+================================*/
+
+
+#section-home{
+	background-color: $colorMain_1;
+
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		.container-text{
+			width: 435px;
+			h1{
+				@include styleH1;
+				color: #FFF;
+			}
+			p{
+				margin-top: 12px;
+				@include styleParagraph3;
+				color: #FFF;
+				opacity: 0.7;
+			}
+			.container-action{
+				margin-top: 50px;
+				display: flex;
+				align-items: center;
+				flex-flow: row wrap;
+			}
+			.btn{
+				@include styleButton;
+			}
+			.link{
+				text-decoration: none;
+				@include styleParagraph5;
+				color: #FFF;
+				margin-left: 40px;
+			}
+		}
+		.container-illu{
+			position: relative;
+			z-index: 2;
+			width: 748px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+#section-sponsors{
+	position: relative;
+	background-color: $colorMain_2;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	margin-top: -50px;
+	.wrapper{
+		@include styleGrid1;
+		.container-el{
+			width: 100%;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			.el{
+				position: relative;
+				img{
+					max-height: 46px;
+					max-width: 123px;
+				}
+			}
+		}
+	}
+}
+
+#section-avantage{
+	position: relative;
+	padding-top: 145px;
+	padding-bottom: 200px;
+	.wrapper{
+		@include styleGrid2;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		.container-text{
+			width: 365px;
+			h2{
+				@include styleH2;
+			}
+			.container-el{
+				margin-top: 55px;
+				.el{
+					margin-bottom: 70px;
+					display: flex;
+					flex-flow: row wrap;
+					align-items: flex-start;
+					&:last-child{
+						margin-bottom:0px;
+					}
+					.icn{
+						margin-right: 30px;
+						img{
+							width: 36px;
+						}
+					}
+					.text{
+						width: calc(100% - 66px);
+						h3{
+							@include styleH3;
+						}
+						p{
+							@include styleParagraph5;
+						}
+					}
+				}
+			}
+		}
+		.container-illu{
+			position: relative;
+			height: 510px;
+			width: 560px;
+			.browser{
+				position: absolute;
+				z-index: 2;
+				left: 0px;
+				top: 0px;
+				height: 100%;
+				box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+			}
+			.iphone{
+				z-index: 3;
+				height: 382px;
+				position: absolute;
+				bottom: -50px;
+				left: -150px;
+				filter: drop-shadow(0px 11px 36px rgba(0,0,0,0.2));
+			}
+			.dots{
+				z-index: 1;
+				position: absolute;
+				left: 30px;
+				width: 390px;
+				top: 485px;
+			}
+		}
+	}
+}
+
+#section-features{
+	position: relative;
+	.wrapper{
+		@include styleGrid3;
+		.container-head{
+			width: 490px;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+			h2{
+				@include styleH2;
+			}
+			p{
+				margin-top: 10px;
+				@include styleParagraph2;
+			}
+		}
+		.container-el{
+			margin-top: 120px;
+			.el{
+				width: 100%;
+				margin-bottom: 160px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				justify-content: space-between;
+				&:last-child{
+					margin-bottom:0px;
+				}
+				.container-text{
+					width: 375px;
+					h3{
+						@include styleH3;
+					}
+					p{
+						margin-top: 20px;
+						@include styleParagraph4;
+					}
+				}
+				.container-illu{
+					width: 420px;
+					height: 290px;
+					position: relative;
+				}
+				&:nth-child(odd){
+					.container-text{
+						order: 2;
+					}
+					.container-illu{
+						order: 1;
+					}
+				}
+				&:nth-child(even){
+					.container-text{
+						order: 1;
+					}
+					.container-illu{
+						order: 2;
+					}
+				}
+				&:nth-child(1){
+					.container-illu{
+						.img{
+							width: 190px;
+							position: absolute;
+							left: 50%;
+							top: 0px;
+							transform: translateX(-50%);
+							z-index: 1;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.obj-1{
+							width: 124px;
+							position: absolute;
+							top: 0px;
+							right: 30px;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.obj-2{
+							width: 77px;
+							position: absolute;
+							left: 0px;
+							bottom: 0px;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.dots{
+							width: 70px;
+							position: absolute;
+							right: 0px;
+							bottom: 0px;
+						}
+					}
+				}
+				&:nth-child(2){
+					.container-illu{
+						.img{
+							width: 248px;
+							position: absolute;
+							left: 50%;
+							top: 0px;
+							transform: translateX(-50%);
+							z-index: 1;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.obj-1{
+							width: 335px;
+							position: absolute;
+							z-index: 2;
+							top: 37%;
+							left: 0%;
+						}
+						.obj-2{
+							width: 125px;
+							position: absolute;
+							right: 0px;
+							top: 20%;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.dots{
+							width: 20px;
+							position: absolute;
+							left: 12%;
+							top: 0px;
+						}
+					}
+				}
+				&:nth-child(3){
+					.container-illu{
+						.img{
+							width: 188px;
+							position: absolute;
+							left: 50%;
+							top: 0px;
+							transform: translateX(-50%);
+							z-index: 1;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.obj-1{
+							width: 150px;
+							position: absolute;
+							z-index: 2;
+							top: 17%;
+							right: 0px;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.dots{
+							width: 70px;
+							position: absolute;
+							left: 0px;
+							top: 0px;
+						}
+					}
+				}
+				&:nth-child(4){
+					.container-illu{
+						.img{
+							width: 228px;
+							position: absolute;
+							left: 50%;
+							top: 0px;
+							transform: translateX(-50%);
+							z-index: 1;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+							z-index: 1;
+						}
+						.obj-1{
+							width: 150px;
+							position: absolute;
+							z-index: 2;
+							top: 75%;
+							right: 10px;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+							z-index: 2;
+						}
+						.obj-2{
+							width: 112px;
+							position: absolute;
+							top: 65%;
+							left: 0px;
+							filter: drop-shadow(0px 11px 36px rgba(0,0,0,0.2));
+						}
+						.dots{
+							width: 70px;
+							position: absolute;
+							left: 0px;
+							top: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*====================================
+=            END PAGE HOME           =
+=====================================*/
+
+@import 'footer.scss';
