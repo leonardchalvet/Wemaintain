@@ -1,9 +1,4 @@
 $(window).on('load', function() {
-	/*
-	setTimeout(function() {
-	}, 1000);
-	*/
-
 
 	function animScroll() {
 		var windowHeight = $window.height() / 1.5;
@@ -16,11 +11,15 @@ $(window).on('load', function() {
 	    });
 	};
 
-
 	$window = $(window);
 	$window.scroll(function() {
 	    animScroll();
 	});
 	animScroll();
+
+	$('body').click(function(){
+		$('#section-team .wrapper .container-carousel .container-el .el').toggleClass('active');
+		$('#section-quotes .wrapper .container-el .el').toggleClass('active');
+	})
 
 })
