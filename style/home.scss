@@ -9,10 +9,21 @@ main{
 }
 
 #section-home{
+	position: relative;
 	background-color: $colorMain_1;
+	
+	.background{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
 
 	.wrapper{
 		@include styleGrid1;
+		position: relative;
+		z-index: 1;
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
@@ -48,10 +59,160 @@ main{
 			z-index: 2;
 			width: 748px;
 			svg{
+				opacity: 0;
+				transition: all 0.75s ease;
 				width: 100%;
 			}
 		}
 	}
+	&.reach{
+		.container-illu svg{
+			opacity: 1;
+		}
+	}
+
+	.elSvg-ascenseur{
+		transform: translateY(10%);
+		opacity: 0;
+		transition: all 1500ms cubic-bezier(0.000, 0.995, 0.530, 0.995);
+	}
+	&.reach{
+		.elSvg-ascenseur{
+			opacity: 1;
+			transform: translateY(0px);
+
+			animation-delay: 1.5s;
+			animation-duration: 5s;
+			animation-name: floating;
+		  	animation-iteration-count: infinite;
+		  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+		  	transform-origin: 50% 1px; 
+		}
+	}
+
+
+	.elSvg-ombre-ascenseur,
+	.elSvg-plateforme1-shadow,
+	.elSvg-plateforme2-shadow,
+	.elSvg-plateforme3-shadow{
+		opacity: 0;
+		transition: all 0.75s ease;
+	}
+	.elSvg-ombre-ascenseur{
+		transform: scale(0.5);
+		transform-origin: 50% 60%; 
+		animation-duration: 5s;
+	}
+	.elSvg-plateforme1-shadow{
+		transform-origin: 10% 50%; 
+		animation-duration: 7s;
+	}
+	.elSvg-plateforme2-shadow{
+		transform-origin: 70% 100%; 
+		animation-duration: 9s;
+	}
+	.elSvg-plateforme3-shadow{
+		transform-origin: 70% 20%; 
+		animation-duration: 5s;
+	}
+	.elSvg-plateforme1-shadow,
+	.elSvg-plateforme2-shadow,
+	.elSvg-plateforme3-shadow{
+		opacity: 0;
+	  	transition: all 0.75s ease;
+	}
+
+	&.reach{
+		.elSvg-ombre-ascenseur,
+		.elSvg-plateforme1-shadow,
+		.elSvg-plateforme2-shadow,
+		.elSvg-plateforme3-shadow{
+			opacity: 1;
+			transform: scale(1);
+			animation-name: shadow;
+		  	animation-iteration-count: infinite;
+		  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+		}
+		.elSvg-ombre-ascenseur{
+			animation-delay: 1.5s;
+		}
+		.elSvg-plateforme1-shadow{
+			transition-delay: 0s; 
+			animation-delay: 0.75s;
+		}
+		.elSvg-plateforme2-shadow{
+			transition-delay: 0.2s;  
+			animation-delay: 0.95s;
+		}
+		.elSvg-plateforme3-shadow{ 
+			transition-delay: 0.4s;
+			animation-delay: 1.15s;
+		}
+	}
+
+
+	.elSvg-plateforme1,
+	.elSvg-plateforme2,
+	.elSvg-plateforme3{
+		animation-name: floating;
+	  	animation-iteration-count: infinite;
+	  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+	  	transform-origin: 50% 1px; 
+	  	opacity: 0;
+	  	transition: all 0.75s ease;
+	}
+	.elSvg-plateforme1{
+		animation-duration: 7s;  
+	}
+	.elSvg-plateforme2{
+		animation-duration: 9s;  
+	}
+	.elSvg-plateforme3{
+		animation-duration: 5s;  
+	}
+	&.reach{
+		.elSvg-plateforme1,
+		.elSvg-plateforme2,
+		.elSvg-plateforme3{
+			opacity: 1;
+		}
+		.elSvg-plateforme1{
+			transition-delay: 0s; 
+		}
+		.elSvg-plateforme2{
+			transition-delay: 0.2s;  
+		}
+		.elSvg-plateforme3{
+			transition-delay: 0.4s;
+		}
+	}
+
+
+	@keyframes floating {
+	  0%{
+	    transform: translateY(0px);
+	  } 
+	  50%{
+	    transform:translateY(-16px);
+	  } 
+	  100%{
+	    transform: translateY(0px);
+	  }       
+	}
+	@keyframes shadow {
+	  0%{
+	    transform: scale(1);
+	  } 
+	  50%{
+	  	opacity: 0.6;
+	    transform: scale(1.1);
+	  } 
+	  100%{
+	    transform: scale(1);
+	  }       
+	}
+
+	
 }
 
 #section-sponsors{
@@ -485,6 +646,7 @@ main{
 					background-color: #DADCDC;
 				}
 				.nav{
+					cursor: pointer;
 					background-color: #FFFFFF;
 					width: 50px;
 					height: 50px;
@@ -497,7 +659,12 @@ main{
 						position: absolute;
 						top: 50%;
 						left: 50%;
+					}
+					&:nth-child(1) img {
 						transform: translate(-50%, -50%);
+					}
+					&:nth-child(2) img {
+						transform: translate(-50%, -50%) rotate(180deg);
 					}
 				}
 			}
@@ -671,6 +838,7 @@ main{
 				background-color: #DADCDC;
 			}
 			.nav{
+				cursor: pointer;
 				background-color: #FFFFFF;
 				width: 50px;
 				height: 50px;
@@ -684,6 +852,12 @@ main{
 					top: 50%;
 					left: 50%;
 					transform: translate(-50%, -50%);
+				}
+				&:nth-child(1) img {
+					transform: translate(-50%, -50%);
+				}
+				&:nth-child(2) img {
+					transform: translate(-50%, -50%) rotate(180deg);
 				}
 			}
 		}
