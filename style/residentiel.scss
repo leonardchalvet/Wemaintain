@@ -1,0 +1,159 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*=======================================
+=            PAGE RESIDENTIEL           =
+========================================*/
+
+
+#section-cover{
+	position: relative;
+	padding-top: 170px;
+	padding-bottom: 115px;
+	background-color: #F3F5F5;
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		.container-text{
+			width: 440px;
+			h1{
+				@include styleH1;
+				span{
+					color: $colorMain_4;
+				}
+			}
+			p{
+				@include styleParagraph3;
+				color: $colorMain_6;
+				margin-top: 12px;
+			}
+			.btn{
+				margin-top: 55px;
+				@include styleButton;
+			}
+		}
+		.container-illu{
+			position: relative;
+			width: 474px;
+			height: 382px;
+			.phone{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				height: 100%;
+				z-index: 1;
+				filter: drop-shadow(0px 11px 36px rgba(0,0,0,0.2));
+			}
+			.screen{
+				position: absolute;
+				height: 272px;
+				right: 45px;
+				bottom: 0px;
+				z-index: 1;
+				filter: drop-shadow(0px 11px 36px rgba(0,0,0,0.2));
+			}
+			.obj{
+				position: absolute;
+				width: 140px;
+				top: 65px;
+				right: 0px;
+			}
+			.dots{
+				position: absolute;
+				top: 35%;
+				right: 55%;
+			}
+		}
+	}
+}
+
+
+#section-features{
+	padding-top: 100px;
+	.wrapper{
+		@include styleGrid3;
+		.container-text{
+			text-align: center;
+			width: 680px;
+			margin: auto;
+			h2{
+				@include styleH1;
+			}
+			p{
+				margin-top: 22px;
+				@include styleParagraph2;
+			}
+		}
+		.container-features{
+			margin-top: 105px;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: space-between;
+
+			.container-el-illu{
+				width: 550px;
+				height: 475px;
+				position: relative;
+			}
+			.container-el-desc{
+				width: 365px;
+				position: relative;
+				padding-left: 80px;
+				.container-bar{
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					width: 2px;
+					height: 100%;
+					background-color: #D4D4D8;
+					.bar{
+						position: absolute;
+						left: 0px;
+						top: 0px;
+						height: calc(100% / 3);
+						width: 100%;
+						background-color: $colorMain_4;
+						transition: all 0.25s ease;
+						&.active-1{
+							transform: translateY(0%);
+						}
+						&.active-2{
+							transform: translateY(100%);
+						}
+						&.active-3{
+							transform: translateY(200%);
+						}
+					}
+				}
+				.li-el-desc{
+					position: relative;
+					.el-desc{
+						cursor: pointer;
+						margin-bottom: 68px;
+						&:last-child{
+							margin-bottom:0px;
+						}
+						h3{
+							@include styleH3;
+						}
+						p{
+							margin-top: 8px;
+							@include styleParagraph4;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*===========================================
+=            END PAGE RESIDENTIEL           =
+============================================*/
+
+@import 'footer.scss';

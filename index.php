@@ -871,25 +871,25 @@
 					</div>
 				</div>
 			</section>
-			<section id="section-sponsors">
+			<section id="section-sponsors" class="container__anim">
 				<div class="wrapper">
 					<div class="container-el">
-						<div class="el">
+						<div class="el anim__slide anim__delayMedium_1">
 							<img src="img/home/sponsors/tribune.svg" alt="">
 						</div>
-						<div class="el">
+						<div class="el anim__slide anim__delayMedium_2">
 							<img src="img/home/sponsors/harvard.svg" alt="">
 						</div>
-						<div class="el">
+						<div class="el anim__slide anim__delayMedium_3">
 							<img src="img/home/sponsors/forbes.svg" alt="">
 						</div>
-						<div class="el">
+						<div class="el anim__slide anim__delayMedium_4">
 							<img src="img/home/sponsors/echos.svg" alt="">
 						</div>
-						<div class="el">
+						<div class="el anim__slide anim__delayMedium_5">
 							<img src="img/home/sponsors/bfm.svg" alt="">
 						</div>
-						<div class="el">
+						<div class="el anim__slide anim__delayMedium_6">
 							<img src="img/home/sponsors/bati.png" alt="">
 						</div>
 					</div>
