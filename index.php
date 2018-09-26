@@ -1047,6 +1047,63 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="el">
+								<div class="pp" style="background-image: url(img/home/team/pp-4.jpg);"></div>
+								<div class="cdr">
+									<div class="content-text">
+										<div class="name">Barthélémy Chalvet</div>
+										<div class="job">15 ans d’expérience</div>
+									</div>
+								</div>
+							</div>
+							<div class="el">
+								<div class="pp" style="background-image: url(img/home/team/pp-2.jpg);"></div>
+								<div class="cdr">
+									<div class="content-text">
+										<div class="name">Barthélémy Chalvet</div>
+										<div class="job">15 ans d’expérience</div>
+									</div>
+								</div>
+							</div>
+							<div class="el">
+								<div class="pp" style="background-image: url(img/home/team/pp-3.jpg);"></div>
+								<div class="cdr">
+									<div class="content-text">
+										<div class="name">Barthélémy Chalvet</div>
+										<div class="job">15 ans d’expérience</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="el">
+								<div class="pp" style="background-image: url(img/home/team/pp-4.jpg);"></div>
+								<div class="cdr">
+									<div class="content-text">
+										<div class="name">Barthélémy Chalvet</div>
+										<div class="job">15 ans d’expérience</div>
+									</div>
+								</div>
+							</div>
+							<div class="el">
+								<div class="pp" style="background-image: url(img/home/team/pp-3.jpg);"></div>
+								<div class="cdr">
+									<div class="content-text">
+										<div class="name">Barthélémy Chalvet</div>
+										<div class="job">15 ans d’expérience</div>
+									</div>
+								</div>
+							</div>
+							<div class="el">
+								<div class="pp" style="background-image: url(img/home/team/pp-2.jpg);"></div>
+								<div class="cdr">
+									<div class="content-text">
+										<div class="name">Barthélémy Chalvet</div>
+										<div class="job">15 ans d’expérience</div>
+									</div>
+								</div>
+							</div>
+							
 						</div>
 						<div class="container-nav anim__fade anim__delayMedium_4">
 							<div class="nav">
@@ -1086,6 +1143,39 @@
 							</div>
 							<div class="container-quote">
 								<q>
+									1
+									Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations
+								</q>
+							</div>
+							<div class="cdr">
+								<div class="name">Barthélémy Chalvet</div>
+								<div class="job">CEO @Google</div>
+							</div>
+						</div>
+
+						<div class="el">
+							<div class="container-logo">
+								<img src="img/home/logo/logo-mashable.svg" alt="">
+							</div>
+							<div class="container-quote">
+								<q>
+									2
+									Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations
+								</q>
+							</div>
+							<div class="cdr">
+								<div class="name">Barthélémy Chalvet</div>
+								<div class="job">CEO @Google</div>
+							</div>
+						</div>
+
+						<div class="el">
+							<div class="container-logo">
+								<img src="img/home/logo/logo-mashable.svg" alt="">
+							</div>
+							<div class="container-quote">
+								<q>
+									3
 									Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations
 								</q>
 							</div>
