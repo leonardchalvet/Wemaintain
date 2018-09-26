@@ -16,12 +16,7 @@ $(window).on('load', function() {
 	    animScroll();
 	});
 	animScroll();
-
-	/*$('body').click(function(){
-		$('#section-team .wrapper .container-carousel .container-el .el').toggleClass('active');
-		$('#section-quotes .wrapper .container-el .el').toggleClass('active');
-	})*/
-
+	
 
 	/* QUOTE ANIM FUNCTION & INIT */
 
@@ -79,10 +74,62 @@ $(window).on('load', function() {
 	/* END QUOTE ANIM */
 
 
-
 	/* TEAM FUNCTION & INIT */
-	function animTeam(num) {
 
+	//Function
+	function animTeam(num) {
+		//$('#section-team .wrapper .container-carousel .container-el .el').toggleClass('active');
+
+		let container = '#section-team .wrapper .container-carousel .container-el .el';
+		if(!$(container + ':nth-child('+num+')').hasClass('active')) {
+
+			$(container).removeClass('active');
+			
+			setTimeout(function(){
+				
+				$(container).show();
+				for( let i=1 ; i <= $(container).length ; i++ ) {
+					if(i != num && i != (num-1) && i != (num-2)) {
+						$(container + ':nth-child('+i+')').hide();
+					}
+				}
+
+				for( let pos = num ; pos >= (num - 2) ; pos-- ) {
+					$(container + ':nth-child('+pos+')').addClass('active');
+				}
+
+			}, 500)
+		}
 	}
+
+	//Initialisation
+	for( let i=4 ; i <= $('#section-team .wrapper .container-carousel .container-el .el').length ; i++ ) {
+		$('#section-team .wrapper .container-carousel .container-el .el:nth-child('+i+')').hide();
+	}
+
+	let numTeam = 3;
+
+	//Anim auto
+	setInterval(function() {
+		animTeam(numTeam);
+		numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? 3 : numTeam+=3;
+	}, 5000);
+
+	//Click right arrow
+	$('#section-team .wrapper .container-carousel .container-nav .nav:nth-child(1)').click(function(){
+		do {
+			numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? 3 : numTeam+=3;
+		} while( $('#section-team .wrapper .container-carousel .container-el .el:nth-child('+numTeam+')').hasClass('active') );
+		animTeam(numTeam);
+	});
+
+	//Click left arrow
+	$('#section-team .wrapper .container-carousel .container-nav .nav:nth-child(2)').click(function(){
+		do {
+			numTeam = numTeam < 3 ? ($('#section-team .wrapper .container-carousel .container-el .el').length) : numTeam-=3;
+		} while( ($('#section-team .wrapper .container-carousel .container-el .el:nth-child('+numTeam+')').hasClass('active')) || numTeam < 3 );
+		animTeam(numTeam);
+	});
+
 	/* END TEAM ANIM */
 })
