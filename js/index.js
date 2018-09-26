@@ -23,10 +23,10 @@ $(window).on('load', function() {
 	})*/
 
 
-	/* QUOTE UNIQUE FUNCTION & INIT */
+	/* QUOTE ANIM FUNCTION & INIT */
 
 	//Function
-	function animQuoteSolo(num) {
+	function animQuote(num) {
 		let container = '#section-quotes .wrapper .container-el .el';
 		if(!$(container + ':nth-child('+num+')').hasClass('active')) {
 
@@ -52,37 +52,37 @@ $(window).on('load', function() {
 		$('#section-quotes .wrapper .container-el .el:nth-child('+i+')').hide();
 	}
 
-	let numQuoteSolo = 1;
+	let numQuote = 1;
 
 	//Anim auto
 	setInterval(function() {
-		setTimeout(function() { //preparation pause
-			animQuoteSolo(numQuoteSolo);
-			numQuoteSolo = numQuoteSolo >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuoteSolo+=1
-		}, 0);
+		animQuote(numQuote);
+		numQuote = numQuote >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuote+=1;
 	}, 5000);
 
 	//Click right arrow
 	$('#section-quotes .wrapper .container-nav .nav:nth-child(1)').click(function(){
-		numQuoteSolo+=1;
-		numQuoteSolo = numQuoteSolo >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuoteSolo;
-		console.log(numQuoteSolo);
+		do {
+			numQuote = numQuote >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuote+=1
+		} while( $('#section-quotes .wrapper .container-el .el:nth-child('+numQuote+')').hasClass('active') );
+		animQuote(numQuote);
 	});
 
 	//Click left arrow
 	$('#section-quotes .wrapper .container-nav .nav:nth-child(2)').click(function(){
-		numQuoteSolo-=1;
-		numQuoteSolo = numQuoteSolo <= 0 ? $('#section-quotes .wrapper .container-el .el').length : numQuoteSolo;
-		console.log(numQuoteSolo);
+		do {
+			numQuote = numQuote <= 1 ? $('#section-quotes .wrapper .container-el .el').length : numQuote-=1;
+		} while( $('#section-quotes .wrapper .container-el .el:nth-child('+numQuote+')').hasClass('active') );
+		animQuote(numQuote);
 	});
 
-	/* END QUOTE UNIQUE */
+	/* END QUOTE ANIM */
 
 
 
-	/**/
-	function animQuotesMulti(num) {
+	/* TEAM FUNCTION & INIT */
+	function animTeam(num) {
 
 	}
-	/**/
+	/* END TEAM ANIM */
 })
