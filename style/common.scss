@@ -373,7 +373,8 @@ main
 /* ********************* ANIM PAGES ********************* */
 /* ------------------------------------------------------ */
 
-.container__anim {
+.container__anim,
+.container__anim__dt {
   .anim__slide {
     opacity: 0;
     transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -383,11 +384,13 @@ main
   	opacity: 0;
   	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
   }
-  &.reach .anim__slide {
+  &.reach .anim__slide,
+  &.active .anim__slide {
     opacity: 1;
     transform: translateY(0px);
   }
-  &.reach .anim__fade {
+  &.reach .anim__fade,
+  &.active .anim__fade {
     opacity: 1;
   }
   @for $i from 1 to 10 {
