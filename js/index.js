@@ -48,19 +48,28 @@ $(window).on('load', function() {
 	}
 
 	let numQuote = 1;
+	let pauseQuote = 0;
 
 	//Anim auto
 	setInterval(function() {
-		animQuote(numQuote);
-		numQuote = numQuote >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuote+=1;
+		if(!pauseQuote) {
+			animQuote(numQuote);
+			numQuote = numQuote >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuote+=1;
+		}
+		else {
+			setTimeout(function() {
+				pauseQuote = 0;
+			}, 10000);
+		}
 	}, 5000);
 
 	//Click right arrow
 	$('#section-quotes .wrapper .container-nav .nav:nth-child(1)').click(function(){
 		do {
-			numQuote = numQuote >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuote+=1
+			numQuote = numQuote >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuote+=1;
 		} while( $('#section-quotes .wrapper .container-el .el:nth-child('+numQuote+')').hasClass('active') );
 		animQuote(numQuote);
+		pauseQuote = 1;
 	});
 
 	//Click left arrow
@@ -69,6 +78,7 @@ $(window).on('load', function() {
 			numQuote = numQuote <= 1 ? $('#section-quotes .wrapper .container-el .el').length : numQuote-=1;
 		} while( $('#section-quotes .wrapper .container-el .el:nth-child('+numQuote+')').hasClass('active') );
 		animQuote(numQuote);
+		pauseQuote = 1;
 	});
 
 	/* END QUOTE ANIM */
@@ -98,7 +108,7 @@ $(window).on('load', function() {
 					$(container + ':nth-child('+pos+')').addClass('active');
 				}
 
-			}, 500)
+			}, 1000)
 		}
 	}
 
@@ -108,11 +118,19 @@ $(window).on('load', function() {
 	}
 
 	let numTeam = 3;
+	let pauseTeam = 0;
 
 	//Anim auto
 	setInterval(function() {
-		animTeam(numTeam);
-		numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? 3 : numTeam+=3;
+		if(!pauseTeam) {
+			animTeam(numTeam);
+			numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? 3 : numTeam+=3;
+		}
+		else {
+			setTimeout(function() {
+				pauseTeam = 0;
+			}, 10000);
+		}
 	}, 5000);
 
 	//Click right arrow
@@ -121,6 +139,7 @@ $(window).on('load', function() {
 			numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? 3 : numTeam+=3;
 		} while( $('#section-team .wrapper .container-carousel .container-el .el:nth-child('+numTeam+')').hasClass('active') );
 		animTeam(numTeam);
+		pauseTeam = 1;
 	});
 
 	//Click left arrow
@@ -129,6 +148,7 @@ $(window).on('load', function() {
 			numTeam = numTeam < 3 ? ($('#section-team .wrapper .container-carousel .container-el .el').length) : numTeam-=3;
 		} while( ($('#section-team .wrapper .container-carousel .container-el .el:nth-child('+numTeam+')').hasClass('active')) || numTeam < 3 );
 		animTeam(numTeam);
+		pauseTeam = 1;
 	});
 
 	/* END TEAM ANIM */
