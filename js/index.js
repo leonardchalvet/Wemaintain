@@ -12,9 +12,6 @@ $(window).on('load', function() {
 	};
 
 	$window = $(window);
-	$window.scroll(function() {
-	    animScroll();
-	});
 	animScroll();
 	
 
@@ -49,6 +46,7 @@ $(window).on('load', function() {
 
 	let numQuote = 1;
 	let pauseQuote = 0;
+	let firstAnimQuote = 0;
 
 	//Anim auto
 	setInterval(function() {
@@ -119,6 +117,7 @@ $(window).on('load', function() {
 
 	let numTeam = 3;
 	let pauseTeam = 0;
+	let firstAnimTeam = 0;
 
 	//Anim auto
 	setInterval(function() {
@@ -152,4 +151,28 @@ $(window).on('load', function() {
 	});
 
 	/* END TEAM ANIM */
+
+	/* SCROLL */
+	$window.scroll(function() {
+	    animScroll();
+
+	    const offsetTopSectonTeam  = $('#section-team').offset().top;
+	    const offsetTopSectonQuote = $('#section-quotes').offset().top;
+		const wHeight = $( window ).height();
+
+		/* A FINIR 
+	    if ( $window.scrollTop() + (wHeight/2) >= offsetTopSectonTeam ) {
+	    	if(!$('#section-team').hasClass('reach') || !firstAnimTeam) {
+	    		animTeam(numTeam); 
+	    		firstAnimTeam = 1;
+	    	}
+	    }
+
+	    if ( $window.scrollTop() + (wHeight/2) >= offsetTopSectonQuote ) {
+	    	if(!$('#section-quotes').hasClass('reach') || !firstAnimQuote) {
+	    		animQuote(numQuote);
+	    		firstAnimQuote = 1;
+	    	}
+	    }*/
+	});
 })
