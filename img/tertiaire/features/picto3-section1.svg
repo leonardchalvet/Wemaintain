@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="24px" viewBox="0 0 40 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>picto3-section1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3a-Tertiaire" transform="translate(-728.000000, -971.000000)">
+            <g id="Section-1" transform="translate(120.000000, 747.000000)">
+                <g id="2" transform="translate(608.000000, 224.000000)">
+                    <g id="picto3-section1">
+                        <circle id="Oval-2" fill="#0081C5" fill-rule="nonzero" cx="10" cy="13" r="10"></circle>
+                        <circle id="Oval-2-Copy" fill="#0081C5" fill-rule="nonzero" cx="37" cy="3" r="3"></circle>
+                        <g id="lock-8" transform="translate(13.000000, 0.000000)" stroke="#171A3B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <g id="Group">
+                                <g id="lock-shield">
+                                    <path d="M12,23.25 C5.324,21.469 0.75,17.51 0.75,10.5 L0.75,0.75 L23.25,0.75 L23.25,10.5 C23.25,17.505 18.683,21.467 12,23.25 Z" id="Shape"></path>
+                                    <path d="M8.75,12.25 L14.75,12.25" id="Shape"></path>
+                                    <path d="M8.75,15.25 L14.75,15.25" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="40px" viewBox="0 0 32 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>5A21586C-F0F8-4DF2-80CD-BF1579247C36</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3a-Tertiaire" transform="translate(-649.000000, -2742.000000)">
+            <g id="Section-3" transform="translate(118.000000, 2252.000000)">
+                <g id="2-copy" transform="translate(529.000000, 487.000000)">
+                    <g id="picto4-section3" transform="translate(2.000000, 3.000000)">
+                        <circle id="Oval-2" fill="#F5A623" fill-rule="nonzero" cx="10" cy="10" r="10"></circle>
+                        <circle id="Oval-2-Copy-3" fill="#F5A623" fill-rule="nonzero" cx="29" cy="37" r="3"></circle>
+                        <g id="Group" transform="translate(2.000000, 3.000000)" stroke="#171A3B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <g id="human-resources-network">
+                                <path d="M23.25,23.25 C22.3048058,20.5585948 19.7655471,18.7554285 16.913,18.75 L16.907,18.75 C14.0547244,18.7555523 11.5158206,20.5587511 10.571,23.25" id="Shape"></path>
+                                <path d="M13.353,11.031 C15.334213,13.0840449 18.3796785,13.6957665 21,12.567" id="Shape"></path>
+                                <circle id="Oval" cx="16.907" cy="13.125" r="4.125"></circle>
+                                <path d="M16.778,18.75 L16.778,23.25" id="Shape"></path>
+                                <path d="M5.737,21.347 C1.62727913,18.5914753 -0.199822502,13.4743939 1.23521772,8.73906058 C2.67025793,4.00372728 7.03057128,0.761738613 11.9785618,0.75114851 C16.9265522,0.740558408 21.3007031,3.96385284 22.756,8.693 C22.8046667,8.853 22.8503333,9.014 22.893,9.176" id="Shape"></path>
+                                <path d="M7.981,19.4 C6.77492533,15.5767584 6.46526099,11.5271699 7.076,7.565 C7.34499573,5.27013118 8.09937687,3.05880246 9.289,1.078" id="Shape"></path>
+                                <path d="M0.775,11.25 L9.75,11.25" id="Shape"></path>
+                                <path d="M2.482,6 L21.518,6" id="Shape"></path>
+                                <path d="M1.686,16.5 L9.75,16.5" id="Shape"></path>
+                                <path d="M14.711,1.078 C15.6490327,2.58654787 16.3009265,4.25509769 16.634,6" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

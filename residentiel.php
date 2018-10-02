@@ -18,7 +18,24 @@
 	<body>
 
 		<header id="header-desktop">
-			
+			<div class="wrapper">
+				<a class="logo" href="">
+					<img class="logo-style-1" src="img/common/logo-style-1.svg" alt="">
+					<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
+				</a>
+				<ul class="container-link">
+					<li><a href="">Résidentiel</a></li>
+					<li><a href="">Tertiaire</a></li>
+					<li><a href="">Techniciens</a></li>
+					<li><a href="">A propos</a></li>
+					<li><a href="">FAQ</a></li>
+				</ul>
+				<div class="container-action">
+					<div class="signin">Se connecter</div>
+					<div class="sep"></div>
+					<div class="signup">S’inscrire</div>
+				</div>
+			</div>
 		</header>
 
 		<main>
@@ -110,14 +127,164 @@
 				</div>
 			</section>
 
-			<section id="section-tarifs">
-				
+			<section id="section-tarifs" class="container__anim">
+				<div class="background anim__slide anim__delayMedium_0"></div>
+				<div class="wrapper">
+					<div class="container-text">
+						<div class="container-desc">
+							<h2 class="anim__slide anim__delayMedium_1">
+								Bénéficiez de tarifs cohérents
+							</h2>
+							<p class="anim__slide anim__delayMedium_2">
+								Chaque ascenseur a sa technologie, ses utilisateurs et son historique. Ils se maintiennent tous différemment.
+							</p>
+						</div>
+						<div class="btn anim__slide anim__delayMedium_3">
+							<span class="btn-text">
+								Je demande une pré-visite gratuite
+							</span>
+						</div>
+					</div>
+					<div class="container-li">
+						<div class="container_illu anim__slide anim__delayMedium_4">
+							<img src="img/residentiel/tarifs/Illustration-section2.svg" alt="">
+						</div>
+						<div class="container-el">
+							<div class="el anim__slide anim__delayMedium_5">
+								<div class="icn">
+									<img src="img/residentiel/tarifs/picto1-section2.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Pré-visite gratuite</h3>
+									<p>
+										Le technicien passe environ 45 minute par appareil. Notre algorithme calcule objectivement le prix nécessaire à une bonne maintenance.
+									</p>
+								</div>
+							</div>
+							<div class="el anim__slide anim__delayMedium_6">
+								<div class="icn">
+									<img src="img/residentiel/tarifs/picto2-section2.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Transparence sur les coûts</h3>
+									<p>
+										Nous expliquons et justifions nos prix, pas de coûts cachés.
+									</p>
+								</div>
+							</div>
+							<div class="el anim__slide anim__delayMedium_7">
+								<div class="icn">
+									<img src="img/residentiel/tarifs/picto3-section2.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Une proposition juste et adaptée </h3>
+									<p>
+										Notre proposition inclue le contrat de maintenance et tous potentiels travaux à venir identifiés.
+									</p>
+								</div>
+							</div>
+							<div class="el anim__slide anim__delayMedium_8">
+								<div class="icn">
+									<img src="img/residentiel/tarifs/picto4-section2.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Des pièces détâchées 40% moins cher en moyenne</h3>
+									<p>
+										Des pièces détachées moins cher Nous travaillons main dans la main avec les fournisseurs pour obtenir les meilleurs prix.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-sponsors" class="container__anim">
+				<div class="background anim__slide anim__delayMedium_"></div>
+				<div class="wrapper">
+					<div class="container-text">
+						<h2 class="anim__slide anim__delayMedium_1">Ils nous font confiance</h2>
+						<p class="anim__slide anim__delayMedium_2">
+							Nos clients témoignent de leur passage à WeMaintain pour simplifier leurs opérations
+						</p>
+					</div>
+					<div class="container-col">
+						<div class="col anim__slide anim__delayMedium_3">
+							<div class="title">Nos clients</div>
+							<div class="content">
+								<div class="container-logo">
+									<div class="logo">
+										<img src="img/residentiel/logo/logo1-section3.svg" alt="">
+									</div>
+									<div class="logo">
+										<img src="img/residentiel/logo/logo2-section3.svg" alt="">
+									</div>
+									<div class="logo">
+										<img src="img/residentiel/logo/logo3-section3.svg" alt="">
+									</div>
+									<div class="logo">
+										<img src="img/residentiel/logo/logo4-section3.svg" alt="">
+									</div>
+									<div class="logo">
+										<img src="img/residentiel/logo/logo5-section3.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col anim__slide anim__delayMedium_4">
+							<div class="title">Nos fans</div>
+							<div class="content">
+								<div class="container-quote">
+									<q>
+										Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations
+									</q>
+									<div class="author">
+										<div class="name">Barthélémy Chalvet</div>
+										<div class="job">CEO @Google</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col anim__slide anim__delayMedium_5">
+							<div class="title">Nos Distinctions</div>
+							<div class="content">
+								<div class="container-logo">
+									<div class="logo">
+										<img src="img/residentiel/logo/logo1-section3.svg" alt="">
+									</div>
+									<div class="logo">
+										<img src="img/residentiel/logo/logo2-section3.svg" alt="">
+									</div>
+									<div class="logo">
+										<img src="img/residentiel/logo/logo3-section3.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-experience" class="container__anim">
+				<div class="wrapper">
+					<div class="container-text">
+						<img class="anim__slide anim__delayMedium_1" src="img/home/picto-section-exigez.svg" alt="">
+						<h2 class="anim__slide anim__delayMedium_2">Exigez une nouvelle expérience</h2>
+					</div>
+					<div class="container-btn">
+						<div class="btn anim__slide anim__delayMedium_3">
+							<span class="btn-text">Je demande une pré-visite gratuite</span>
+						</div>
+					</div>
+					<img class="dots anim__fade anim__delayMedium_1" src="img/common/points1.svg" alt="">
+				</div>
 			</section>
 
 		</main>
 
 		<footer></footer>
 
+		<script type="text/javascript" src="js/common.js"></script>
 		<script type="text/javascript" src="js/residentiel.js"></script>
 	</body>
 </html>

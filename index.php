@@ -17,8 +17,25 @@
 	
 	<body>
 
-		<header id="header-desktop">
-			
+		<header id="header-desktop" class="style-1">
+			<div class="wrapper">
+				<a class="logo" href="">
+					<img class="logo-style-1" src="img/common/logo-style-1.svg" alt="">
+					<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
+				</a>
+				<ul class="container-link">
+					<li><a href="">Résidentiel</a></li>
+					<li><a href="">Tertiaire</a></li>
+					<li><a href="">Techniciens</a></li>
+					<li><a href="">A propos</a></li>
+					<li><a href="">FAQ</a></li>
+				</ul>
+				<div class="container-action">
+					<div class="signin">Se connecter</div>
+					<div class="sep"></div>
+					<div class="signup">S’inscrire</div>
+				</div>
+			</div>
 		</header>
 
 		<main>
@@ -874,22 +891,22 @@
 			<section id="section-sponsors" class="container__anim">
 				<div class="wrapper">
 					<div class="container-el">
-						<div class="el anim__slide anim__delayMedium_1">
+						<div class="el anim__slide anim__delaySmall_1">
 							<img src="img/home/sponsors/tribune.svg" alt="">
 						</div>
-						<div class="el anim__slide anim__delayMedium_2">
+						<div class="el anim__slide anim__delaySmall_2">
 							<img src="img/home/sponsors/harvard.svg" alt="">
 						</div>
-						<div class="el anim__slide anim__delayMedium_3">
+						<div class="el anim__slide anim__delaySmall_3">
 							<img src="img/home/sponsors/forbes.svg" alt="">
 						</div>
-						<div class="el anim__slide anim__delayMedium_4">
+						<div class="el anim__slide anim__delaySmall_4">
 							<img src="img/home/sponsors/echos.svg" alt="">
 						</div>
-						<div class="el anim__slide anim__delayMedium_5">
+						<div class="el anim__slide anim__delaySmall_5">
 							<img src="img/home/sponsors/bfm.svg" alt="">
 						</div>
-						<div class="el anim__slide anim__delayMedium_6">
+						<div class="el anim__slide anim__delaySmall_6">
 							<img src="img/home/sponsors/bati.png" alt="">
 						</div>
 					</div>
@@ -1199,6 +1216,7 @@
 
 		<footer></footer>
 
+		<script type="text/javascript" src="js/common.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>

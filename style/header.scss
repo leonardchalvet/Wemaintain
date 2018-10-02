@@ -1,0 +1,116 @@
+#header-desktop{
+	position: fixed;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+	height: 105px;
+	width: 100%;
+	transition: all 0.25s ease;
+	.wrapper{
+		position: relative;
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		.logo{
+			position: relative;
+			height: 40px;
+			width: 155px;
+			margin-right: 95px;
+			img{
+				position: absolute;
+				top: 50%;
+				left: 0%;
+				width: 100%;
+				transform: translateY(-50%);
+			}
+			.logo-style-1{
+				display: none;
+			}
+			.logo-style-2{
+				display: block;
+			}
+		}
+		.container-link{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			li{
+				list-style: none;
+				margin-right: 50px;
+				transition: all 0.25s ease;
+				&:last-child{
+					margin-right: 0px;
+				}
+				a{
+					text-decoration: none;
+					color: #5C5F88;
+					@include styleParagraph4;
+				}
+				&:hover{
+					opacity: 0.6;
+				}
+			}
+		}
+		.container-action{
+			position: absolute;
+			right: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			.signin{
+				@include styleParagraph4;
+			}
+			.sep{
+				margin-right: 25px;
+				margin-left: 25px;
+				height: 3px;	
+				width: 3px;
+				background-color: #D8D8D8;
+				border-radius: 4px;
+			}
+			.signup{
+				@include styleParagraph4;
+				color: $colorMain_4;
+			}
+		}
+	}
+
+
+	&.scroll{
+		box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1);
+		background-color: #FFF;
+
+		.wrapper .logo-style-1{
+			display: none;
+		}
+		.wrapper .logo-style-2{
+			display: block;
+		}
+		.wrapper .container-link li a {
+			color: #5C5F88;
+		} 
+		.wrapper .signin{
+			color: #5C5F88;
+		}
+	}
+	&.style-1 {
+		.wrapper .logo-style-1{
+			display: block;
+		}
+		.wrapper .logo-style-2{
+			display: none;
+		}
+		.wrapper .container-link li a {
+			color: #FFF;
+		} 
+		.wrapper .signin{
+			color: #FFF;
+		}
+	}
+}

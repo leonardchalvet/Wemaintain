@@ -1,21 +1,6 @@
 $(window).on('load', function() {
-
-	function animScroll() {
-		var windowHeight = $window.height() / 1.5;
-	    $('.container__anim').each(function() {
-	        if ($window.scrollTop() >= $(this).offset().top - windowHeight) {
-	            if (!$(this).hasClass('reach')) {
-	                $(this).addClass('reach');
-	            }
-	        }
-	    });
-	};
-
-	$window = $(window);
-	$window.scroll(function() {
-	    animScroll();
-	});
-	animScroll();
+	
+	$('#section-sponsors').addClass('reach');
 	
 
 	/* QUOTE ANIM FUNCTION & INIT */

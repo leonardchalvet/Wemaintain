@@ -1,0 +1,380 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*====================================
+=            PAGE A PROPOS           =
+====================================*/
+
+main{
+	padding-bottom: 155px;
+}
+
+#section-cover{
+	position: relative;
+	padding-top: 190px;
+	background-color: $colorMain_1;
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		h1{
+			@include styleH1;
+			color: #FFF;
+		}
+		.banner{
+			margin-top: 42px;
+			position: relative;
+			bottom: -30px;
+			width: 100%;
+			height: 385px;
+			background-repeat: no-repeat;
+    		background-position: center center;
+    		background-size: cover;
+    		z-index: 1;
+		}
+		.obj{
+			position: absolute;
+			left: 0px;
+			top: 80px;
+			width: 360px;
+			height: 360px;
+			border-radius: 180px;
+			background-color: $colorMain_2;
+		}
+	}
+}
+
+#section-valeurs{
+	margin-top: 150px;
+	.wrapper{
+		@include styleGrid4;
+		position: relative;
+		.container-text{
+			text-align: center;
+			max-width: 510px;
+			margin:auto;
+			h2{
+				@include styleH2;
+			}
+			p{
+				margin-top: 22px;
+				@include styleParagraph2;
+			}
+		}
+		.container-el{
+			margin-top: 85px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			.el{
+				width: 240px;
+				.icn{
+					position: relative;
+					height: 45px;
+					width: 45px;
+					svg{
+						position: absolute;
+						left: 0px;
+						top: 0px;
+					}
+				}
+				h3{
+					@include styleH3;
+				}
+				p{
+					margin-top: 8px;
+					@include styleParagraph4;
+				}
+			}
+		}
+	}
+}
+
+
+#section-numbers{
+	margin-top: 70px;
+	position: relative;
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		.banner{
+			background-repeat: no-repeat;
+	    	background-position: center center;
+	    	background-size: cover;
+	    	width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}))/2) - 9px);
+	    	height: 680px;
+		}
+		.container-el{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			justify-content: space-between;
+			margin-top: 56px;
+			.el{
+				width: 25%;
+				.num{
+					font-size: 64px;
+					line-height: 76px;
+					font-family: $font_2;
+					color: $colorMain_5;
+				}
+				.bar{
+					height: 10px;	
+					width: 30px;
+				}
+				&:nth-child(1) .bar{
+					background-color: $colorMain_4;
+				}
+				&:nth-child(2) .bar{
+					background-color: $colorMain_1;
+				}
+				&:nth-child(3) .bar{
+					background-color: $colorMain_2;
+				}
+				p{
+					margin-top: 20px;
+					@include styleParagraph2;
+					span{
+						color: $colorMain_4;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#section-team{
+	position: relative;
+	background-color: #F3F5F5;
+	margin-top: 80px;
+	padding-top: 130px;
+	padding-bottom: 165px;
+
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		.container-text{
+			text-align: center;
+			h2{
+				@include styleH2;
+			}
+			p{
+				margin-top: 20px;
+				@include styleParagraph2;
+			}
+		}
+
+		.container-col{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			align-items: flex-start;
+			margin-top: 80px;
+			.col{
+				width: 360px;
+				h3{
+					@include styleH3;
+				}
+				p{
+					margin-top: 16px;
+					@include styleParagraph4;
+				}
+			}
+		}
+
+		.container-grid{
+		    display: grid;
+			grid-gap: 28.5px;
+			grid-template-columns: 381px 381px 381px;
+			grid-template-rows: 381px 381px;
+			margin-top: 90px;
+			.grid-item{
+				&:nth-child(1){
+					grid-column: 1/3;
+    				grid-row: 1/2;
+    				background-repeat: no-repeat;
+		    		background-position: center center;
+		    		background-size: cover;
+				}
+				&:nth-child(2){
+					grid-column: 3/4;
+    				grid-row: 1/3;
+    				background-repeat: no-repeat;
+		    		background-position: center center;
+		    		background-size: cover;
+				}
+				&:nth-child(3){
+					grid-column: 1/2;
+    				grid-row: 2/3;
+    				background-repeat: no-repeat;
+		    		background-position: center center;
+		    		background-size: cover;
+				}
+				&:nth-child(4){
+					position: relative;
+					grid-column: 2/3;
+    				grid-row: 2/3;
+    				background-color: $colorMain_2;
+    				.content{
+    					position: absolute;
+    					top: 50%;
+    					left: 50%;
+    					transform: translate(-50%, -50%);
+    					width: 80%;
+    					text-align: center;
+    					h4{
+							@include styleH3;
+							color: #FFF;
+    					}
+    					p{
+    						margin-top: 18px;
+    						@include styleParagraph4;
+    						color: #FFF;
+    					}
+    					.btn{
+    						margin-top: 30px;
+    						@include styleButton;
+    						background-color: #FFF;
+    						.btn-text{
+    							color:$colorMain_5;
+    							font-family: $font_2;
+    						}
+    					}
+    				}
+				}	
+			}
+		}
+		
+	}
+}
+
+
+#section-fondateur{
+	background-color: $colorMain_1;
+	padding-top: 125px;
+	padding-bottom: 220px;
+	.wrapper{
+		@include styleGrid1;
+		.container-text{
+			text-align: center;
+			h2{
+				@include styleH2;
+				color:#FFF;
+			}
+			p{
+				@include styleParagraph2;
+				color: rgba(255, 255, 255, 0.8);
+				max-width: 470px;
+				margin:auto;
+				margin-top: 25px;
+			}
+		}
+		.container-el{
+			width: 670px;
+			margin:auto;
+			margin-top: 85px;
+			.el{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 120px;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+				&:nth-child(odd){
+					.img{
+						order:1;
+					}
+					.text{
+						order:2;
+					}
+				}
+				&:nth-child(even){
+					.img{
+						order:2;
+					}
+					.text{
+						order:1;
+					}
+				}
+				.img{
+					height: 450px;
+					width: 280px;
+					background-color: #E4E4E4;
+					background-repeat: no-repeat;
+			    	background-position: center center;
+			    	background-size: cover;
+				}
+				.text{
+					width: 315px;
+					.name{
+						@include styleH3;
+						color:#FFF;
+					}
+					.job{
+						@include styleH3;
+						color: $colorMain_4;
+					}
+					p{
+						margin-top: 35px;
+						@include styleParagraph4;
+						color: rgba(255, 255, 255, 0.8);
+					}
+				}
+				&:nth-child(1) .job{
+					color: $colorMain_4;
+				}
+				&:nth-child(2) .job{
+					color: $colorMain_2;
+				}
+				&:nth-child(3) .job{
+					color: $colorMain_3;
+				}
+			}
+		}
+	}
+}
+
+#section-joinus{
+	position: relative;
+	margin-top: 110px;
+	padding: 140px 0px 140px 0px;
+	.background{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}))/2) - 9px);
+		height: 100%;
+		background-color: $colorMain_4;
+	}
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		text-align: center;
+		h2{
+			@include styleH2;
+			color:#FFF;
+		}
+		.btn{
+			margin-top: 45px;
+			@include styleButton;
+			background-color: $colorMain_1;
+			position: relative;
+			z-index: 1;
+		}
+		.dots{
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			width: 390px;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+/*========================================
+=            END PAGE A PROPOS           =
+=========================================*/
+
+@import 'footer.scss';

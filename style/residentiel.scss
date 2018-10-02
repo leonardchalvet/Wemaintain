@@ -5,6 +5,9 @@
 =            PAGE RESIDENTIEL           =
 ========================================*/
 
+main{
+	padding-bottom: 155px;
+}
 
 #section-cover{
 	position: relative;
@@ -69,7 +72,6 @@
 		}
 	}
 }
-
 
 #section-features{
 	padding-top: 100px;
@@ -279,6 +281,209 @@
 	}
 }
 
+#section-tarifs{
+	padding-top: 95px;
+	position: relative;
+	.background{
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}))/2) - 9px);
+		height: 100%;
+		background-color: $colorMain_1;
+	}
+	.wrapper{
+		padding-right: 50px;
+		position: relative;
+		z-index: 1;
+		@include styleGrid1;
+		.container-text{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			.container-desc{
+				width: 500px;
+				h2{
+					@include styleH2;
+					color:#FFF;
+				}
+				p{
+					margin-top: 16px;
+					@include styleParagraph2;
+					color:#FFF;
+				}
+			}
+			.btn{
+				@include styleButton;
+			}
+		}
+		.container-li{
+			position: relative;
+			width: 100%;
+			margin-top: 95px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			.container-illu{
+				width: calc(100% - 700px);
+				img{
+					width: 320px;
+				}
+			}
+			.container-el{
+				width: 700px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: flex-start;
+				justify-content: space-between;
+				.el{
+					display: flex;
+					flex-flow: row wrap;
+					align-items: flex-start;
+					margin-bottom: 55px;
+
+					.icn{
+						width: 45px;
+						margin-right: 25px;
+						img{
+							width: 100%;
+						}
+					}
+					.text{
+						width: 240px;
+						h3{
+							@include styleH3;
+							color:#FFF;
+						}
+						p{
+							margin-top: 10px;
+							@include styleParagraph4;
+							color:rgba(255, 255, 255, 0.8);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#section-sponsors{
+	position: relative;
+	margin-top: 90px;
+	.background{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}))/2) - 9px);
+		height: 100%;
+		background-color: $colorMain_2;
+	}
+	.wrapper{
+		padding: 90px 0px 90px 120px;
+		@include styleGrid1;
+		position: relative;
+		.container-text{
+			width: 500px;
+			h2{
+				@include styleH2;
+				color:#FFF;
+			}
+			p{
+				margin-top: 16px;
+				@include styleParagraph2;
+				color:#FFF;
+			}
+		}
+		.container-col{
+			margin-top: 80px;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			justify-content: space-between;
+			.col{
+				width: 30%;
+				.title{
+					@include styleH3;
+					color:$colorMain_5;
+				}
+				.content{
+					margin-top: 35px;
+					.container-logo{
+						display: flex;
+						flex-flow: row wrap;
+						width: 100%;
+						align-items: center;
+						justify-content: space-between;
+						.logo{
+							width: 50%;
+							margin-bottom: 45px;
+							img{
+								max-width: 85%;
+								max-height: 35px;
+							}
+						}
+						
+					}
+					.container-quote{
+						q{
+							@include styleParagraph3;
+							color: #FFF;
+						}
+						.author{
+							margin-top: 35px;
+						}
+						.name{
+							@include styleParagraph4;
+							color: #FFF;
+						}
+						.job{
+							@include styleParagraph5;
+							color: #FFF;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#section-experience{
+	margin-top: 155px;
+	.wrapper{
+		position: relative;
+		@include styleGrid4;
+		text-align: center;
+		.container-text{
+			img{
+				width: 40px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			h2{
+				@include styleH2;
+			}
+		}
+		.container-btn{
+			margin-top: 45px;
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			.btn{
+				@include styleButton;
+			}
+		}
+		.dots{
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			width: 390px;
+			transform: translateX(-50%);
+		}
+	}
+}
 
 /*===========================================
 =            END PAGE RESIDENTIEL           =

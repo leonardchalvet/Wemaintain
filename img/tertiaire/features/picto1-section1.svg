@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>picto1-section1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3a-Tertiaire" transform="translate(-120.000000, -961.000000)">
+            <g id="Section-1" transform="translate(120.000000, 747.000000)">
+                <g id="3" transform="translate(0.000000, 215.000000)">
+                    <g id="picto1-section1">
+                        <circle id="Oval-2" fill="#52C2D6" fill-rule="nonzero" cx="26" cy="24" r="10"></circle>
+                        <g id="face-id" transform="translate(7.000000, 0.000000)" stroke="#171A3B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <path d="M7.5,16.881 C10.0498366,19.2052119 13.9501634,19.2052119 16.5,16.881" id="Shape"></path>
+                            <path d="M6.75,6.624 L6.75,8.874" id="Shape"></path>
+                            <path d="M17.25,6.624 L17.25,8.874" id="Shape"></path>
+                            <path d="M12,6.624 L12,11.874 C12,12.7024271 11.3284271,13.374 10.5,13.374 L9.75,13.374" id="Shape"></path>
+                            <path d="M23.25,18.624 L23.25,21.624 C23.25,22.4524271 22.5784271,23.124 21.75,23.124 L18.75,23.124" id="Shape"></path>
+                            <path d="M18.75,0.624 L21.75,0.624 C22.5784271,0.624 23.25,1.29557288 23.25,2.124 L23.25,5.124" id="Shape"></path>
+                            <path d="M0.75,5.124 L0.75,2.124 C0.75,1.29557288 1.42157288,0.624 2.25,0.624 L5.25,0.624" id="Shape"></path>
+                            <path d="M5.25,23.124 L2.25,23.124 C1.42157288,23.124 0.75,22.4524271 0.75,21.624 L0.75,18.624" id="Shape"></path>
+                        </g>
+                        <circle id="Oval-2-Copy-2" fill="#52C2D6" fill-rule="nonzero" cx="3.5" cy="8.5" r="3.5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

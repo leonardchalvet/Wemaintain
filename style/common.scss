@@ -294,6 +294,9 @@ main
 			font-size: $paragraph5_textsize_desktop;
 			line-height: $paragraph5_lineheight_desktop;
 		}
+		&:hover{
+			opacity: 0.8;
+		}
 	}
 
 

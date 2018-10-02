@@ -11,6 +11,7 @@ main{
 #section-home{
 	position: relative;
 	background-color: $colorMain_1;
+	padding-top: 105px;
 	
 	.background{
 		position: absolute;
@@ -82,7 +83,7 @@ main{
 			transform: translateY(0px);
 
 			animation-delay: 1.5s;
-			animation-duration: 5s;
+			animation-duration: 7s;
 			animation-name: floating;
 		  	animation-iteration-count: infinite;
 		  	animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
@@ -96,7 +97,7 @@ main{
 	.elSvg-plateforme2-shadow,
 	.elSvg-plateforme3-shadow{
 		opacity: 0;
-		transition: all 0.75s ease;
+		transition: all 1.25s ease;
 	}
 	.elSvg-ombre-ascenseur{
 		transform: scale(0.5);
@@ -114,12 +115,6 @@ main{
 	.elSvg-plateforme3-shadow{
 		transform-origin: 70% 20%; 
 		animation-duration: 5s;
-	}
-	.elSvg-plateforme1-shadow,
-	.elSvg-plateforme2-shadow,
-	.elSvg-plateforme3-shadow{
-		opacity: 0;
-	  	transition: all 0.75s ease;
 	}
 
 	&.reach{
@@ -162,13 +157,13 @@ main{
 	  	transition: all 0.75s ease;
 	}
 	.elSvg-plateforme1{
-		animation-duration: 7s;  
-	}
-	.elSvg-plateforme2{
 		animation-duration: 9s;  
 	}
+	.elSvg-plateforme2{
+		animation-duration: 11s;  
+	}
 	.elSvg-plateforme3{
-		animation-duration: 5s;  
+		animation-duration: 7s;  
 	}
 	&.reach{
 		.elSvg-plateforme1,

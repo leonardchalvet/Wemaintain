@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>picto2-section1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3a-Tertiaire" transform="translate(-423.000000, -959.000000)">
+            <g id="Section-1" transform="translate(120.000000, 747.000000)">
+                <g id="1" transform="translate(303.000000, 212.000000)">
+                    <g id="picto2-section1">
+                        <circle id="Oval-2" fill="#F1653C" fill-rule="nonzero" cx="26" cy="14" r="10"></circle>
+                        <circle id="Oval-2-Copy-3" fill="#F1653C" fill-rule="nonzero" cx="3" cy="33" r="3"></circle>
+                        <g id="data-transfer-circle" stroke="#171A3B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <circle id="Oval" cx="12" cy="12" r="11.25"></circle>
+                            <path d="M9,8.25 L17.25,8.25" id="Shape"></path>
+                            <polyline id="Shape" points="14.25 5.25 17.25 8.25 14.25 11.25"></polyline>
+                            <path d="M15,15.75 L6.75,15.75" id="Shape"></path>
+                            <polyline id="Shape" points="9.75 18.75 6.75 15.75 9.75 12.75"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

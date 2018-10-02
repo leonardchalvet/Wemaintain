@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="35px" viewBox="0 0 39 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>picto4-section1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3a-Tertiaire" transform="translate(-1030.000000, -962.000000)">
+            <g id="Section-1" transform="translate(120.000000, 747.000000)">
+                <g id="4" transform="translate(910.000000, 216.000000)">
+                    <g id="picto4-section1">
+                        <circle id="Oval-2" fill="#F5A623" fill-rule="nonzero" cx="29" cy="24" r="10"></circle>
+                        <circle id="Oval" stroke="#171A3B" stroke-width="1.34999996" cx="16" cy="10" r="10"></circle>
+                        <circle id="Oval" stroke="#171A3B" stroke-width="1.07999991" cx="24" cy="18" r="8"></circle>
+                        <circle id="Oval-2-Copy-2" fill="#F5A623" fill-rule="nonzero" cx="3.5" cy="7.5" r="3.5"></circle>
+                        <path d="M16,20 C16,13.3333333 18.9527559,10 24.8582677,10 C24.8582677,10 25.7440945,14.5454545 23.0866142,17.2727273 C21.3149606,19.0909091 18.9527559,20 16,20 Z" id="Path-37" stroke="#171A3B" stroke-width="0.899999976" fill="#171A3B" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

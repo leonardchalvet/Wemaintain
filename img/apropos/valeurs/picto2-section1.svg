@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="34px" viewBox="0 0 44 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>C43DB248-1939-4C88-AF2D-C11330286954</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5a-A-Propos" transform="translate(-647.000000, -1026.000000)">
+            <g id="Section-1" transform="translate(342.000000, 811.000000)">
+                <g id="2" transform="translate(306.000000, 215.000000)">
+                    <g id="picto2-section2">
+                        <circle id="Oval-2" fill="#0081C5" fill-rule="nonzero" cx="33" cy="12" r="10"></circle>
+                        <circle id="Oval-2-Copy" fill="#0081C5" fill-rule="nonzero" cx="10" cy="31" r="3"></circle>
+                        <g id="Regular" stroke="#171A3B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.80000007">
+                            <rect id="Rectangle-path" x="3.65217391" y="5.4" width="5.47826087" height="3.6"></rect>
+                            <path d="M9.13043478,23.4 L10.6448696,17.4312 C10.8319039,16.6929441 10.5277783,15.9185099 9.88521739,15.4968 C8.82048208,14.7972481 8.09725295,13.6942339 7.88747826,12.45 L7.30434783,9 L9.13043478,9 L9.13043478,5.4 C9.13043478,4.40588745 9.94800176,3.6 10.9565217,3.6 L18.2608696,3.6 C19.2693895,3.6 20.0869565,4.40588745 20.0869565,5.4 L20.0869565,11.7 C20.0578227,12.897749 19.8342367,14.0831657 19.4246957,15.2112 C19.2601688,15.8604253 19.2601688,16.5395747 19.4246957,17.1888 L21,23.4" id="Shape"></path>
+                            <path d="M1.82608696,0.9 C0.817566979,0.9 2.70315171e-16,1.70588745 0,2.7 L0,12.6 C2.70315171e-16,13.5941125 0.817566979,14.4 1.82608696,14.4 C2.83460693,14.4 3.65217391,13.5941125 3.65217391,12.6 L3.65217391,2.7 C3.65217391,1.70588745 2.83460693,0.9 1.82608696,0.9 Z" id="Shape"></path>
+                            <path d="M25.5652174,0.9 C24.5566974,0.9 23.7391304,1.70588745 23.7391304,2.7 L23.7391304,12.6 C23.7391304,13.5941125 24.5566974,14.4 25.5652174,14.4 C26.5737374,14.4 27.3913043,13.5941125 27.3913043,12.6 L27.3913043,2.7 C27.3913043,1.70588745 26.5737374,0.9 25.5652174,0.9 Z" id="Shape"></path>
+                            <rect id="Rectangle-path" x="20.0869565" y="5.4" width="3.65217391" height="3.6"></rect>
+                            <path d="M12.7826087,7.2 L12.7826087,3.6" id="Shape"></path>
+                            <path d="M16.4347826,7.2 L16.4347826,3.6" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
