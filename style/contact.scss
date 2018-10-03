@@ -1,0 +1,209 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*===================================
+=            PAGE CONTACT           =
+===================================*/
+
+main{
+	padding-bottom: 155px;
+}
+
+#section-cover{
+	position: relative;
+	padding-top: 200px;
+	padding-bottom: 425px;
+	background-color: $colorMain_1;
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		.container-text{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			justify-content: space-between;
+			width: 100%;
+			h1{
+				@include styleH1;
+				color: #FFF;
+			}
+			p{
+				max-width: 445px;
+				@include styleParagraph3;
+				color: rgba(255,255,255,0.8);
+			}
+		}
+		.obj{
+			position: absolute;
+			left: -20px;
+			top: 80px;
+			width: 360px;
+			height: 360px;
+			border-radius: 180px;
+			background-color: $colorMain_4;
+		}
+	}
+}
+
+#section-form{
+	position: relative;
+	margin-top: -355px;
+	margin-bottom: 60px;
+	.wrapper{
+		padding: 75px 0px 0px 65px;
+		background-color: #FFFFFF;
+		@include styleGrid1;
+		position: relative;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		.container-form{
+			width: 550px;
+			form{
+				width: 100%;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				align-items: flex-start;
+
+				.container-input{
+					position: relative;
+					width:44%;
+					margin-bottom: 40px;
+					.title{
+						@include styleParagraph4;
+						margin-bottom: 16px;
+					}
+					.wrapper-input{
+						width: 100%;
+						input,
+						select,
+						textarea{
+							resize:none;
+							outline: none;
+							width: 100%;
+							height: 50px;
+							background-color: #F3F5F5;
+							border: 1px solid transparent;
+							@include styleParagraph4;
+							padding-left: 15px;
+							border-radius: 3px;
+						}
+					}
+					.container-error{
+						opacity: 0;
+						width: 100%;
+						position: absolute;
+						top: calc(100% + 5px);
+						left: 0px;
+						text-align: right;
+						@include styleParagraph5;
+						color: $colorMain_4;
+					}
+					&.error {
+						.container-error{
+							opacity: 1;
+						}
+						input{
+							border-color: $colorMain_4;
+						}
+					}
+					&.select,
+					&.textarea{
+						width: 100%;
+					}
+					&.textarea .wrapper-input textarea{
+						height: 200px;
+						padding: 15px;
+					}
+				}
+				.container-btn{
+					position: relative;
+					width: 100%;
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: flex-end;
+					.btn{
+						@include styleButton;
+						position: relative;
+						.btn-text{
+							transition: all 0.25s ease;
+						}
+						.btn-valid{
+							opacity: 0;
+							position: absolute;
+							width: 15px;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							transition: all 0.25s ease;
+						}
+						&.valid{
+							.btn-text{
+								opacity: 0;
+							}
+							.btn-valid{
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+		}
+		.container-map{
+			right: -50px;
+			position: absolute;
+			height: calc(100% - 75px);	
+			width: 531px;
+			iframe{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+#section-experience{
+	position: relative;
+	.wrapper{
+		padding-top: 65px;
+		border-top: 2px solid #F6F6F7;
+		position: relative;
+		@include styleGrid4;
+		text-align: center;
+		.container-text{
+			img{
+				width: 40px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			h2{
+				@include styleH2;
+			}
+		}
+		.container-btn{
+			margin-top: 45px;
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			.btn{
+				@include styleButton;
+			}
+		}
+		.dots{
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			width: 390px;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+/*=======================================
+=            END PAGE CONTACT           =
+========================================*/
+
+@import 'footer.scss';

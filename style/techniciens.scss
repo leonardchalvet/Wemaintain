@@ -1,0 +1,651 @@
+@import 'common.scss';
+@import 'header.scss';
+
+/*=======================================
+=            PAGE TECHNICIENS           =
+=======================================*/
+
+main{
+	padding-bottom: 155px;
+}
+
+#section-cover{
+	position: relative;
+	padding-top: 170px;
+	padding-bottom: 115px;
+	background-color: #F3F5F5;
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		.container-text{
+			width: 440px;
+			h1{
+				@include styleH1;
+				span{
+					color: $colorMain_4;
+				}
+			}
+			p{
+				@include styleParagraph3;
+				color: $colorMain_6;
+				margin-top: 12px;
+			}
+			.btn{
+				margin-top: 55px;
+				@include styleButton;
+			}
+		}
+		.container-illu{
+			position: relative;
+			width: 530px;
+			height: 382px;
+			
+			.phone{
+				position: absolute;
+				height: 382px;
+				top: 0px;
+				left: 200px;
+				filter: drop-shadow(0px 24px 48px rgba(0,0,0,0.2));
+				z-index: 1;
+			}
+			.obj-1{
+				position: absolute;
+				right: -20px;
+				top: -10px;
+				width: 120px;
+				filter: drop-shadow(0px 24px 48px rgba(0,0,0,0.2));
+			}
+			.obj-2{
+				position: absolute;
+				bottom: 5px;
+				left: 0px;
+				width: 165px;
+				filter: drop-shadow(0px 24px 48px rgba(0,0,0,0.2));
+				z-index: 1;
+			}
+			.dots{
+				position: absolute;
+				bottom: 0px;
+				right: 30px;
+				height: 70px;
+			}
+		}
+	}
+}
+
+#section-features{
+	position: relative;
+	padding-top: 85px;
+	.wrapper{
+		border-bottom: 2px solid #F6F6F7;
+		padding-bottom: 85px;
+		@include styleGrid4;
+		position: relative;
+		.container-text{
+			text-align: center;
+			h2{
+				@include styleH2;
+			}
+			p{
+				@include styleParagraph2;
+				max-width: 680px;
+				margin:auto;
+				margin-top: 22px;
+			}
+		}
+		.container-el{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			justify-content: space-between;
+			margin-top: 90px;
+			.el{
+				width: 28%;
+				.icn{
+					height: 24px;
+					width: 36px;
+					position: relative;
+					img{
+						position: absolute;
+						left: 0px;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+				h3{
+					margin-top: 21px;
+					@include styleH3;
+				}
+				p{
+					margin-top: 8px;
+					@include styleParagraph4;
+				}
+			}
+		}
+		.container-action{
+			margin-top: 90px;
+			text-align: center;
+			.btn{
+				@include styleButton;
+			}
+		}
+	}
+}
+
+#section-signup{
+	position: relative;
+	padding-top: 85px;
+	padding-bottom: 85px;
+	.wrapper{
+		@include styleGrid1;
+		position: relative;
+		.container-text{
+			text-align: center;
+			h2{
+				@include styleH2;
+			}
+			p{
+				margin-top: 8px;
+				@include styleParagraph2;
+			}
+		}
+		.container-tsr{
+			margin-top: 70px;
+			.container-illu{
+				width: 600px;
+				height: 350px;
+				position: relative;
+				margin:auto;
+				.el-illu{
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					height: 100%;
+					width: 100%;
+					opacity: 0;
+					transition: all 0.25s ease;
+					text-align: center;
+					&.active{
+						opacity: 1;
+					}
+				}
+				.el-illu-1{
+					.img-1{
+						box-shadow: 0 55px 109px 0 rgba(0,0,0,0.2);
+						width: 283px;
+						position: absolute;
+						left: 150px;
+						top: 0px;
+						z-index: 1;
+					}
+					.img-2{
+						box-shadow: 0 55px 109px 0 rgba(0,0,0,0.2);
+						position: absolute;
+						width: 180px;
+						left: 320px;
+						bottom: -20px;
+						z-index: 1;
+					}
+					.obj{
+						position: absolute;
+						width: 170px;
+						left: 90px;
+						bottom: 30px;
+					}
+				}
+				.el-illu-2{
+					.img{
+						position: absolute;
+						height: 380px;
+						left: 150px;
+						filter: drop-shadow(0px 24px 48px rgba(0,0,0,0.2));
+						z-index: 1;
+					}
+					.obj{
+						position: absolute;
+						width: 170px;
+						left: 90px;
+						bottom: 30px;
+					}
+					.dots{
+						position: absolute;
+						width: 70px;
+						top: 30px;
+						right: 200px;
+					}
+					
+				}
+				.el-illu-3{
+					.img-1{
+						width: 600px;
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						z-index: 1;
+						box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+					}
+					.dots{
+						position: absolute;
+						height: 70px;
+						right: -20px;
+						top: -20px;
+					}
+					.obj{
+						position: absolute;
+						width: 55px;
+						bottom: -10px;
+						left: -15px;
+						z-index: 1;
+					}
+				}
+				.el-illu-4{
+					.img-1{
+						width: 600px;
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						z-index: 1;
+						box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+					}
+					.dots{
+						position: absolute;
+						height: 70px;
+						right: -20px;
+						top: -20px;
+					}
+					.obj{
+						position: absolute;
+						width: 100px;
+						bottom: -10px;
+						right: -50px;
+						z-index: 1;
+					}
+				}
+			}
+			.container-nav{
+				margin-top: 100px;
+				.container-el{
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: space-between;
+					align-items: center;
+					.el{
+						@include styleH3;
+						color: $colorMain_5;
+						opacity: 0.6;
+						cursor: pointer;
+						position: relative;
+						&:hover{
+							opacity: 1;
+						}
+						&:after{
+							content: '';
+							opacity: 0;
+							transition: all 0.25s ease;
+							position: absolute;
+							top: calc(100% + 25px);
+							width: 100%;
+							left: 0px;
+							height: 2px;
+							background-color: $colorMain_4;
+						}
+						&.active{
+							opacity: 1;
+							&:after{
+								opacity: 1;
+							}
+						}
+
+					}
+				}
+				.container-bar{
+					margin-top: 25px;
+					height: 2px;
+					width: 100%;
+					background-color: #D4D4D8;
+				}
+			}
+			.container-desc{
+				margin-top: 36px;
+				p{
+					@include styleParagraph4;
+					width: 800px;
+					margin:auto;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+#section-ots{
+	position: relative;
+	padding-top: 110px;
+	padding-bottom: 110px;
+	.background{
+		content:'';
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: calc((#{$grid_desktop_1} + ((100vw - #{$grid_desktop_1}))/2) - 9px);
+		height: 100%;
+		background-color: $colorMain_1;
+	}
+	.wrapper{
+		@include styleGrid4;
+		position: relative;
+		z-index: 1;
+		.container-head{
+			width: 490px;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+			h2{
+				@include styleH2;
+				color: #FFF;
+			}
+			p{
+				margin-top: 10px;
+				@include styleParagraph2;
+				color: rgba(255, 255, 255, 0.7);
+			}
+		}
+		.container-el{
+			margin-top: 120px;
+			.el{
+				width: 100%;
+				margin-bottom: 160px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				justify-content: space-between;
+				&:last-child{
+					margin-bottom:0px;
+				}
+				.container-text{
+					width: 375px;
+					h3{
+						@include styleH3;
+						color: #FFF;
+					}
+					p{
+						margin-top: 20px;
+						@include styleParagraph4;
+						color: rgba(255, 255, 255, 0.7);
+					}
+				}
+				.container-illu{
+					width: 420px;
+					height: 290px;
+					position: relative;
+				}
+				&:nth-child(odd){
+					.container-text{
+						order: 2;
+					}
+					.container-illu{
+						order: 1;
+					}
+				}
+				&:nth-child(even){
+					.container-text{
+						order: 1;
+					}
+					.container-illu{
+						order: 2;
+					}
+				}
+				&:nth-child(1){
+					.container-illu{
+						.img{
+							width: 190px;
+							position: absolute;
+							left: 50%;
+							top: 0px;
+							transform: translateX(-50%);
+							z-index: 1;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.obj-1{
+							width: 124px;
+							position: absolute;
+							top: 0px;
+							right: 30px;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.obj-2{
+							width: 77px;
+							position: absolute;
+							left: 0px;
+							bottom: 0px;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.dots{
+							width: 70px;
+							position: absolute;
+							right: 0px;
+							bottom: 0px;
+						}
+					}
+				}
+				&:nth-child(2){
+					.container-illu{
+						.img{
+							width: 248px;
+							position: absolute;
+							left: 50%;
+							top: 0px;
+							transform: translateX(-50%);
+							z-index: 1;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.obj-1{
+							width: 335px;
+							position: absolute;
+							z-index: 2;
+							top: 37%;
+							left: 0%;
+						}
+						.obj-2{
+							width: 125px;
+							position: absolute;
+							right: 0px;
+							top: 20%;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.dots{
+							width: 20px;
+							position: absolute;
+							left: 12%;
+							top: 0px;
+						}
+					}
+				}
+				&:nth-child(3){
+					.container-illu{
+						.img{
+							width: 188px;
+							position: absolute;
+							left: 50%;
+							top: 0px;
+							transform: translateX(-50%);
+							z-index: 1;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.obj-1{
+							width: 150px;
+							position: absolute;
+							z-index: 2;
+							top: 17%;
+							right: 0px;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.dots{
+							width: 70px;
+							position: absolute;
+							left: 0px;
+							top: 0px;
+						}
+					}
+				}
+				&:nth-child(4){
+					.container-illu{
+						.img{
+							width: 228px;
+							position: absolute;
+							left: 50%;
+							top: 0px;
+							transform: translateX(-50%);
+							z-index: 1;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+							z-index: 1;
+						}
+						.obj-1{
+							width: 150px;
+							position: absolute;
+							z-index: 2;
+							top: 75%;
+							right: 10px;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+							z-index: 2;
+						}
+						.obj-2{
+							width: 112px;
+							position: absolute;
+							top: 65%;
+							left: 0px;
+							filter: drop-shadow(0px 11px 36px rgba(0,0,0,0.2));
+						}
+						.dots{
+							width: 70px;
+							position: absolute;
+							left: 0px;
+							top: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#section-services{
+	padding-top: 95px;
+	position: relative;
+	.wrapper{
+		padding-left: 150px;
+		position: relative;
+		z-index: 1;
+		@include styleGrid1;
+		.container-text{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			.container-desc{
+				width: 500px;
+				h2{
+					@include styleH2;
+				}
+				p{
+					margin-top: 16px;
+					@include styleParagraph2;
+				}
+			}
+			.btn{
+				@include styleButton;
+			}
+		}
+		.container-li{
+			position: relative;
+			width: 100%;
+			margin-top: 95px;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			.container-illu{
+				width: calc(100% - 700px);
+				img{
+					width: 320px;
+				}
+			}
+			.container-el{
+				width: 700px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: flex-start;
+				justify-content: space-between;
+				.el{
+					display: flex;
+					flex-flow: row wrap;
+					align-items: flex-start;
+					margin-bottom: 55px;
+
+					.icn{
+						width: 45px;
+						margin-right: 25px;
+						img{
+							width: 100%;
+						}
+					}
+					.text{
+						width: 240px;
+						h3{
+							@include styleH3;
+						}
+						p{
+							margin-top: 10px;
+							@include styleParagraph4;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#section-experience{
+	margin-top: 155px;
+	.wrapper{
+		position: relative;
+		@include styleGrid4;
+		text-align: center;
+		.container-text{
+			img{
+				width: 40px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			h2{
+				@include styleH2;
+			}
+		}
+		.container-btn{
+			margin-top: 45px;
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			.btn{
+				@include styleButton;
+			}
+		}
+		.dots{
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			width: 390px;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+/*===========================================
+=            END PAGE TECHNICIENS           =
+============================================*/
+
+@import 'footer.scss';

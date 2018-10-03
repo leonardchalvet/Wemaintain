@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="33px" viewBox="0 0 36 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>D77687EB-0E85-4B57-A360-A67766597CA7</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4a-Techniciens" transform="translate(-344.000000, -922.000000)">
+            <g id="Section-1" transform="translate(344.000000, 747.000000)">
+                <g id="1" transform="translate(0.000000, 175.000000)">
+                    <g id="picto1-section1">
+                        <circle id="Oval-2" fill="#F1653C" fill-rule="nonzero" cx="26" cy="11" r="10"></circle>
+                        <circle id="Oval-2-Copy-3" fill="#F1653C" fill-rule="nonzero" cx="3" cy="30" r="3"></circle>
+                        <g id="Group" transform="translate(3.000000, 0.000000)" stroke="#171A3B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <g id="human-resources-employee-star">
+                                <path d="M21.5000399,22.32 L21.5,21.43008 C21.5039631,20.8234998 21.2124683,20.2499801 20.712,19.87968 C19.347,18.87936 16.823,17.28 10.962,17.28 C5.101,17.28 2.577,18.87936 1.212,19.87968 C0.711784247,20.2500812 0.420643245,20.8236326 0.425,21.43008 L0.424951789,22.32" id="Shape"></path>
+                                <polyline id="Shape" points="13.008 22.32 10.962 17.28 8.917 22.32"></polyline>
+                                <path d="M18.462,22.32 L16.212,22.32" id="Shape"></path>
+                                <path d="M11.858,1.23648 L13.784,6.12288 L17.534,6.12288 C17.91963,6.11018052 18.2724565,6.33009045 18.4173003,6.67342403 C18.5621442,7.0167576 18.4681556,7.41038925 18.182,7.65888 L14.927,9.83424 L16.727,13.8096 C16.8901174,14.1833616 16.7861697,14.6153804 16.468826,14.882602 C16.1514822,15.1498236 15.691753,15.1924528 15.327,14.98848 L10.969,12.63552 L6.615,14.99232 C6.25024695,15.1962928 5.79051777,15.1536636 5.47317402,14.886442 C5.15583027,14.6192204 5.05188262,14.1872016 5.215,13.81344 L7.015,9.83808 L3.765,7.66272 C3.47829359,7.41512579 3.38334564,7.02190607 3.52733954,6.6784672 C3.67133345,6.33502833 4.02356641,6.11459931 4.409,6.12672 L8.159,6.12672 L10.09,1.24032 C10.2624955,0.925459546 10.6022218,0.727989489 10.9727952,0.727184624 C11.3433686,0.726379758 11.6840222,0.922372067 11.858,1.23648 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
