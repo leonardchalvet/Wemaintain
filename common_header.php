@@ -18,3 +18,33 @@
 		</div>
 	</div>
 </header>
+
+<header id="header-mobile" class="<?php echo($styleHeader); ?>">	
+	<div class="head">	
+		<div class="wrapper">
+			<a href="" class="container-logo">	
+				<img class="logo-style-1" src="img/common/logo-style-1.svg" alt="">
+				<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
+			</a>	
+			<div class="burger">
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container-link">
+		<div class="wrapper">	
+			<ul>
+				<li><a href="">Résidentiel</a></li>
+				<li><a href="">Tertiaire</a></li>
+				<li><a href="">Techniciens</a></li>
+				<li><a href="">A propos</a></li>
+				<li><a href="">FAQ</a></li>
+			</ul>
+			<div class="container-action">	
+				<a href="">Se connecter</a>
+				<a href="">S'inscrire</a>
+			</div>
+		</div>
+	</div>
+</header>

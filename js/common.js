@@ -9,10 +9,16 @@ $(window).on('load', function() {
 
 	    if ( $window.scrollTop() >= 1 ) {
 	        $('#header-desktop').addClass('scroll').removeClass(styleHeader);
+	        $('#header-mobile').addClass('scroll').removeClass(styleHeader);
 	    } else {
 	    	$('#header-desktop').removeClass('scroll').addClass(styleHeader);
+	    	$('#header-mobile').removeClass('scroll').addClass(styleHeader);
 	    };
 	});
+
+	$('#header-mobile .head .wrapper .burger').click(function(){
+		$('#header-mobile').toggleClass('open');
+	})
 
 
 	function animScroll() {
