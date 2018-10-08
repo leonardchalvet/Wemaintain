@@ -29,6 +29,9 @@
 					<h1 class="anim__slide anim__delayMedium_1">
 						We rise by lifting others
 					</h1>
+					<p>
+						WeMaintain a été fondé en 2017 et est présent sur le marché depuis le 15 septembre 2017.
+					</p>
 					<div class="banner anim__slide anim__delayMedium_2" style="background-image: url(img/apropos/img-section2@2x.jpg);"></div>
 					<div class="obj anim__fade anim__delayMedium_3"></div>
 				</div>
