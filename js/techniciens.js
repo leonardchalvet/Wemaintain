@@ -7,6 +7,9 @@ $(window).on('load', function() {
 		$('#section-signup .container-illu .el-illu').removeClass('active');
 		$('#section-signup .container-illu .el-illu-' + el).addClass('active');
 		$('#section-signup .container-nav .container-el .el').removeClass('active-1 active-2 active-3').addClass('active-'+el);
+
+		$('#section-signup .wrapper .container-tsr .container-desc p').hide();
+		$('#section-signup .wrapper .container-tsr .container-desc .desc-'+el).show();
 	})
 
 	function animScroll() {

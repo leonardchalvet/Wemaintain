@@ -17,26 +17,10 @@
 	
 	<body>
 
-		<header id="header-desktop">
-			<div class="wrapper">
-				<a class="logo" href="">
-					<img class="logo-style-1" src="img/common/logo-style-1.svg" alt="">
-					<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
-				</a>
-				<ul class="container-link">
-					<li><a href="">Résidentiel</a></li>
-					<li><a href="">Tertiaire</a></li>
-					<li><a href="">Techniciens</a></li>
-					<li><a href="">A propos</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
-				<div class="container-action">
-					<div class="signin">Se connecter</div>
-					<div class="sep"></div>
-					<div class="signup">S’inscrire</div>
-				</div>
-			</div>
-		</header>
+		<?php
+			$styleHeader = 'active-2';
+			include('common_header.php');
+		?>
 
 		<main>
 
@@ -49,11 +33,14 @@
 						<p class="anim__slide anim__delayMedium_2">
 							Notre plateforme vous offre tous les outils pour contrôler et suivre l'état de votre parc.
 						</p>
-						<a class="btn anim__slide anim__delayMedium_3">
-							<span class="btn-text">
-								Commencer
-							</span>
-						</a>
+						<div class="container-btn anim__slide anim__delayMedium_3">
+							<a class="btn">
+								<span class="btn-text">
+									Commencer
+								</span>
+							</a>
+						</div>
+						
 					</div>
 					<div class="container-illu">
 						<img class="tablet anim__slide anim__delayMedium_4" src="img/tertiaire/cover/Notebook@2x.png" alt="">
@@ -142,10 +129,10 @@
 					<div class="container-tsr">
 						<div class="container-illu">
 							<div class="el-illu el-illu-1 container__anim__dt">
-								<img class="img-1 anim__slide anim__delayMedium_1" src="img/tertiaire/features-1/Browser.png" alt="">
-								<img class="dots anim__slide anim__delayMedium_2" src="img/tertiaire/features-1/Oval.svg" alt="">
-								<img class="obj-1 anim__slide anim__delayMedium_3" src="img/tertiaire/features-1/Perso-Petitdroite.svg" alt="">
-								<img class="obj-2 anim__slide anim__delayMedium_4" src="img/tertiaire/features-1/Perso-Petitgauche.svg" alt="">
+								<img class="img-1 anim__slide anim__delayMedium_1" src="img/techniciens/signup-step-1/Contrat@3x.jpg" alt="">
+								<img class="img-2 anim__slide anim__delayMedium_2" src="img/techniciens/signup-step-1/Sign@3x.jpg" alt="">
+								<img class="obj anim__slide anim__delayMedium_3" src="img/techniciens/signup-step-1/cercle.svg" alt="">
+								<img class="dots anim__fade anim__delayMedium_4" src="img/techniciens/signup-step-1/Oval2.svg" alt="">
 							</div>
 							<div class="el-illu el-illu-2 container__anim__dt">
 								<img class="img-1 anim__slide anim__delayMedium_1" src="img/tertiaire/features-2/Box-illu1@3x.jpg" alt="">
@@ -177,8 +164,17 @@
 							<div class="container-bar"></div>
 						</div>
 						<div class="container-desc">
-							<p>
-								Créez votre compte sur WeMaintain, renseignez vos premiers ascenseurs et effectuez votre première demande de maintenance en quelques minutes seulement.
+							<p class="desc-1">
+								WeMaintain vous accompagne dans la création de votre statut pour devenir indépendant
+							</p>
+							<p class="desc-2">
+								Vous êtes maintenant indépendant, mais pas seul. WeMaintain vous forme à la prise en main de l'application et à la relation client.
+							</p>
+							<p class="desc-3">
+								Lorsqu'un client créé une demande de maintenance dans le périmètre que vous avez défini, vous pouvez y répondre. Ainsi vous choisissez et maintenez vos ascenseurs.
+							</p>
+							<p class="desc-4">
+								Vous faîtes en relation continue avec les autres techniciens de la communauté WeMaintain via des outils de communication et des rencontres chaque semaine.
 							</p>
 						</div>
 					</div>
@@ -199,9 +195,6 @@
 						</div>
 					</div>
 					<div class="container-li">
-						<div class="container_illu anim__slide anim__delayMedium_4">
-							<img src="img/tertiaire/services/Illustration.svg" alt="">
-						</div>
 						<div class="container-el">
 							<div class="el anim__slide anim__delayMedium_5">
 								<div class="icn">
@@ -247,6 +240,9 @@
 									</p>
 								</div>
 							</div>
+						</div>
+						<div class="container_illu anim__slide anim__delayMedium_4">
+							<img src="img/tertiaire/services/Illustration.svg" alt="">
 						</div>
 					</div>
 				</div>
@@ -294,6 +290,7 @@
 									<div class="author">
 										<div class="name">Barthélémy Chalvet</div>
 										<div class="job">CEO @Google</div>
+										<img src="img/common/Twitter-black.svg" alt="">
 									</div>
 								</div>
 							</div>

@@ -16,6 +16,7 @@ main{
 	background-color: #F3F5F5;
 	.wrapper{
 		@include styleGrid1;
+		padding-right: 100px;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -33,9 +34,11 @@ main{
 				color: $colorMain_6;
 				margin-top: 12px;
 			}
-			.btn{
+			.container-btn{
 				margin-top: 55px;
-				@include styleButton;
+				.btn{
+					@include styleButton;
+				}
 			}
 		}
 		.container-illu{
@@ -94,6 +97,7 @@ main{
 				max-width: 680px;
 				margin:auto;
 				margin-top: 22px;
+				color: $colorMain_6;
 			}
 		}
 		.container-el{
@@ -122,6 +126,7 @@ main{
 				p{
 					margin-top: 8px;
 					@include styleParagraph4;
+					color: $colorMain_6;
 				}
 			}
 		}
@@ -231,7 +236,7 @@ main{
 						position: absolute;
 						height: 70px;
 						right: -20px;
-						top: -20px;
+						top: -10px;
 					}
 					.obj{
 						position: absolute;
@@ -309,11 +314,13 @@ main{
 				}
 			}
 			.container-desc{
+				width: 800px;
+				margin:auto;
 				margin-top: 36px;
+				min-height: 100px;
 				p{
+					display: none;
 					@include styleParagraph4;
-					width: 800px;
-					margin:auto;
 					text-align: center;
 				}
 			}
@@ -357,7 +364,7 @@ main{
 			margin-top: 120px;
 			.el{
 				width: 100%;
-				margin-bottom: 160px;
+				margin-bottom: 240px;
 				display: flex;
 				flex-flow: row wrap;
 				align-items: center;
@@ -450,11 +457,11 @@ main{
 							left: 0%;
 						}
 						.obj-2{
-							width: 125px;
+							width: 155px;
 							position: absolute;
-							right: 0px;
+							right: -10%;
 							top: 20%;
-							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+							filter: drop-shadow(0px 24px 48px rgba(0,0,0,0.2));
 						}
 						.dots{
 							width: 20px;
@@ -462,68 +469,11 @@ main{
 							left: 12%;
 							top: 0px;
 						}
-					}
-				}
-				&:nth-child(3){
-					.container-illu{
-						.img{
-							width: 188px;
+						.obj{
 							position: absolute;
-							left: 50%;
-							top: 0px;
-							transform: translateX(-50%);
-							z-index: 1;
-							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
-						}
-						.obj-1{
-							width: 150px;
-							position: absolute;
-							z-index: 2;
-							top: 17%;
-							right: 0px;
-							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
-						}
-						.dots{
-							width: 70px;
-							position: absolute;
-							left: 0px;
-							top: 0px;
-						}
-					}
-				}
-				&:nth-child(4){
-					.container-illu{
-						.img{
-							width: 228px;
-							position: absolute;
-							left: 50%;
-							top: 0px;
-							transform: translateX(-50%);
-							z-index: 1;
-							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
-							z-index: 1;
-						}
-						.obj-1{
-							width: 150px;
-							position: absolute;
-							z-index: 2;
-							top: 75%;
-							right: 10px;
-							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
-							z-index: 2;
-						}
-						.obj-2{
+							bottom: 5%;
+							right: 25%;
 							width: 112px;
-							position: absolute;
-							top: 65%;
-							left: 0px;
-							filter: drop-shadow(0px 11px 36px rgba(0,0,0,0.2));
-						}
-						.dots{
-							width: 70px;
-							position: absolute;
-							left: 0px;
-							top: 0px;
 						}
 					}
 				}
@@ -536,29 +486,24 @@ main{
 	padding-top: 95px;
 	position: relative;
 	.wrapper{
-		padding-left: 150px;
 		position: relative;
 		z-index: 1;
+		border-bottom: 1px solid #D4D4D8;
+		padding-bottom: 50px;
 		@include styleGrid1;
 		.container-text{
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-between;
-			align-items: flex-start;
-			.container-desc{
-				width: 500px;
-				h2{
-					@include styleH2;
-				}
-				p{
-					margin-top: 16px;
-					@include styleParagraph2;
-				}
+			width: 550px;
+			margin:auto;
+			text-align: center;
+			h2{
+				@include styleH2;
 			}
-			.btn{
-				@include styleButton;
+			p{
+				margin-top: 16px;
+				@include styleParagraph2;
 			}
 		}
+
 		.container-li{
 			position: relative;
 			width: 100%;
@@ -574,7 +519,7 @@ main{
 				}
 			}
 			.container-el{
-				width: 700px;
+				width: 800px;
 				display: flex;
 				flex-flow: row wrap;
 				align-items: flex-start;
@@ -593,7 +538,7 @@ main{
 						}
 					}
 					.text{
-						width: 240px;
+						width: 280px;
 						h3{
 							@include styleH3;
 						}

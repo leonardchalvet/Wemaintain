@@ -17,26 +17,10 @@
 	
 	<body>
 
-		<header id="header-desktop" class="style-1">
-			<div class="wrapper">
-				<a class="logo" href="">
-					<img class="logo-style-1" src="img/common/logo-style-1.svg" alt="">
-					<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
-				</a>
-				<ul class="container-link">
-					<li><a href="">Résidentiel</a></li>
-					<li><a href="">Tertiaire</a></li>
-					<li><a href="">Techniciens</a></li>
-					<li><a href="">A propos</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
-				<div class="container-action">
-					<div class="signin">Se connecter</div>
-					<div class="sep"></div>
-					<div class="signup">S’inscrire</div>
-				</div>
-			</div>
-		</header>
+		<?php
+			$styleHeader = 'style-1 active-4';
+			include('common_header.php');
+		?>
 
 		<main>
 
@@ -108,7 +92,7 @@
 							</div>
 							<div class="bar"></div>
 							<p>
-								L'aventure s'est vraiment lancée en septembre 2017.
+								L'aventure s'est vraiment lancée en <span>septembre 2017</span>.
 							</p>
 						</div>
 						<div class="el anim__slide anim__delayMedium_3">
@@ -117,7 +101,7 @@
 							</div>
 							<div class="bar"></div>
 							<p>
-								L'équipe est composée de 13 salariés aux expériences diverses et aux compétences variés.
+								L'équipe est composée de <span>13 salariés</span> aux expériences diverses et aux compétences variés.
 							</p>
 						</div>
 						<div class="el anim__slide anim__delayMedium_4">
@@ -126,7 +110,7 @@
 							</div>
 							<div class="bar"></div>
 							<p>
-								WeMaintain a fait une première levée de fonds de 2Millions de dollars en février 2018 auprès de family offices.
+								WeMaintain a fait une première levée de fonds de <span>2Millions</span> de dollars en février 2018 auprès de family offices.
 							</p>
 						</div>
 					</div>
@@ -257,7 +241,7 @@
 					<div class="btn anim__slide anim__delayMedium_3">
 						<div class="btn-text">Candidatez</div>
 					</div>
-					<img class="dots anim__fade anim__delayMedium_4" src="img/common/points1.svg" alt="">
+					<img class="dots anim__fade anim__delayMedium_4" src="img/apropos/points1.svg" alt="">
 				</div>
 			</section>
 

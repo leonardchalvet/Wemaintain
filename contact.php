@@ -17,26 +17,10 @@
 	
 	<body>
 
-		<header id="header-desktop" class="style-1">
-			<div class="wrapper">
-				<a class="logo" href="">
-					<img class="logo-style-1" src="img/common/logo-style-1.svg" alt="">
-					<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
-				</a>
-				<ul class="container-link">
-					<li><a href="">Résidentiel</a></li>
-					<li><a href="">Tertiaire</a></li>
-					<li><a href="">Techniciens</a></li>
-					<li><a href="">A propos</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
-				<div class="container-action">
-					<div class="signin">Se connecter</div>
-					<div class="sep"></div>
-					<div class="signup">S’inscrire</div>
-				</div>
-			</div>
-		</header>
+		<?php
+			$styleHeader = 'style-1';
+			include('common_header.php');
+		?>
 
 		<main>
 
@@ -106,7 +90,6 @@
 								</div>
 							</div>
 							<div class="container-input textarea">
-								<div class="title">Sujet de votre message</div>
 								<div class="wrapper-input">
 									<textarea placeholder="Entrez votre message"></textarea>
 								</div>

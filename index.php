@@ -17,26 +17,10 @@
 	
 	<body>
 
-		<header id="header-desktop" class="style-1">
-			<div class="wrapper">
-				<a class="logo" href="">
-					<img class="logo-style-1" src="img/common/logo-style-1.svg" alt="">
-					<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
-				</a>
-				<ul class="container-link">
-					<li><a href="">Résidentiel</a></li>
-					<li><a href="">Tertiaire</a></li>
-					<li><a href="">Techniciens</a></li>
-					<li><a href="">A propos</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
-				<div class="container-action">
-					<div class="signin">Se connecter</div>
-					<div class="sep"></div>
-					<div class="signup">S’inscrire</div>
-				</div>
-			</div>
-		</header>
+		<?php
+			$styleHeader = 'style-1';
+			include('common_header.php');
+		?>
 
 		<main>
 			<section id="section-home" class="container__anim">
@@ -47,11 +31,11 @@
 						<p class="anim__slide anim__delayMedium_2">
 							La première communauté de techniciens ayant à cœur de vous servi
 						</p>
-						<div class="container-action">
-							<a class="btn anim__slide anim__delayMedium_3">
+						<div class="container-action anim__slide anim__delayMedium_3">
+							<a class="btn">
 								<span class="btn-text">Je m’inscris</span>
 							</a>
-							<a class="link anim__slide anim__delayMedium_4" href="">En savoir plus</a>
+							<a class="link" href="">En savoir plus</a>
 						</div>
 					</div>
 					<div class="container-illu">
@@ -1020,7 +1004,7 @@
 								<img class="img anim__fade anim__delaySmall_3" src="img/home/features-4/Contrat@2x.png" alt="">
 								<img class="obj-1 anim__slide anim__delaySmall_4" src="img/home/features-4/Sign@2x.png" alt="">
 								<img class="obj-2 anim__slide anim__delaySmall_5" src="img/home/features-4/ovalorange@2x.png" alt="">
-								
+								<img class="dots anim__fade anim__delaySmall_6" src="img/home/features-4/points3.svg" alt="">
 							</div>
 						</div>
 					</div>
@@ -1035,7 +1019,7 @@
 							La sécurité étant notre priorité, nous ne sélectionnons que les techniciens les plus expérimentés.
 						</p>
 					</div>
-					<div class="container-carousel">
+					<div class="container-carousel anim__slide anim__delayMedium_4">
 						<div class="container-el">
 							<div class="el active">
 								<div class="pp" style="background-image: url(img/home/team/pp-2.jpg);"></div>

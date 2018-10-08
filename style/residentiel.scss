@@ -16,6 +16,7 @@ main{
 	background-color: #F3F5F5;
 	.wrapper{
 		@include styleGrid1;
+		padding-right: 100px;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -33,9 +34,12 @@ main{
 				color: $colorMain_6;
 				margin-top: 12px;
 			}
-			.btn{
+			.container-btn{
 				margin-top: 55px;
-				@include styleButton;
+				.btn{
+					
+					@include styleButton;
+				}
 			}
 		}
 		.container-illu{
@@ -123,7 +127,7 @@ main{
 							position: absolute;
 							width: 265px;
 							left: 0px;
-							bottom: 0px;
+							bottom: 60px;
 							box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
 							z-index: 1;
 						}
@@ -131,7 +135,7 @@ main{
 							position: absolute;
 							width: 265px;
 							right: 0px;
-							bottom: 0px;
+							bottom: 60px;
 							box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
 							z-index: 1;
 						}
@@ -139,21 +143,21 @@ main{
 							position: absolute;
 							width: 85px;
 							left: -30px;
-							bottom: -30px;
+							bottom: 30px;
 							z-index: 1;
 						}
 						.obj-1{
 							position: absolute;
 							width: 70px;
 							left: 50%;
-							top: 50px;
+							top: 30px;
 							transform: translateX(-50%);
 						}
 						.obj-3{
 							position: absolute;
 							width: 136px;
 							left: 50%;
-							bottom: -30px;
+							bottom: 30px;
 							transform: translateX(-50%);
 							z-index: 1;
 							box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
@@ -164,7 +168,7 @@ main{
 							position: absolute;
 							width: 265px;
 							left: 0px;
-							bottom: 0px;
+							bottom: 40px;
 							box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
 							z-index: 1;
 						}
@@ -172,7 +176,7 @@ main{
 							position: absolute;
 							width: 265px;
 							right: 0px;
-							bottom: 0px;
+							bottom: 40px;
 							box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
 							z-index: 1;
 						}
@@ -180,13 +184,13 @@ main{
 							position: absolute;
 							width: 112px;
 							left: -35px;
-							bottom: -40px;
+							bottom: 0px;
 						}
 						.obj-2{
 							position: absolute;
 							width: 85px;
 							right: -30px;
-							bottom: -40px;
+							bottom: 0px;
 							z-index: 1;
 						}
 					}
@@ -195,7 +199,7 @@ main{
 							position: absolute;
 							width: 560px;
 							left: 0px;
-							top: 90px;
+							top: 50px;
 							filter: drop-shadow(0px 11px 36px rgba(0,0,0,0.2));
 							z-index: 1;
 						}
@@ -203,7 +207,7 @@ main{
 							position: absolute;
 							width: 142px;
 							left: -48px;
-							bottom: 0px;
+							bottom: 40px;
 							filter: drop-shadow(0px 11px 36px rgba(0,0,0,0.2));
 							z-index: 1;
 						}
@@ -211,15 +215,15 @@ main{
 							position: absolute;
 							width: 55px;
 							right: -10px;
-							bottom: -10px;
+							bottom: 30px;
 							z-index: 1;
 						}
 						.obj-2{
 							position: absolute;
-							width: 138px;
+							width: 250px;
 							left: 50%;
 							transform: translateX(-50%);
-							bottom: 50px;
+							bottom: 80px;
 						}
 					}
 				}
@@ -273,6 +277,7 @@ main{
 						p{
 							margin-top: 8px;
 							@include styleParagraph4;
+							color: $colorMain_6;
 						}
 					}
 				}
@@ -283,6 +288,7 @@ main{
 
 #section-tarifs{
 	padding-top: 95px;
+	padding-bottom: 50px;
 	position: relative;
 	.background{
 		position: absolute;
@@ -293,7 +299,7 @@ main{
 		background-color: $colorMain_1;
 	}
 	.wrapper{
-		padding-right: 50px;
+		padding-right: 100px;
 		position: relative;
 		z-index: 1;
 		@include styleGrid1;
@@ -311,7 +317,7 @@ main{
 				p{
 					margin-top: 16px;
 					@include styleParagraph2;
-					color:#FFF;
+					color:rgba(255, 255, 255, 0.8);
 				}
 			}
 			.btn{
@@ -393,7 +399,7 @@ main{
 			p{
 				margin-top: 16px;
 				@include styleParagraph2;
-				color:#FFF;
+				color:rgba(255, 255, 255, 0.8);
 			}
 		}
 		.container-col{
@@ -403,7 +409,7 @@ main{
 			align-items: flex-start;
 			justify-content: space-between;
 			.col{
-				width: 30%;
+				width: 29%;
 				.title{
 					@include styleH3;
 					color:$colorMain_5;
@@ -433,6 +439,7 @@ main{
 						}
 						.author{
 							margin-top: 35px;
+							position: relative;
 						}
 						.name{
 							@include styleParagraph4;
@@ -441,6 +448,13 @@ main{
 						.job{
 							@include styleParagraph5;
 							color: #FFF;
+						}
+						img{
+							position: absolute;
+							height: 32px;
+							top: 50%;
+							right: 0px;
+							transform: translateY(-50%);
 						}
 					}
 				}
@@ -482,6 +496,208 @@ main{
 			width: 390px;
 			transform: translateX(-50%);
 		}
+	}
+}
+
+
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: 1050px){
+	#section-cover .wrapper .container-text{
+		width: 370px;
+	}
+	#section-features .wrapper .container-features{
+		margin-top: 50px;
+	}
+	#section-features .wrapper .container-features .container-el-illu{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#section-features .wrapper .container-features .container-el-desc{
+		width: 100%;
+		margin-top: 50px;
+	}
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: 1100px){
+	#section-tarifs .wrapper .container-li .container-el{
+		width: 500px;
+	}
+	#section-tarifs .wrapper .container-li .container-el .el .text{
+		width: 150px;
+	}
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: 970px){
+	#section-cover .wrapper .container-text{
+		width: 100%;
+	}
+	#section-cover .wrapper .container-illu{
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 65px;
+	}
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: 900px){
+	#section-tarifs .wrapper .container-text .container-desc{
+		width: 100%;
+	}
+	#section-tarifs .wrapper .container-text .btn{
+		margin-top: 35px;
+	}
+	#section-tarifs .wrapper .container-li{
+		justify-content: center;
+	}
+	#section-tarifs .wrapper .container-li .container-el{
+		width: 100%;
+	}
+	#section-tarifs .wrapper .container-li .container-el .el{
+		width: 22%;
+	}
+	#section-tarifs .wrapper .container-li .container-el .el .text{
+		width: 100%;
+	}
+	#section-tarifs .wrapper .container-li .container-el .el .icn{
+		margin-bottom: 25px;
+	}
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: 800px){
+	#section-sponsors{
+		margin-top: 0px;
+	}
+	#section-sponsors .wrapper .container-text{
+		width: 100%;
+	}
+	#section-sponsors .wrapper .container-col{
+		margin-top: 40px;
+	}
+	#section-sponsors .wrapper .container-col .col{
+		width: 100%;
+		margin-bottom: 80px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+	#section-sponsors .wrapper .container-col .col .content .container-logo .logo{
+		width: 25%;
+	}
+}
+@media screen and (max-width: $breakPoint_mobile)
+{
+	#section-cover .wrapper .container-text{
+		width: 100%;
+	}
+	#section-cover .wrapper .container-illu{
+		width: 100%;
+		height: 280px;
+		margin-top: 65px;
+	}
+	#section-cover .wrapper .container-illu .screen{
+		width: 150px;
+		height: initial;
+		right: 0px;
+	}
+	#section-cover .wrapper .container-illu .obj{
+		right: -30px;
+		top: 40px;
+		width: 100px;
+	}
+	#section-cover .wrapper .container-illu .dots{
+		right: 40%;
+	}
+
+	#section-features .wrapper .container-text{
+		width: 100%;
+	}
+	#section-features .wrapper .container-features{
+		margin-top: 50px;
+	}
+	#section-features .wrapper .container-features .container-el-illu{
+		width: 100%;
+		height: 250px;
+	}
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-1 .img-1{
+		width: 150px;
+	}
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-1 .img-2{
+		width: 150px;
+	}
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-1 .obj-1{
+		width: 40px;
+	}
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-1 .obj-2{
+		width: 50px;
+	}
+
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-2 .img-1{
+		width: 150px;
+	}
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-2 .img-2{
+		width: 150px;
+	}
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-2 .obj-1{
+		width: 80px;
+		bottom: 30px;
+	}
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-2 .obj-2{
+		width: 50px;
+	}
+
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-3 .img-2{
+		width: 80px;
+		left: -20px;
+	}
+	#section-features .wrapper .container-features .container-el-illu .li-el-illu .el-illu-3 .img-1{
+		width: 100%;
+		top: 0px;
+	}
+
+	#section-features .wrapper .container-features .container-el-desc{
+		width: 100%;
+		padding-left: 40px;
+		margin-top: 40px;
+	}
+	#section-features .wrapper .container-features .container-el-desc .li-el-desc .el-desc{
+		margin-bottom: 30px;
+	}
+
+	#section-tarifs .wrapper .container-text .btn{
+		margin-top: 34px;
+		width: 100%;
+		text-align: center;
+	}
+	#section-tarifs .wrapper .container-li{
+		justify-content: center;
+	}
+	#section-tarifs .wrapper .container-li .container-el{
+		width: 100%;
+	}
+	#section-tarifs .wrapper .container-li .container-el .el{
+		width: 100%;
+	}
+	#section-tarifs .wrapper .container-li .container-el .el .text{
+		width: calc(100% - 70px);
+	}
+
+	#section-sponsors{
+		margin-top: 0px;
+	}
+	#section-sponsors .wrapper .container-text{
+		width: 100%;
+	}
+	#section-sponsors .wrapper .container-col{
+		margin-top: 40px;
+	}
+	#section-sponsors .wrapper .container-col .col{
+		width: 100%;
+		margin-bottom: 80px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+	#section-sponsors .wrapper .container-col .col .content .container-logo{
+		justify-content: flex-start;
+	}
+	#section-sponsors .wrapper .container-col .col .content .container-logo .logo{
+		width: calc(100% / 3);
 	}
 }
 

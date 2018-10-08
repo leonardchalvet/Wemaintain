@@ -33,10 +33,13 @@ main{
 				color: $colorMain_6;
 				margin-top: 12px;
 			}
-			.btn{
+			.container-btn{
 				margin-top: 55px;
-				@include styleButton;
+				.btn{
+					@include styleButton;
+				}
 			}
+			
 		}
 		.container-illu{
 			position: relative;
@@ -47,7 +50,7 @@ main{
 				position: absolute;
 				height: 380px;
 				top: 0px;
-				left: 140px;
+				left: 160px;
 				filter: drop-shadow(0px 24px 48px rgba(0,0,0,0.2));
 				z-index: 1;
 			}
@@ -60,7 +63,7 @@ main{
 			.dots{
 				position: absolute;
 				bottom: 45px;
-				left: 20px;
+				left: 40px;
 				height: 70px;
 			}
 		}
@@ -86,6 +89,7 @@ main{
 				max-width: 680px;
 				margin:auto;
 				margin-top: 22px;
+				color:$colorMain_6;
 			}
 		}
 		.container-el{
@@ -114,6 +118,7 @@ main{
 				p{
 					margin-top: 8px;
 					@include styleParagraph4;
+					color:$colorMain_6;
 				}
 			}
 		}
@@ -131,7 +136,7 @@ main{
 #section-signup{
 	position: relative;
 	padding-top: 85px;
-	padding-bottom: 85px;
+	padding-bottom: 25px;
 	.wrapper{
 		@include styleGrid1;
 		position: relative;
@@ -143,6 +148,7 @@ main{
 			p{
 				margin-top: 8px;
 				@include styleParagraph2;
+				color:$colorMain_6;
 			}
 		}
 		.container-tsr{
@@ -167,32 +173,26 @@ main{
 				}
 				.el-illu-1{
 					.img-1{
-						width: 600px;
+						box-shadow: 0 55px 109px 0 rgba(0,0,0,0.2);
+						width: 283px;
 						position: absolute;
+						left: 150px;
 						top: 0px;
-						left: 0px;
-						z-index: 1;
-						box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
-					}
-					.dots{
-						position: absolute;
-						height: 70px;
-						right: -20px;
-						top: -20px;
-					}
-					.obj-2{
-						position: absolute;
-						width: 55px;
-						bottom: -10px;
-						left: -15px;
 						z-index: 1;
 					}
-					.obj-1{
+					.img-2{
+						box-shadow: 0 55px 109px 0 rgba(0,0,0,0.2);
 						position: absolute;
-						width: 100px;
-						bottom: -10px;
-						right: -50px;
+						width: 180px;
+						left: 320px;
+						bottom: -20px;
 						z-index: 1;
+					}
+					.obj{
+						position: absolute;
+						width: 170px;
+						left: 90px;
+						bottom: 30px;
 					}
 				}
 				.el-illu-2{
@@ -293,10 +293,10 @@ main{
 					}
 					.obj-2{
 						position: absolute;
-						width: 138px;
+						width: 248px;
 						left: 50%;
 						transform: translateX(-50%);
-						bottom: 50px;
+						bottom: 20px;
 					}
 				}
 			}
@@ -344,11 +344,13 @@ main{
 				}
 			}
 			.container-desc{
+				width: 800px;
+				margin:auto;
 				margin-top: 36px;
+				min-height: 100px;
 				p{
+					display: none;
 					@include styleParagraph4;
-					width: 800px;
-					margin:auto;
 					text-align: center;
 				}
 			}
@@ -359,6 +361,7 @@ main{
 
 #section-services{
 	padding-top: 95px;
+	padding-bottom: 50px;
 	position: relative;
 	.background{
 		position: absolute;
@@ -433,6 +436,7 @@ main{
 						p{
 							margin-top: 10px;
 							@include styleParagraph4;
+							color:$colorMain_6;
 						}
 					}
 				}
@@ -465,7 +469,7 @@ main{
 			p{
 				margin-top: 16px;
 				@include styleParagraph2;
-				color:#FFF;
+				color:rgba(255, 255, 255, 0.8);
 			}
 		}
 		.container-col{
@@ -475,7 +479,7 @@ main{
 			align-items: flex-start;
 			justify-content: space-between;
 			.col{
-				width: 30%;
+				width: 29%;
 				.title{
 					@include styleH3;
 					color:$colorMain_4;
@@ -505,6 +509,7 @@ main{
 						}
 						.author{
 							margin-top: 35px;
+							position: relative;
 						}
 						.name{
 							@include styleParagraph4;
@@ -513,6 +518,13 @@ main{
 						.job{
 							@include styleParagraph5;
 							color: #FFF;
+						}
+						img{
+							position: absolute;
+							height: 32px;
+							top: 50%;
+							right: 0px;
+							transform: translateY(-50%);
 						}
 					}
 				}

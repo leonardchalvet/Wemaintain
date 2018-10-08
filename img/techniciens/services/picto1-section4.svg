@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="37px" viewBox="0 0 39 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>picto1-section4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4a-Techniciens" transform="translate(-534.000000, -3760.000000)">
+            <g id="Section-4" transform="translate(146.000000, 3591.000000)">
+                <g id="1" transform="translate(388.000000, 165.000000)">
+                    <g id="picto1-section4" transform="translate(0.000000, 4.000000)">
+                        <circle id="Oval-2" fill="#F1653C" fill-rule="nonzero" cx="10" cy="27" r="10"></circle>
+                        <circle id="Oval-2-Copy-3" fill="#F1653C" fill-rule="nonzero" cx="36" cy="3" r="3"></circle>
+                        <g id="browser-user-help-message" transform="translate(10.000000, 4.000000)" stroke="#171A3B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <path d="M16.125,4.875 C16.125,3.83946609 16.9644661,3 18,3 C19.0355339,3 19.875,3.83946609 19.875,4.875 C19.875,5.91053391 19.0355339,6.75 18,6.75" id="Shape"></path>
+                            <path d="M18,9 C17.7928932,9 17.625,9.16789322 17.625,9.375 C17.625,9.58210678 17.7928932,9.75 18,9.75 C18.2071068,9.75 18.375,9.58210678 18.375,9.375 C18.375,9.16789322 18.2071068,9 18,9" id="Shape"></path>
+                            <path d="M21.18,10.178 C22.9168318,8.87753671 23.6793223,6.64563549 23.1012333,4.55431949 C22.5231443,2.46300349 20.7225954,0.939586728 18.5644234,0.715794266 C16.4062514,0.492001805 14.3314308,1.61356066 13.336536,3.54176552 C12.3416413,5.46997037 12.6299571,7.81083535 14.063,9.44 L13.407,13.219 L15.939,11.658" id="Shape"></path>
+                            <circle id="Oval" cx="8.232" cy="15.375" r="3.375"></circle>
+                            <path d="M13.46,23.243 C12.3708242,21.3873888 10.3796438,20.248176 8.22799444,20.249616 C6.07634512,20.2510559 4.08669126,21.3929327 3,23.25" id="Shape"></path>
+                            <path d="M18,14.25 L18,23.25" id="Shape"></path>
+                            <path d="M0.75,23.25 L0.75,3.75 C0.75,2.09314575 2.09314575,0.75 3.75,0.75 L11.25,0.75" id="Shape"></path>
+                            <path d="M0.75,5.321 L9.75,5.321" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

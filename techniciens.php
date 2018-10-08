@@ -17,26 +17,10 @@
 	
 	<body>
 
-		<header id="header-desktop">
-			<div class="wrapper">
-				<a class="logo" href="">
-					<img class="logo-style-1" src="img/common/logo-style-1.svg" alt="">
-					<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
-				</a>
-				<ul class="container-link">
-					<li><a href="">Résidentiel</a></li>
-					<li><a href="">Tertiaire</a></li>
-					<li><a href="">Techniciens</a></li>
-					<li><a href="">A propos</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
-				<div class="container-action">
-					<div class="signin">Se connecter</div>
-					<div class="sep"></div>
-					<div class="signup">S’inscrire</div>
-				</div>
-			</div>
-		</header>
+		<?php
+			$styleHeader = 'active-3';
+			include('common_header.php');
+		?>
 
 		<main>
 			<section id="section-cover" class="container__anim">
@@ -48,11 +32,14 @@
 						<p class="anim__slide anim__delayMedium_2">
 							Devenez indépendant grâce à la technologie et rejoignez une communauté qui vous ressemble
 						</p>
-						<a class="btn anim__slide anim__delayMedium_3">
-							<span class="btn-text">
-								Commencer
-							</span>
-						</a>
+						<div class="container-btn anim__slide anim__delayMedium_3">
+							<a class="btn">
+								<span class="btn-text">
+									Commencer
+								</span>
+							</a>
+						</div>
+						
 					</div>
 					<div class="container-illu">
 						<img class="phone anim__slide anim__delayMedium_5" src="img/techniciens/cover/iPhone.png" alt="">
@@ -162,6 +149,20 @@
 							</div>
 							<div class="container-bar"></div>
 						</div>
+						<div class="container-desc">
+							<p class="desc-1">
+								Créez votre compte sur WeMaintain, renseignez vos premiers ascenseurs et effectuez votre première demande de maintenance en quelques minutes seulement.
+							</p>
+							<p class="desc-2">
+								Un expert de la communauté WeMaintain se déplace et effectue une pré-visite entièrement gratuite sur votre site qui vous donne un état des lieux complet de l'état de vos appareils. Nous vous transmettons ensuite une proposition commerciale compétitive et transparente.
+							</p>
+							<p class="desc-3">
+								Signez en ligne si vous le souhaitez et recevez une copie du contrat directement dans votre boîte mail.
+							</p>
+							<p class="desc-4">
+								Restez informés en temps réel de l'évolution de l'état de votre parc, des incidents, des coûts et des opérations.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -178,26 +179,34 @@
 					<div class="container-el">
 						<div class="el container__anim">
 							<div class="container-text">
-								<h3 class="anim__slide anim__delaySmall_1">Rentrez les informations concernant vos bâtiments et ascenseurs.</h3>
-								<p class="anim__slide anim__delaySmall_2">Précisez simplement l'adresse et le nombre d'appareils, pas besoin d'être un expert de l'ascenseur.</p>
+								<h3 class="anim__slide anim__delaySmall_1">
+									Des outils métiers pour vous accompagner
+								</h3>
+								<p class="anim__slide anim__delaySmall_2">
+									Notre application vous permet de gérer votre activité en phase avec la réglementation et d’effectuer efficacement vos visites de maintenance.
+								</p>
 							</div>
 							<div class="container-illu">
-								<img class="img anim__fade anim__delaySmall_3" src="img/home/features-1/Box@2x.png" alt="">
-								<img class="obj-2 anim__slide anim__delaySmall_4" src="img/home/features-1/Lieu@2x.png" alt="">
-								<img class="obj-1 anim__slide anim__delaySmall_5" src="img/home/features-1/Map@2x.png" alt="">
-								<img class="dots anim__slide anim__delaySmall_6" src="img/common/points2.svg" alt="">
+								<img class="img anim__fade anim__delaySmall_3" src="img/techniciens/ots-el-1/iPhone.png" alt="">
+								<img class="obj-2 anim__slide anim__delaySmall_4" src="img/techniciens/ots-el-1/Lieu@3x.jpg" alt="">
+								<img class="obj-1 anim__slide anim__delaySmall_5" src="img/techniciens/ots-el-1/Map@3x.jpg" alt="">
+								<img class="dots anim__fade anim__delaySmall_6" src="img/techniciens/ots-el-1/Oval3.svg" alt="">
 							</div>
 						</div>
 						<div class="el container__anim">
 							<div class="container-text">
-								<h3 class="anim__slide anim__delaySmall_1">Créez une demande de maintenance.</h3>
-								<p class="anim__slide anim__delaySmall_2">Nous nous adaptons à vos conditions et planifions une pré-visite gratuite par l'un des techniciens de la communauté.</p>
+								<h3 class="anim__slide anim__delaySmall_1">
+									Gérez votre emploi du temps
+								</h3>
+								<p class="anim__slide anim__delaySmall_2">
+									Notre technologie gère et optimise votre emploi du temps, mais vous contrôlez tout : vous choisissez vos immeubles et vos horaires de travail, nous nous occupons du reste.
+								</p>
 							</div>
 							<div class="container-illu">
-								<img class="img anim__fade anim__delaySmall_3" src="img/home/features-2/Box@2x.png" alt="">
-								<img class="obj-1 anim__slide anim__delaySmall_4" src="img/home/features-2/1@2x.png" alt="">
-								<img class="obj-2 anim__slide anim__delaySmall_5" src="img/home/features-2/Contrat@2x.png" alt="">
-								<img class="dots anim__slide anim__delaySmall_6" src="img/common/points4.svg" alt="">
+								<img class="img anim__fade anim__delaySmall_3" src="img/techniciens/ots-el-2/Box@3x.jpg" alt="">
+								<img class="obj-2 anim__slide anim__delaySmall_5" src="img/techniciens/ots-el-2/photo@2x.png" alt="">
+								<img class="dots anim__slide anim__delaySmall_6" src="img/techniciens/ots-el-2/Oval.svg" alt="">
+								<img class="obj anim__fade anim__delaySmall_7" src="img/techniciens/ots-el-2/circle.svg" alt="">
 							</div>
 						</div>
 					</div>
@@ -207,50 +216,48 @@
 			<section id="section-services" class="container__anim">
 				<div class="wrapper">
 					<div class="container-text">
-						<div class="container-desc">
-							<h2 class="anim__slide anim__delayMedium_1">
-								Un service sur mesure
-							</h2>
-							<p class="anim__slide anim__delayMedium_2">
-								Foncières, Asset / Property / Facility managers, Hôtels, Commerces, nous savons répondre à vos attentes
-							</p>
-						</div>
+						<h2 class="anim__slide anim__delayMedium_1">
+							Sécurité
+						</h2>
+						<p class="anim__slide anim__delayMedium_2">
+							Vous exercez un métier à risque : votre sécurité n'a pas de prix
+						</p>
 					</div>
 					<div class="container-li">
 						<div class="container_illu anim__slide anim__delayMedium_4">
-							<img src="img/tertiaire/services/Illustration.svg" alt="">
+							<img src="img/techniciens/services/Illustration.svg" alt="">
 						</div>
 						<div class="container-el">
 							<div class="el anim__slide anim__delayMedium_5">
 								<div class="icn">
-									<img src="img/tertiaire/services/picto1-section3.svg" alt="">
+									<img src="img/techniciens/services/picto1-section4.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Accompagnement du bureau de contrôle</h3>
+									<h3>SOS</h3>
 									<p>
-										WeMaintain travaille main dans la main avec les acteurs de l'industrie
+										Une fonction SOS intégrée à votre application est activable à tout moment
 									</p>
 								</div>
 							</div>
 							<div class="el anim__slide anim__delayMedium_6">
 								<div class="icn">
-									<img src="img/tertiaire/services/picto2-section3.svg" alt="">
+									<img src="img/techniciens/services/picto2-section4.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Temps de dépannage personnalisé</h3>
+									<h3>Protection du travailleur isolé</h3>
 									<p>
-										Nous garantissons des temps d'intervention réduits pour vos sites stratégiques
+										Nos équipes interviennent lorsque vous restez hors ligne trop longtemps lors d’une visite.
 									</p>
 								</div>
 							</div>
 							<div class="el anim__slide anim__delayMedium_7">
 								<div class="icn">
-									<img src="img/tertiaire/services/picto3-section3.svg" alt="">
+									<img src="img/techniciens/services/picto3-section4.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Reporting</h3>
+									<h3>EPI</h3>
 									<p>
-										Une vue claire sur votre patrimoine en gestion
+										Nous vous fournissons tout l’équipement nécessaire pour travailler en sécurité
 									</p>
 								</div>
 							</div>
@@ -263,11 +270,11 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<img class="anim__slide anim__delayMedium_1" src="img/home/picto-section-exigez.svg" alt="">
-						<h2 class="anim__slide anim__delayMedium_2">Exigez une nouvelle expérience</h2>
+						<h2 class="anim__slide anim__delayMedium_2">Rien ne vous retient, vivez autrement votre métier</h2>
 					</div>
 					<div class="container-btn">
 						<div class="btn anim__slide anim__delayMedium_3">
-							<span class="btn-text">Je demande une pré-visite gratuite</span>
+							<span class="btn-text">Je veux rencontrer WeMaintain</span>
 						</div>
 					</div>
 					<img class="dots anim__fade anim__delayMedium_1" src="img/common/points1.svg" alt="">

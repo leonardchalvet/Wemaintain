@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="34px" viewBox="0 0 36 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>picto2-section4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4a-Techniciens" transform="translate(-926.000000, -3765.000000)">
+            <g id="Section-4" transform="translate(146.000000, 3591.000000)">
+                <g id="1-copy" transform="translate(773.000000, 165.000000)">
+                    <g id="picto2-section4" transform="translate(7.000000, 9.000000)">
+                        <circle id="Oval-2" fill="#0081C5" fill-rule="nonzero" cx="26" cy="12" r="10"></circle>
+                        <circle id="Oval-2-Copy-3" fill="#0081C5" fill-rule="nonzero" cx="3" cy="31" r="3"></circle>
+                        <g id="Group" transform="translate(2.000000, 0.000000)" stroke="#171A3B" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <g id="office-work-wireless">
+                                <circle id="Oval" cx="3.5" cy="7.5" r="2.25"></circle>
+                                <path d="M8.751,23.25 C8.18239234,23.2505492 7.66235701,22.9295445 7.408,22.421 L6.737,21.079 C6.48523245,20.5709092 5.96704763,20.2496114 5.4,20.25 L3.5,20.25 C2.67157288,20.25 2,19.5784271 2,18.75 L2,12.75 C1.99930189,12.1964786 2.30349584,11.6875578 2.79135207,11.4260568 C3.2792083,11.1645558 3.87142988,11.1929794 4.332,11.5 L5.448,12.244 C5.94120318,12.5711563 6.52015597,12.7451205 7.112,12.744 L8.75,12.744 C9.57842712,12.744 10.25,13.4155729 10.25,14.244 C10.25,15.0724271 9.57842712,15.744 8.75,15.744 L7.112,15.744 C6.39097813,15.7462472 5.67548342,15.6181899 5,15.366 L5,17.25 L5.4,17.25 C7.10591723,17.244447 8.66673491,18.2088578 9.425,19.737 L10.096,21.079 C10.328846,21.5445327 10.3037042,22.0974988 10.0295733,22.5399807 C9.7554424,22.9824626 9.27151564,23.2511975 8.751,23.25 Z" id="Shape"></path>
+                                <path d="M3.5,20.25 L0.5,20.25" id="Shape"></path>
+                                <path d="M8.75,15.75 L19.25,15.75" id="Shape"></path>
+                                <path d="M14,15.75 L14,23.25" id="Shape"></path>
+                                <polyline id="Shape" points="13.25 12.75 19.25 12.75 21.5 7.5"></polyline>
+                                <path d="M13.25,7.125 C13.4571068,7.125 13.625,7.29289322 13.625,7.5 C13.625,7.70710678 13.4571068,7.875 13.25,7.875 C13.0428932,7.875 12.875,7.70710678 12.875,7.5 C12.875,7.29289322 13.0428932,7.125 13.25,7.125" id="Shape"></path>
+                                <path d="M10.6,4.848 C12.0645433,3.38683433 14.4354567,3.38683433 15.9,4.848" id="Shape"></path>
+                                <path d="M8.477,2.727 C9.74287293,1.46111157 11.4597744,0.749941546 13.25,0.749941546 C15.0402256,0.749941546 16.7571271,1.46111157 18.023,2.727" id="Shape"></path>
+                                <path d="M2.75,23.25 L2.75,20.25" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

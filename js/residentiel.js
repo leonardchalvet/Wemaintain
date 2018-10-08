@@ -9,4 +9,21 @@ $(window).on('load', function() {
 		$('#section-features .container-bar .bar').removeClass('active-1 active-2 active-3').addClass('active-'+el);
 	})
 
+
+	function animScroll() {
+		var windowHeight = $window.height() / 1.5;
+	    $('#section-features').each(function() {
+	        if ($window.scrollTop() >= $(this).offset().top - windowHeight) {
+	            if (!$(this).hasClass('reach')) {
+	                $(this).addClass('reach');
+	                $('#section-features .li-el-desc .el-desc:nth-child(1)').click();
+	            }
+	        }
+	    });
+	};
+	$window.scroll(function() {
+	    animScroll();
+	});
+	animScroll();
+
 })

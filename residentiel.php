@@ -17,26 +17,10 @@
 	
 	<body>
 
-		<header id="header-desktop">
-			<div class="wrapper">
-				<a class="logo" href="">
-					<img class="logo-style-1" src="img/common/logo-style-1.svg" alt="">
-					<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
-				</a>
-				<ul class="container-link">
-					<li><a href="">Résidentiel</a></li>
-					<li><a href="">Tertiaire</a></li>
-					<li><a href="">Techniciens</a></li>
-					<li><a href="">A propos</a></li>
-					<li><a href="">FAQ</a></li>
-				</ul>
-				<div class="container-action">
-					<div class="signin">Se connecter</div>
-					<div class="sep"></div>
-					<div class="signup">S’inscrire</div>
-				</div>
-			</div>
-		</header>
+		<?php
+			$styleHeader = 'active-1';
+			include('common_header.php');
+		?>
 
 		<main>
 
@@ -49,11 +33,14 @@
 						<p class="anim__slide anim__delayMedium_2">
 							Le technicien n’est plus un inconnu. Il connait la copropriété et est disponible pour vous.
 						</p>
-						<a class="btn anim__slide anim__delayMedium_3">
-							<span class="btn-text">
-								Commencer
-							</span>
-						</a>
+						<div class="container-btn anim__slide anim__delayMedium_3">
+							<a class="btn">
+								<span class="btn-text">
+									Commencer
+								</span>
+							</a>
+						</div>
+						
 					</div>
 					<div class="container-illu">
 						<img class="phone anim__slide anim__delayMedium_4" src="img/residentiel/cover/iPhone.png" alt="">
@@ -241,6 +228,7 @@
 									<div class="author">
 										<div class="name">Barthélémy Chalvet</div>
 										<div class="job">CEO @Google</div>
+										<img src="img/common/Twitter-black.svg" alt="">
 									</div>
 								</div>
 							</div>
