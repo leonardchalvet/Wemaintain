@@ -1,0 +1,133 @@
+footer{
+	background-color: #F3F5F5;
+	position: relative;
+	padding: 65px 0px 10px 0px;
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		.container-lg{
+			a{
+				display: block;
+				text-decoration: none;
+				height: 58px;
+				img{
+					height: 100%;
+				}
+			}
+			.container-language{
+				margin-top: 70px;
+				select{
+					@include styleParagraph4;
+					background-color: transparent;
+					border:none;
+					outline: none;
+					cursor: pointer;
+				}
+			}
+		}
+		.container-link{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			ul{
+				list-style: none;
+				margin-right: 145px;
+				&:last-child{
+					margin-right:0px;
+				}
+				li{
+					&:nth-child(1){
+						@include styleH3;
+						margin-bottom: 15px;
+					}
+					&:not(:nth-child(1)){
+						@include styleParagraph5;
+						margin-bottom: 8px;
+						color:$colorMain_6;
+					}
+					a{
+						text-decoration: none;
+						@include styleParagraph5;
+						color:$colorMain_6;
+					}
+				}
+			}
+		}
+		.container-contact{
+			.title{
+				@include styleH3;
+			}
+			.container-rs{
+				margin-top: 15px;
+				display: flex;
+				flex-flow: row wrap;
+				a{
+					text-decoration: none;
+					margin-right: 29px;
+					&:last-child{
+						margin-right:0px;
+					}
+					img{
+						height: 20px;
+					}
+				}
+			}
+			.container-tel{
+				margin-top: 45px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				.icn{
+					height: 16px;
+					margin-right: 20px;
+					img{
+						height: 100%;
+					}
+				}
+				a{
+					@include styleParagraph3;
+					text-decoration: none;
+					color: $colorMain_4;
+					font-family: $font_2;
+				}
+			}
+		}
+	}
+	.cpr{
+		margin-top: 35px;
+		text-align: center;
+		@include styleParagraph5;
+		color: $colorMain_6;
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile){
+	footer{
+		padding-top: 50px;
+		.wrapper .container-lg{
+			width: 100%;
+			text-align: center;
+			.container-language{
+				margin-top: 20px;
+			}
+			.img{
+				height: 40px;
+			}
+		}
+		.wrapper .container-link{
+			justify-content: space-between;
+			width: 100%;
+			margin-top: 35px;
+		}
+		.wrapper .container-link ul{
+			margin-right: initial;
+		}
+		.wrapper .container-contact{
+			margin-top: 35px;
+		}
+
+	}
+}
