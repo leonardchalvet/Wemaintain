@@ -73,7 +73,7 @@ $(window).on('load', function() {
 	/* TEAM FUNCTION & INIT */
 
 	//Function
-	function animTeam(num) {
+	function animTeam(num, md) {
 		//$('#section-team .wrapper .container-carousel .container-el .el').toggleClass('active');
 
 		let container = '#section-team .wrapper .container-carousel .container-el .el';
@@ -85,13 +85,18 @@ $(window).on('load', function() {
 				
 				$(container).show();
 				for( let i=1 ; i <= $(container).length ; i++ ) {
-					if(i != num && i != (num-1) && i != (num-2)) {
+					if( ( i != num && i != (num-1) && i != (num-2) ) || ( i != num && md==1 ) )  {
 						$(container + ':nth-child('+i+')').hide();
 					}
 				}
 
-				for( let pos = num ; pos >= (num - 2) ; pos-- ) {
-					$(container + ':nth-child('+pos+')').addClass('active');
+				if(md == 3) {
+					for( let pos = num ; pos >= (num - 2) ; pos-- ) {
+						$(container + ':nth-child('+pos+')').addClass('active');
+					}
+				}
+				else if(md = 1) {
+					$(container + ':nth-child('+num+')').addClass('active');
 				}
 
 			}, 1000)
@@ -105,13 +110,22 @@ $(window).on('load', function() {
 
 	let numTeam = 3;
 	let pauseTeam = 0;
-	let firstAnimTeam = 0;
+	let firstanimTeam = 0;
+
+	let lengthTeam = 3;
+	if (window.matchMedia("(max-width: 700px)").matches) {
+		lengthTeam = 1;
+		numTeam = 0;
+
+		$('#section-team .wrapper .container-carousel .container-el .el:nth-child(2)').removeClass('active').hide();
+		$('#section-team .wrapper .container-carousel .container-el .el:nth-child(3)').removeClass('active').hide();
+	}
 
 	//Anim auto
 	setInterval(function() {
 		if(!pauseTeam) {
-			animTeam(numTeam);
-			numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? 3 : numTeam+=3;
+			animTeam(numTeam, lengthTeam);
+			numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? lengthTeam : numTeam+=lengthTeam;
 		}
 		else {
 			setTimeout(function() {
@@ -123,18 +137,18 @@ $(window).on('load', function() {
 	//Click right arrow
 	$('#section-team .wrapper .container-carousel .container-nav .nav:nth-child(1)').click(function(){
 		do {
-			numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? 3 : numTeam+=3;
+			numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? lengthTeam : numTeam+=lengthTeam;
 		} while( $('#section-team .wrapper .container-carousel .container-el .el:nth-child('+numTeam+')').hasClass('active') );
-		animTeam(numTeam);
+		animTeam(numTeam, lengthTeam);
 		pauseTeam = 1;
 	});
 
 	//Click left arrow
 	$('#section-team .wrapper .container-carousel .container-nav .nav:nth-child(2)').click(function(){
 		do {
-			numTeam = numTeam < 3 ? ($('#section-team .wrapper .container-carousel .container-el .el').length) : numTeam-=3;
-		} while( ($('#section-team .wrapper .container-carousel .container-el .el:nth-child('+numTeam+')').hasClass('active')) || numTeam < 3 );
-		animTeam(numTeam);
+			numTeam = numTeam < lengthTeam ? ($('#section-team .wrapper .container-carousel .container-el .el').length) : numTeam-=lengthTeam;
+		} while( ($('#section-team .wrapper .container-carousel .container-el .el:nth-child('+numTeam+')').hasClass('active')) || numTeam < lengthTeam );
+		animTeam(numTeam, lengthTeam);
 		pauseTeam = 1;
 	});
 
@@ -142,7 +156,6 @@ $(window).on('load', function() {
 
 	/* SCROLL */
 	$window.scroll(function() {
-	    animScroll();
 
 	    const offsetTopSectonTeam  = $('#section-team').offset().top;
 	    const offsetTopSectonQuote = $('#section-quotes').offset().top;
@@ -150,9 +163,9 @@ $(window).on('load', function() {
 
 		/* A FINIR 
 	    if ( $window.scrollTop() + (wHeight/2) >= offsetTopSectonTeam ) {
-	    	if(!$('#section-team').hasClass('reach') || !firstAnimTeam) {
+	    	if(!$('#section-team').hasClass('reach') || !firstanimTeam) {
 	    		animTeam(numTeam); 
-	    		firstAnimTeam = 1;
+	    		firstanimTeam = 1;
 	    	}
 	    }
 
