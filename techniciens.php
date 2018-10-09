@@ -147,7 +147,10 @@
 								<div class="el" data-illu="3">Votre parc</div>
 								<div class="el" data-illu="4">Communauté</div>
 							</div>
-							<div class="container-bar"></div>
+							<div class="container-bar">
+								<div class="triangle-left"></div>
+								<div class="triangle-right"></div>
+							</div>
 						</div>
 						<div class="container-desc">
 							<p class="desc-1">
