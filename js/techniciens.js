@@ -42,18 +42,16 @@ $(window).on('load', function() {
 
 		//Click right arrow
 		$('#section-signup .wrapper .container-tsr .container-nav .container-bar .triangle-right').click(function(){
-			do {
-				numSignup = numSignup >= $('#section-signup .container-nav .el').length ? 1 : numSignup+=1;
-			} while( $('#section-signup .container-nav .el:nth-child('+numSignup+')').hasClass('active') );
+			if(pauseSignup == 0) numSignup-=1;
+			numSignup = numSignup >= $('#section-signup .container-nav .el').length ? 1 : numSignup+=1;
 			animSignup(numSignup);
 			pauseSignup = 1;
 		});
 
 		//Click left arrow
 		$('#section-signup .wrapper .container-tsr .container-nav .container-bar .triangle-left').click(function(){
-			do {
-				numSignup = numSignup <= 1 ? $('#section-signup .container-nav .el').length : numSignup-=1;
-			} while( $('#section-signup .container-nav .el:nth-child('+numSignup+')').hasClass('active') );
+			if(pauseSignup == 0) numSignup-=1;
+			numSignup = numSignup <= 1 ? $('#section-signup .container-nav .el').length : numSignup-=1;
 			animSignup(numSignup);
 			pauseSignup = 1;
 		});
