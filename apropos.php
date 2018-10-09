@@ -250,7 +250,9 @@
 
 		</main>
 
-		<footer></footer>
+		<?php
+			include('common_footer.php');
+		?>
 
 		<script type="text/javascript" src="js/common.js"></script>
 		<script type="text/javascript" src="js/tertiaire.js"></script>

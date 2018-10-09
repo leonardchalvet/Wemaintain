@@ -9,6 +9,17 @@
 	height: 105px;
 	width: 100%;
 	transition: all 0.25s ease;
+	&:before{
+		content:'';
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		background-color: #FFF;
+		opacity: 0;
+		transition: all 0.25s ease;
+	}
 	.wrapper{
 		position: relative;
 		@include styleGrid1;
@@ -58,8 +69,8 @@
 					content: '';
 					opacity: 0;
 					position: absolute;
-					background-color: $colorMain_1;
-					top: calc(100% + 10px);
+					background-color: $colorMain_2;
+					top: calc(100% + 5px);
 					left: 50%;
 					transform: translateX(-50%);
 					height: 3px;
@@ -79,6 +90,7 @@
 			align-items: center;
 			.signin{
 				@include styleParagraph4;
+				font-family: $font_2;
 			}
 			.sep{
 				margin-right: 25px;
@@ -91,6 +103,7 @@
 			.signup{
 				@include styleParagraph4;
 				color: $colorMain_4;
+				font-family: $font_2;
 			}
 		}
 	}
@@ -113,9 +126,12 @@
 
 
 	&.scroll{
-		box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1);
-		background-color: #FFF;
-
+		transform: translateY(-22px);
+		&:before{
+			opacity:1;
+			transform: translateY(-22px);
+			box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1);
+		}
 		.wrapper .logo-style-1{
 			display: none;
 		}
@@ -277,7 +293,7 @@
 			}
 		}
 		.head .wrapper .burger .line{
-			background-color: #FFF;
+			background-color: $colorMain_1;
 		}
 	}
 	&.open{
