@@ -160,7 +160,10 @@
 								<div class="el" data-illu="3">Signature du contrat</div>
 								<div class="el" data-illu="4">Suivi en temps réel</div>
 							</div>
-							<div class="container-bar"></div>
+							<div class="container-bar">
+								<div class="triangle-left"></div>
+								<div class="triangle-right"></div>
+							</div>
 						</div>
 						<div class="container-desc">
 							<p class="desc-1">
