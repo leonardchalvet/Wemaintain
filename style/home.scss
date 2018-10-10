@@ -271,7 +271,7 @@ main{
 							@include styleH3;
 						}
 						p{
-							@include styleParagraph5;
+							@include styleParagraph4;
 							color:$colorMain_6;
 						}
 					}
@@ -453,6 +453,14 @@ main{
 							z-index: 2;
 							top: 17%;
 							right: 0px;
+							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
+						}
+						.obj-2{
+							width: 150px;
+							position: absolute;
+							z-index: 2;
+							bottom: -15px;
+							left: 116px;
 							box-shadow: 0 30px 60px 0 rgba(0,0,0,0.2);
 						}
 						.dots{
@@ -1006,12 +1014,16 @@ main{
 		margin-bottom: 100px;
 	}
 	#section-features .wrapper .container-el .el .container-text{
-		order: 2 !important;
+		order: 1 !important;
 		width: 100%;
-		margin-top: 45px;
 	}
 	#section-features .wrapper .container-el .el .container-illu{
-		order: 1 !important;
+		margin-top: 45px;
+		order: 2 !important;
+	}
+	#section-features .wrapper .container-el .el:nth-child(3) .container-illu .obj-2 {
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	#section-team .background{
