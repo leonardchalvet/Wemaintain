@@ -154,16 +154,16 @@
 						</div>
 						<div class="container-desc">
 							<p class="desc-1">
-								Créez votre compte sur WeMaintain, renseignez vos premiers ascenseurs et effectuez votre première demande de maintenance en quelques minutes seulement.
+								WeMaintain vous accompagne dans la création de votre statut pour devenir indépendant
 							</p>
 							<p class="desc-2">
-								Un expert de la communauté WeMaintain se déplace et effectue une pré-visite entièrement gratuite sur votre site qui vous donne un état des lieux complet de l'état de vos appareils. Nous vous transmettons ensuite une proposition commerciale compétitive et transparente.
+								Vous êtes maintenant indépendant, mais pas seul. WeMaintain vous forme à la prise en main de l'application et à la relation client.
 							</p>
 							<p class="desc-3">
-								Signez en ligne si vous le souhaitez et recevez une copie du contrat directement dans votre boîte mail.
+								Lorsqu'un client créé une demande de maintenance dans le périmètre que vous avez défini, vous pouvez y répondre. Ainsi vous choisissez et maintenez vos ascenseurs.
 							</p>
 							<p class="desc-4">
-								Restez informés en temps réel de l'évolution de l'état de votre parc, des incidents, des coûts et des opérations.
+								Vous faîtes en relation continue avec les autres techniciens de la communauté WeMaintain via des outils de communication et des rencontres chaque semaine.
 							</p>
 						</div>
 					</div>
