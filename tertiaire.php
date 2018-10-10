@@ -129,10 +129,10 @@
 					<div class="container-tsr">
 						<div class="container-illu">
 							<div class="el-illu el-illu-1 container__anim__dt">
-								<img class="img-1 anim__slide anim__delayMedium_1" src="img/techniciens/signup-step-1/Contrat@3x.jpg" alt="">
-								<img class="img-2 anim__slide anim__delayMedium_2" src="img/techniciens/signup-step-1/Sign@3x.jpg" alt="">
-								<img class="obj anim__slide anim__delayMedium_3" src="img/techniciens/signup-step-1/cercle.svg" alt="">
-								<img class="dots anim__fade anim__delayMedium_4" src="img/techniciens/signup-step-1/Oval2.svg" alt="">
+								<img class="img-1 anim__slide anim__delayMedium_1" src="img/tertiaire/features-1/browser.png" alt="">
+								<img class="dots  anim__fade anim__delayMedium_2" src="img/tertiaire/features-1/oval.svg" alt="">
+								<img class="obj-1 anim__slide anim__delayMedium_3" src="img/tertiaire/features-1/perso-Petitdroite.svg" alt="">
+								<img class="obj-2 anim__slide anim__delayMedium_3" src="img/tertiaire/features-1/perso-Petitgauche.svg" alt="">
 							</div>
 							<div class="el-illu el-illu-2 container__anim__dt">
 								<img class="img-1 anim__slide anim__delayMedium_1" src="img/tertiaire/features-2/Box-illu1@3x.jpg" alt="">
@@ -142,10 +142,9 @@
 								<img class="obj-3 anim__fade anim__delayMedium_4" src="img/tertiaire/features-2/box-bleue-illu1@3x.jpg" alt="">
 							</div>
 							<div class="el-illu el-illu-3 container__anim__dt">
-								<img class="img-1 anim__slide anim__delayMedium_1" src="img/tertiaire/features-3/Box-illu3-residentiel@3x.jpg" alt="">
-								<img class="img-2 anim__slide anim__delayMedium_2" src="img/tertiaire/features-3/Synthese-illu3-residentiel@3x.jpg" alt="">
-								<img class="obj-1 anim__slide anim__delayMedium_3" src="img/tertiaire/features-3/cercle-illu3-residentiel.svg" alt="">
-								<img class="obj-2 anim__slide anim__delayMedium_4" src="img/tertiaire/features-3/technicien-illu3-residentiel.svg" alt="">
+								<img class="img-1 anim__slide anim__delayMedium_1" src="img/tertiaire/features-3/Contrat@3x.jpg" alt="">
+								<img class="img-2 anim__slide anim__delayMedium_2" src="img/tertiaire/features-3/Sign@3x.jpg" alt="">
+								<img class="obj anim__slide anim__delayMedium_3" src="img/tertiaire/features-3/cercle.svg" alt="">
 							</div>
 							<div class="el-illu el-illu-4 container__anim__dt">
 								<img class="img-1 anim__slide anim__delayMedium_1" src="img/tertiaire/features-4/Browser@2x.png" alt="">
@@ -161,20 +160,23 @@
 								<div class="el" data-illu="3">Signature du contrat</div>
 								<div class="el" data-illu="4">Suivi en temps réel</div>
 							</div>
-							<div class="container-bar"></div>
+							<div class="container-bar">
+								<div class="triangle-left"></div>
+								<div class="triangle-right"></div>
+							</div>
 						</div>
 						<div class="container-desc">
 							<p class="desc-1">
-								WeMaintain vous accompagne dans la création de votre statut pour devenir indépendant
+								Créez votre compte sur WeMaintain, renseignez vos premiers ascenseurs et effectuez votre première demande de maintenance en quelques minutes seulement.
 							</p>
 							<p class="desc-2">
-								Vous êtes maintenant indépendant, mais pas seul. WeMaintain vous forme à la prise en main de l'application et à la relation client.
+								Un expert de la communauté WeMaintain se déplace et effectue une pré-visite entièrement gratuite sur votre site qui vous donne un état des lieux complet de l'état de vos appareils. Nous vous transmettons ensuite une proposition commerciale compétitive et transparente.
 							</p>
 							<p class="desc-3">
-								Lorsqu'un client créé une demande de maintenance dans le périmètre que vous avez défini, vous pouvez y répondre. Ainsi vous choisissez et maintenez vos ascenseurs.
+								Signez en ligne si vous le souhaitez et recevez une copie du contrat directement dans votre boîte mail.
 							</p>
 							<p class="desc-4">
-								Vous faîtes en relation continue avec les autres techniciens de la communauté WeMaintain via des outils de communication et des rencontres chaque semaine.
+								Restez informés en temps réel de l'évolution de l'état de votre parc, des incidents, des coûts et des opérations.
 							</p>
 						</div>
 					</div>

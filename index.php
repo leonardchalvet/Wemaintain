@@ -992,6 +992,7 @@
 							<div class="container-illu">
 								<img class="img anim__fade anim__delaySmall_3" src="img/home/features-3/Technicien@2x.png" alt="">
 								<img class="obj-1 anim__slide anim__delaySmall_4" src="img/home/features-3/Box@2x.png" alt="">
+								<img class="obj-2 anim__slide anim__delaySmall_4" src="img/home/features-3/box-bleue-illu1@3x.jpg" alt="">
 								<img class="dots anim__slide anim__delaySmall_5" src="img/common/points3.svg" alt="">
 							</div>
 						</div>

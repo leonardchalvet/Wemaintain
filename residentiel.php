@@ -88,6 +88,8 @@
 						<div class="container-el-desc">
 							<div class="container-bar">
 								<div class="bar"></div>
+								<div class="triangle-left"></div>
+								<div class="triangle-right"></div>
 							</div>
 							<div class="li-el-desc">
 								<div class="el-desc" data-illu="1">
