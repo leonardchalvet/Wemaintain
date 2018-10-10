@@ -277,7 +277,7 @@
 			}
 		}
 		.head .wrapper .burger .line{
-			background-color: $colorMain_1;
+			background-color: #FFF;
 		}
 	}
 	&.scroll{
@@ -302,6 +302,9 @@
 		}
 		.container-link{
 			transform: translateY(0%);
+		}
+		.head .wrapper .burger .line{
+			background-color: $colorMain_1;
 		}
 		.head .wrapper .burger .line:nth-child(1){
 			transform: translateY(5px) rotate(45deg);
