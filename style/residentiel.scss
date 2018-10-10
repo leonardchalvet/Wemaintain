@@ -679,9 +679,10 @@ main{
 	}
 	#section-features .wrapper .container-features .container-el-desc .li-el-desc {
 		margin-top: 40px;
+		min-height: 140px;
 	}
 	#section-features .wrapper .container-features .container-el-desc .li-el-desc .el-desc{
-		margin-bottom: 30px;
+		margin-bottom: 0;
 		display: none;
 		cursor: none;
 	}
