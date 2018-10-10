@@ -257,6 +257,25 @@ main{
 							transform: translateY(200%);
 						}
 					}
+
+					.triangle-left, .triangle-right {
+						display: none;
+						position: absolute;
+						width: 6px;
+						height: 6px;
+						border-right: 1.5px solid #171A3B;
+						border-bottom: 1.5px solid #171A3B;
+					}
+
+					.triangle-left {
+						left: -10%;
+						transform: translateY(-40%) rotate(135deg);
+					}
+
+					.triangle-right {
+						right: -10%;
+						transform: translateY(-40%) rotate(-45deg);
+					}
 				}
 				.li-el-desc{
 					position: relative;
@@ -604,6 +623,9 @@ main{
 		right: 40%;
 	}
 
+	#section-features {
+		padding-bottom: 50px;
+	}
 	#section-features .wrapper .container-text{
 		width: 100%;
 	}
@@ -655,9 +677,41 @@ main{
 		padding-left: 40px;
 		margin-top: 40px;
 	}
+	#section-features .wrapper .container-features .container-el-desc .li-el-desc {
+		margin-top: 40px;
+	}
 	#section-features .wrapper .container-features .container-el-desc .li-el-desc .el-desc{
 		margin-bottom: 30px;
+		display: none;
+		cursor: none;
 	}
+	#section-features .wrapper .container-features .container-el-desc .li-el-desc .el-desc.active {
+		display: block;
+	}
+	#section-features .wrapper .container-features .container-el-desc .container-bar {
+		width: 80%;
+		left: 10%;
+		height: 0;
+		border-bottom: 2px solid #D4D4D8;
+	}
+	#section-features .wrapper .container-features .container-el-desc .container-bar .bar {
+		height: 2px;
+		width: calc(100% / 3);
+	}
+	#section-features .wrapper .container-features .container-el-desc .container-bar .triangle-left, 
+	#section-features .wrapper .container-features .container-el-desc .container-bar .triangle-right {
+		display: block;
+	}
+	#section-features .wrapper .container-features .container-el-desc .container-bar .bar.active-1 {
+		transform: translateX(0%);
+	}
+	#section-features .wrapper .container-features .container-el-desc .container-bar .bar.active-2 {
+		transform: translateX(100%);
+	}
+	#section-features .wrapper .container-features .container-el-desc .container-bar .bar.active-3 {
+		transform: translateX(200%);
+	}
+
 
 	#section-tarifs .wrapper .container-text .btn{
 		margin-top: 34px;
