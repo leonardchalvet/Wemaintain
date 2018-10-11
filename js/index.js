@@ -138,22 +138,33 @@ $(window).on('load', function() {
 		else {
 			setTimeout(function() {
 				pauseTeam = 0;
+				numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? lengthTeam : numTeam+=lengthTeam;
 			}, 10000);
 		}
 	}, 5000);
 
 	//Click right arrow
 	$('#section-team .wrapper .container-carousel .container-nav .nav:nth-child(1)').click(function(){
-		if(pauseTeam == 0) numTeam-=1;
-		numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? lengthTeam : numTeam+=lengthTeam;
+		
+		for( let i=1 ; i <= $('#section-team .wrapper .container-carousel .container-el .el').length ; i++ ) {
+			if($('#section-team .wrapper .container-carousel .container-el .el:nth-child('+i+')').hasClass('active')) {
+				numTeam = i >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? lengthTeam : i+lengthTeam;
+			}
+		}
+
 		animTeam(numTeam, lengthTeam);
 		pauseTeam = 1;
 	});
 
 	//Click left arrow
 	$('#section-team .wrapper .container-carousel .container-nav .nav:nth-child(2)').click(function(){
-		if(pauseTeam == 0) numTeam-=1;
-		numTeam = numTeam < lengthTeam ? ($('#section-team .wrapper .container-carousel .container-el .el').length) : numTeam-=lengthTeam;
+		console.log(numTeam);
+		for( let i=1 ; i <= $('#section-team .wrapper .container-carousel .container-el .el').length ; i++ ) {
+			if($('#section-team .wrapper .container-carousel .container-el .el:nth-child('+i+')').hasClass('active')) {
+				numTeam = i <= lengthTeam ? ($('#section-team .wrapper .container-carousel .container-el .el').length) : i-lengthTeam;
+			}
+		}
+		console.log(numTeam);
 		animTeam(numTeam, lengthTeam);
 		pauseTeam = 1;
 	});
