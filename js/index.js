@@ -7,24 +7,23 @@ $(window).on('load', function() {
 
 	//Function
 	function animQuote(num) {
+
 		let container = '#section-quotes .wrapper .container-el .el';
-		if(!$(container + ':nth-child('+num+')').hasClass('active')) {
 
-			$(container).removeClass('active');
+		$(container).removeClass('active');
+		
+		setTimeout(function(){
 			
-			setTimeout(function(){
-				
-				$(container).show();
-				for( let i=1 ; i <= $(container).length ; i++ ) {
-					if(i != num) {
-						$(container + ':nth-child('+i+')').hide();
-					}
+			$(container).show();
+			for( let i=1 ; i <= $(container).length ; i++ ) {
+				if(i != num) {
+					$(container + ':nth-child('+i+')').hide();
 				}
+			}
 
-				$(container + ':nth-child('+num+')').addClass('active');
+			$(container + ':nth-child('+num+')').addClass('active');
 
-			}, 500)
-		}
+		}, 500)
 	}
 	
 	//Initialisation
@@ -32,7 +31,7 @@ $(window).on('load', function() {
 		$('#section-quotes .wrapper .container-el .el:nth-child('+i+')').hide();
 	}
 
-	let numQuote = 1;
+	var numQuote = 2;
 	let pauseQuote = 0;
 	let firstAnimQuote = 0;
 
@@ -45,24 +44,33 @@ $(window).on('load', function() {
 		else {
 			setTimeout(function() {
 				pauseQuote = 0;
+				numQuote = numQuote >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuote+=1;
 			}, 10000);
 		}
 	}, 5000);
 
 	//Click right arrow
 	$('#section-quotes .wrapper .container-nav .nav:nth-child(1)').click(function(){
-		do {
-			numQuote = numQuote >= $('#section-quotes .wrapper .container-el .el').length ? 1 : numQuote+=1;
-		} while( $('#section-quotes .wrapper .container-el .el:nth-child('+numQuote+')').hasClass('active') );
+
+		for( let i=1 ; i <= $('#section-quotes .wrapper .container-el .el').length ; i++ ) {
+			if($('#section-quotes .wrapper .container-el .el:nth-child('+i+')').hasClass('active')) {
+				numQuote = i >= $('#section-quotes .wrapper .container-el .el').length ? 1 : i+1;
+			}
+		}
+
 		animQuote(numQuote);
 		pauseQuote = 1;
 	});
 
 	//Click left arrow
 	$('#section-quotes .wrapper .container-nav .nav:nth-child(2)').click(function(){
-		do {
-			numQuote = numQuote <= 1 ? $('#section-quotes .wrapper .container-el .el').length : numQuote-=1;
-		} while( $('#section-quotes .wrapper .container-el .el:nth-child('+numQuote+')').hasClass('active') );
+
+		for( let i=1 ; i <= $('#section-quotes .wrapper .container-el .el').length ; i++ ) {
+			if($('#section-quotes .wrapper .container-el .el:nth-child('+i+')').hasClass('active')) {
+				numQuote = i <= 1 ? $('#section-quotes .wrapper .container-el .el').length : i-1;
+			}
+		}
+
 		animQuote(numQuote);
 		pauseQuote = 1;
 	});
@@ -136,18 +144,16 @@ $(window).on('load', function() {
 
 	//Click right arrow
 	$('#section-team .wrapper .container-carousel .container-nav .nav:nth-child(1)').click(function(){
-		do {
-			numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? lengthTeam : numTeam+=lengthTeam;
-		} while( $('#section-team .wrapper .container-carousel .container-el .el:nth-child('+numTeam+')').hasClass('active') );
+		if(pauseTeam == 0) numTeam-=1;
+		numTeam = numTeam >= ($('#section-team .wrapper .container-carousel .container-el .el').length) ? lengthTeam : numTeam+=lengthTeam;
 		animTeam(numTeam, lengthTeam);
 		pauseTeam = 1;
 	});
 
 	//Click left arrow
 	$('#section-team .wrapper .container-carousel .container-nav .nav:nth-child(2)').click(function(){
-		do {
-			numTeam = numTeam < lengthTeam ? ($('#section-team .wrapper .container-carousel .container-el .el').length) : numTeam-=lengthTeam;
-		} while( ($('#section-team .wrapper .container-carousel .container-el .el:nth-child('+numTeam+')').hasClass('active')) || numTeam < lengthTeam );
+		if(pauseTeam == 0) numTeam-=1;
+		numTeam = numTeam < lengthTeam ? ($('#section-team .wrapper .container-carousel .container-el .el').length) : numTeam-=lengthTeam;
 		animTeam(numTeam, lengthTeam);
 		pauseTeam = 1;
 	});
