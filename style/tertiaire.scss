@@ -607,6 +607,21 @@ main{
 		width: 100%;
 	}
 }
+@media screen and (min-width: $breakPoint_mobile) and (max-width: 1000px){
+
+	#section-signup .wrapper .container-tsr .container-nav .container-el .el {
+		font-size: 16px;
+	}
+	#section-signup .wrapper .container-tsr .container-nav .container-el .el:after {
+		top: calc(100% + 15px);
+	}
+	#section-signup .wrapper .container-tsr .container-nav .container-bar {
+		margin-top: 15px;
+	}
+	#section-signup .wrapper .container-tsr .container-desc {
+		width: 100%;
+	}
+}
 @media screen and (max-width: $breakPoint_mobile){
 	#section-cover .wrapper .container-illu{
 		width: 100%;
