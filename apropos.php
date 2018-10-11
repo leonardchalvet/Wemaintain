@@ -18,6 +18,9 @@
 	<body>
 
 		<?php
+			$name = "apropos";
+			include('traduction.php');
+
 			$styleHeader = 'style-1 active-4';
 			include('common_header.php');
 		?>

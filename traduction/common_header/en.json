@@ -1,0 +1,28 @@
+{
+    "container-link": {
+    	"0": [
+    		"Lorem",
+    		"residentiel.php"
+    	],
+    	"1": [
+    		"Lorem",
+    		"tertiaire.php"
+    	],
+    	"2": [
+    		"Lorem",
+    		"techniciens.php"
+    	],
+    	"3": [
+    		"Lorem",
+    		"apropos.php"
+    	],
+    	"4": [
+    		"Lorem",
+    		""
+    	]
+    },
+    "container-action": [
+    	"Lorem Impsum",
+    	"Lorem Impsum"
+    ]
+}

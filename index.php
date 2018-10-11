@@ -18,6 +18,9 @@
 	<body>
 
 		<?php
+			$name = "home";
+			include('traduction.php');
+
 			$styleHeader = 'style-1';
 			include('common_header.php');
 		?>

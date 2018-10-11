@@ -18,6 +18,9 @@
 	<body>
 
 		<?php
+			$name = "residentiel";
+			include('traduction.php');
+
 			$styleHeader = 'active-1';
 			include('common_header.php');
 		?>

@@ -1,0 +1,34 @@
+{
+    "container-link": {
+    	"0": [
+    		"Résidentiel",
+    		"residentiel.php"
+    	],
+    	"1": [
+    		"Tertiaire",
+    		"tertiaire.php"
+    	],
+    	"2": [
+    		"Techniciens",
+    		"techniciens.php"
+    	],
+    	"3": [
+    		"A propos",
+    		"apropos.php"
+    	],
+    	"4": [
+    		"FAQ",
+    		""
+    	]
+    },
+    "container-action": {
+    	"0" : [
+    		"Se connecter",
+    		""
+    	],
+    	"1" : [		
+    		"S’inscrire",
+    		""
+    	]
+    }
+}

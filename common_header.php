@@ -5,16 +5,16 @@
 			<img class="logo-style-2" src="img/common/logo-style-2.svg" alt="">
 		</a>
 		<ul class="container-link">
-			<li><a href="residentiel.php">Résidentiel</a></li>
-			<li><a href="tertiaire.php">Tertiaire</a></li>
-			<li><a href="techniciens.php">Techniciens</a></li>
-			<li><a href="apropos.php">A propos</a></li>
-			<li><a href="">FAQ</a></li>
+			<?php
+				foreach ($content_header['container-link'] as $link) {
+				    echo '<li><a href="'.$link[1].'">'.$link[0].'</a></li>';
+				 }
+			?>
 		</ul>
 		<div class="container-action">
-			<div class="signin">Se connecter</div>
+			<div class="signin"><?php echo '<a href="'.$content_header['container-action']['0'][1].'">'.$content_header['container-action']['0'][0].'</a>'; ?></div>
 			<div class="sep"></div>
-			<div class="signup">S’inscrire</div>
+			<div class="signup"><?php echo '<a href="'.$content_header['container-action']['1'][1].'">'.$content_header['container-action']['1'][0].'</a>'; ?></div>
 		</div>
 	</div>
 </header>
@@ -35,15 +35,19 @@
 	<div class="container-link">
 		<div class="wrapper">	
 			<ul>
-				<li><a href="residentiel.php">Résidentiel</a></li>
-				<li><a href="tertiaire.php">Tertiaire</a></li>
-				<li><a href="techniciens.php">Techniciens</a></li>
-				<li><a href="apropos.php">A propos</a></li>
-				<li><a href="">FAQ</a></li>
+				<?php
+					foreach ($content_header['container-link'] as $link) {
+					    echo '<li><a href="'.$link[1].'">'.$link[0].'</a></li>';
+					 }
+				?>
 			</ul>
 			<div class="container-action">	
 				<a href="">Se connecter</a>
 				<a href="">S'inscrire</a>
+				<?php 
+					echo '<a href="'.$content_header['container-action']['0'][1].'">'.$content_header['container-action']['0'][0].'</a>';
+					echo '<a href="'.$content_header['container-action']['1'][1].'">'.$content_header['container-action']['1'][0].'</a>'; 
+				?>
 			</div>
 		</div>
 	</div>

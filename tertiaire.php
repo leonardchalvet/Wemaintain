@@ -18,6 +18,9 @@
 	<body>
 
 		<?php
+			$name = "tertiaire";
+			include('traduction.php');
+
 			$styleHeader = 'active-2';
 			include('common_header.php');
 		?>

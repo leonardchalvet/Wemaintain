@@ -18,6 +18,9 @@
 	<body>
 
 		<?php
+			$name = "techniciens";
+			include('traduction.php');
+
 			$styleHeader = 'active-3';
 			include('common_header.php');
 		?>
