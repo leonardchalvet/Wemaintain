@@ -1,14 +1,15 @@
 <footer>
 	<div class="wrapper">
 		<div class="container-lg">
-			<a href="">
+			<a href="index.php">
 				<img src="img/common/logo-style-2.svg" alt="">
 			</a>
 			<div class="container-language">
-				<select name="" id="">
+				<select name="" id="" onchange="location = this.value;">
 					<?php
 						foreach ($content_footer['container-language'] as $language) {
-						    echo '<option value="" '. (strtoupper($lang)==$language?"selected":"") .' >'.$language.'</option>';
+							$url = explode("?",'http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]);
+						    echo '<option value="'.$url[0].'?lg='.strtolower($language).'" '. (strtoupper($lang)==$language?"selected":"") .' >'.$language.'</option>';
 						 }
 					?>
 				</select>

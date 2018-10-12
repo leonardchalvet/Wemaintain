@@ -3,7 +3,7 @@
 if(empty($_GET['lg'])) $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 else $lang = $_GET['lg'];
 
-if($lang != "fr") $lang = "en";
+if($lang != "fr" && $lang != "en") $lang = "en";
 
 $contenu_fichier_json_principal = file_get_contents('traduction/'.$name.'/'.$lang.'.json');
 $contenu_fichier_json_header    = file_get_contents('traduction/common_header/'.$lang.'.json');
