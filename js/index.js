@@ -27,6 +27,7 @@ $(window).on('load', function() {
 	}
 	
 	//Initialisation
+	$('#section-quotes .wrapper .container-el .el:nth-child(1)').addClass('active');
 	for( let i=2 ; i <= $('#section-quotes .wrapper .container-el .el').length ; i++ ) {
 		$('#section-quotes .wrapper .container-el .el:nth-child('+i+')').hide();
 	}
@@ -112,6 +113,9 @@ $(window).on('load', function() {
 	}
 
 	//Initialisation
+	for( let i=1 ; i <= 3 ; i++ ) {
+		$('#section-team .wrapper .container-carousel .container-el .el:nth-child('+i+')').addClass('active');
+	}
 	for( let i=4 ; i <= $('#section-team .wrapper .container-carousel .container-el .el').length ; i++ ) {
 		$('#section-team .wrapper .container-carousel .container-el .el:nth-child('+i+')').hide();
 	}

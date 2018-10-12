@@ -1,0 +1,139 @@
+{
+	"section-home" : {
+		"title":"La maintenance devient plus simple",
+		"text":"La première communauté de techniciens ayant à cœur de vous servir",
+		"container-btn" : {
+			"0" : [
+				"Je m'inscris",
+				""
+			],
+			"1" : [
+				"En savoir plus",
+				""
+			]
+		}
+	},
+	"section-avantage" : {
+		"title":"Vos avantages",
+		"container-el" : {
+			"0" : [
+				"picto-euro-orange.svg",
+				"Visibilité",
+				"De l'information sur les prestations réalisées, les pièces et les coûts."
+			],
+			"2" : [
+				"picto-exigence-bleu.svg",
+				"Efficacité",
+				"Un technicien professionnel dédié à votre site, proche géographiquement, avec qui vous êtes en contact."
+			],
+			"3" : [
+				"picto-efficacite-bleu.svg",
+				"Exigence",
+				"Des techniciens experts pour assurer une maintenance de qualité et garantir moins de pannes."
+			]
+		}
+	},
+	"section-features" : {
+		"title":"Comment ça marche ?",
+		"text":"Créez votre première demande de maintenance en seulement trois minutes",
+		"container-el" : {
+			"0" : [
+				"Rentrez les informations concernant vos bâtiments et ascenseurs.",
+				"Précisez simplement l'adresse et le nombre d'appareils, pas besoin d'être un expert de l'ascenseur."
+			],
+			"1" : [
+				"Créez une demande de maintenance.",
+				"Nous nous adaptons à vos conditions et planifions une pré-visite gratuite par l'un des techniciens de la communauté."
+			],
+			"2" : [
+				"Suite à la pré-visite gratuite, recevez une proposition sur-mesure.",
+				"Vous obtenez une proposition juste basée sur un rapport détaillé de l'état de vos appareils."
+			],
+			"3" : [
+				"Signez en ligne.",
+				"Les démarches sont simplifiées et WeMaintain vous accompagne à chaque étape."
+			]
+		}
+	},
+	"section-team" : {
+		"title":"Les meilleurs techniciens",
+		"text":"La sécurité étant notre priorité, nous ne sélectionnons que les techniciens les plus expérimentés.",
+		"container-el" : {
+			"0" : {
+				"img":"pp-2.jpg",
+				"name":"Barthélémy Chalvet",
+				"job":"15 ans d’expérience"
+			},
+			"1" : {
+				"img":"pp-3.jpg",
+				"name":"Barthélémy Chalvet",
+				"job":"15 ans d’expérience"
+			},
+			"2" : {
+				"img":"pp-4.jpg",
+				"name":"Barthélémy Chalvet",
+				"job":"15 ans d’expérience"
+			},
+			"3" : {
+				"img":"pp-2.jpg",
+				"name":"Barthélémy Chalvet",
+				"job":"15 ans d’expérience"
+			},
+			"4" : {
+				"img":"pp-3.jpg",
+				"name":"Barthélémy Chalvet",
+				"job":"15 ans d’expérience"
+			},
+			"5" : {
+				"img":"pp-4.jpg",
+				"name":"Barthélémy Chalvet",
+				"job":"15 ans d’expérience"
+			},
+			"6" : {
+				"img":"pp-2.jpg",
+				"name":"Barthélémy Chalvet",
+				"job":"15 ans d’expérience"
+			},
+			"7" : {
+				"img":"pp-3.jpg",
+				"name":"Barthélémy Chalvet",
+				"job":"15 ans d’expérience"
+			},
+			"8" : {
+				"img":"pp-4.jpg",
+				"name":"Barthélémy Chalvet",
+				"job":"15 ans d’expérience"
+			}
+		}
+	},
+	"section-experience" : {
+		"title":"Exigez une nouvelle expérience",
+		"container-btn" : [
+			"Je demande une pré-visite gratuite",
+			""
+		]
+	},
+	"section-quotes" : {
+		"title":"Ils en parlent le mieux !",
+		"container-el" : {
+			"0" : {
+				"logo":"logo-mashable.svg",
+				"quote":"1 Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations",
+				"name":"Barthélémy Chalvet",
+				"job":"CEO @Google"
+			},
+			"1" : {
+				"logo":"logo-mashable.svg",
+				"quote":"2 Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations",
+				"name":"Barthélémy Chalvet",
+				"job":"CEO @Google"
+			},
+			"2" : {
+				"logo":"logo-mashable.svg",
+				"quote":"3 Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations",
+				"name":"Barthélémy Chalvet",
+				"job":"CEO @Google"
+			}
+		}
+	}
+}

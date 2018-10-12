@@ -1,0 +1,139 @@
+{
+	"section-home" : {
+		"title":"Lorem ipsum dolor sit amet, consectetur",
+		"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+		"container-btn" : {
+			"0" : [
+				"Lorem ipsum",
+				""
+			],
+			"1" : [
+				"Lorem ipsum",
+				""
+			]
+		}
+	},
+	"section-avantage" : {
+		"title":"Lorem ipsum",
+		"container-el" : {
+			"0" : [
+				"picto-euro-orange.svg",
+				"Lorem ipsum",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+			],
+			"2" : [
+				"picto-exigence-bleu.svg",
+				"Lorem ipsum",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+			],
+			"3" : [
+				"picto-efficacite-bleu.svg",
+				"Lorem ipsum",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+			]
+		}
+	},
+	"section-features" : {
+		"title":"Lorem ipsum",
+		"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+		"container-el" : {
+			"0" : [
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+			],
+			"1" : [
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+			],
+			"2" : [
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+			],
+			"3" : [
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+			]
+		}
+	},
+	"section-team" : {
+		"title":"Lorem ipsum Lorem ipsum",
+		"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+		"container-el" : {
+			"0" : {
+				"img":"pp-2.jpg",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"1" : {
+				"img":"pp-3.jpg",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"2" : {
+				"img":"pp-4.jpg",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"3" : {
+				"img":"pp-2.jpg",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"4" : {
+				"img":"pp-3.jpg",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"5" : {
+				"img":"pp-4.jpg",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"6" : {
+				"img":"pp-2.jpg",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"7" : {
+				"img":"pp-3.jpg",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"8" : {
+				"img":"pp-4.jpg",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			}
+		}
+	},
+	"section-experience" : {
+		"title":"Lorem ipsum Lorem ipsum",
+		"container-btn" : [
+			"Lorem ipsum Lorem ipsum Lorem ipsum",
+			""
+		]
+	},
+	"section-quotes" : {
+		"title":"Ils en parlent le mieux !",
+		"container-el" : {
+			"0" : {
+				"logo":"logo-mashable.svg",
+				"quote":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"1" : {
+				"logo":"logo-mashable.svg",
+				"quote":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			},
+			"2" : {
+				"logo":"logo-mashable.svg",
+				"quote":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+				"name":"Lorem ipsum",
+				"job":"Lorem ipsum"
+			}
+		}
+	}
+}

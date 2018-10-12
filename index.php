@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 	<head>
 
@@ -30,15 +31,17 @@
 				<div class="background"></div>
 				<div class="wrapper">
 					<div class="container-text">
-						<h1 class="anim__slide anim__delayMedium_1">La maintenance devient plus simple</h1>
+						<h1 class="anim__slide anim__delayMedium_1"><?php echo $content_page['section-home']['title']; ?></h1>
 						<p class="anim__slide anim__delayMedium_2">
-							La première communauté de techniciens ayant à cœur de vous servi
+							<?php echo $content_page['section-home']['text']; ?>
 						</p>
 						<div class="container-action anim__slide anim__delayMedium_3">
-							<a class="btn">
-								<span class="btn-text">Je m’inscris</span>
+							<a class="btn" <?php echo 'href="'.$content_page['section-home']['container-btn']["0"][1].'"'; ?> >
+								<span class="btn-text"><?php echo $content_page['section-home']['container-btn']["0"][0]; ?></span>
 							</a>
-							<a class="link" href="">En savoir plus</a>
+							<a class="link" <?php echo 'href="'.$content_page['section-home']['container-btn']["1"][1].'"'; ?> >
+								<?php echo $content_page['section-home']['container-btn']["1"][0]; ?>
+							</a>
 						</div>
 					</div>
 					<div class="container-illu">
@@ -903,48 +906,22 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h2 class="anim__slide anim__delayMedium_1">
-							Vos avantages
+							<?php echo $content_page['section-avantage']['title']; ?>
 						</h2>
 						<div class="container-el">
-							<div class="el anim__slide anim__delayMedium_2">
-								<div class="icn">
-									<img src="img/home/picto-euro-orange.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>
-										Visibilité
-									</h3>
-									<p>
-										De l'information sur les prestations réalisées, les pièces et les coûts.
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_3">
-								<div class="icn">
-									<img src="img/home/picto-exigence-bleu.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>
-										Efficacité
-									</h3>
-									<p>
-										Un technicien professionnel dédié à votre site, proche géographiquement, avec qui vous êtes en contact.
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_4">
-								<div class="icn">
-									<img src="img/home/picto-efficacite-bleu.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>
-										Exigence
-									</h3>
-									<p>
-										Des techniciens experts pour assurer une maintenance de qualité et garantir moins de pannes.
-									</p>
-								</div>
-							</div>
+							<?php
+								foreach ($content_page['section-avantage']['container-el'] as $el) {
+									echo '<div class="el anim__slide anim__delayMedium_3">
+											<div class="icn">
+												<img src="img/home/'.$el[0].'" alt="">
+											</div>
+											<div class="text">
+												<h3>'.$el[1].'</h3>
+												<p>'.$el[2].'</p>
+											</div>
+										  </div>';
+								}
+							?>
 						</div>
 					</div>
 					<div class="container-illu">
@@ -957,16 +934,16 @@
 			<section id="section-features">
 				<div class="wrapper">
 					<div class="container-head container__anim">
-						<h2 class="anim__slide anim__delayMedium_1">Comment ça marche ?</h2>
+						<h2 class="anim__slide anim__delayMedium_1"><?php echo $content_page['section-features']['title']; ?></h2>
 						<p class="anim__slide anim__delayMedium_2">
-							Créez votre première demande de maintenance en seulement trois minutes
+							<?php echo $content_page['section-features']['text']; ?>
 						</p>
 					</div>
 					<div class="container-el">
 						<div class="el container__anim">
 							<div class="container-text">
-								<h3 class="anim__slide anim__delaySmall_1">Rentrez les informations concernant vos bâtiments et ascenseurs.</h3>
-								<p class="anim__slide anim__delaySmall_2">Précisez simplement l'adresse et le nombre d'appareils, pas besoin d'être un expert de l'ascenseur.</p>
+								<h3 class="anim__slide anim__delaySmall_1"><?php echo $content_page['section-features']['container-el']["0"][0]; ?></h3>
+								<p class="anim__slide anim__delaySmall_2"><?php echo $content_page['section-features']['container-el']["0"][1]; ?></p>
 							</div>
 							<div class="container-illu">
 								<img class="img anim__fade anim__delaySmall_3" src="img/home/features-1/Box@2x.png" alt="">
@@ -977,8 +954,8 @@
 						</div>
 						<div class="el container__anim">
 							<div class="container-text">
-								<h3 class="anim__slide anim__delaySmall_1">Créez une demande de maintenance.</h3>
-								<p class="anim__slide anim__delaySmall_2">Nous nous adaptons à vos conditions et planifions une pré-visite gratuite par l'un des techniciens de la communauté.</p>
+								<h3 class="anim__slide anim__delaySmall_1"><?php echo $content_page['section-features']['container-el']["1"][0]; ?></h3>
+								<p class="anim__slide anim__delaySmall_2"><?php echo $content_page['section-features']['container-el']["1"][1]; ?></p>
 							</div>
 							<div class="container-illu">
 								<img class="img anim__fade anim__delaySmall_3" src="img/home/features-2/Box@2x.png" alt="">
@@ -989,8 +966,8 @@
 						</div>
 						<div class="el container__anim">
 							<div class="container-text">
-								<h3 class="anim__slide anim__delaySmall_1">Suite à la pré-visite gratuite, recevez une proposition sur-mesure.</h3>
-								<p class="anim__slide anim__delaySmall_2">Vous obtenez une proposition juste basée sur un rapport détaillé de l'état de vos appareils.</p>
+								<h3 class="anim__slide anim__delaySmall_1"><?php echo $content_page['section-features']['container-el']["2"][0]; ?></h3>
+								<p class="anim__slide anim__delaySmall_2"><?php echo $content_page['section-features']['container-el']["2"][1]; ?></p>
 							</div>
 							<div class="container-illu">
 								<img class="img anim__fade anim__delaySmall_3" src="img/home/features-3/Technicien@2x.png" alt="">
@@ -1001,8 +978,8 @@
 						</div>
 						<div class="el container__anim">
 							<div class="container-text">
-								<h3 class="anim__slide anim__delaySmall_1">Signez en ligne.</h3>
-								<p class="anim__slide anim__delaySmall_2">Les démarches sont simplifiées et WeMaintain vous accompagne à chaque étape.</p>
+								<h3 class="anim__slide anim__delaySmall_1"><?php echo $content_page['section-features']['container-el']["3"][0]; ?></h3>
+								<p class="anim__slide anim__delaySmall_2"><?php echo $content_page['section-features']['container-el']["3"][1]; ?></p>
 							</div>
 							<div class="container-illu">
 								<img class="img anim__fade anim__delaySmall_3" src="img/home/features-4/Contrat@2x.png" alt="">
@@ -1018,97 +995,26 @@
 				<div class="background anim__slide anim__delayMedium_1"></div>
 				<div class="wrapper">
 					<div class="container-text">
-						<h2 class="anim__slide anim__delayMedium_2">Les meilleurs techniciens</h2>
+						<h2 class="anim__slide anim__delayMedium_2"><?php echo $content_page['section-team']['title']; ?></h2>
 						<p class="anim__slide anim__delayMedium_3">
-							La sécurité étant notre priorité, nous ne sélectionnons que les techniciens les plus expérimentés.
+							<?php echo $content_page['section-team']['text']; ?>
 						</p>
 					</div>
 					<div class="container-carousel anim__slide anim__delayMedium_4">
 						<div class="container-el">
-							<div class="el active">
-								<div class="pp" style="background-image: url(img/home/team/pp-2.jpg);"></div>
-								<div class="cdr">
-									<div class="content-text">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">15 ans d’expérience</div>
-									</div>
-								</div>
-							</div>
-							<div class="el active">
-								<div class="pp" style="background-image: url(img/home/team/pp-3.jpg);"></div>
-								<div class="cdr">
-									<div class="content-text">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">15 ans d’expérience</div>
-									</div>
-								</div>
-							</div>
-							<div class="el active">
-								<div class="pp" style="background-image: url(img/home/team/pp-4.jpg);"></div>
-								<div class="cdr">
-									<div class="content-text">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">15 ans d’expérience</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="el">
-								<div class="pp" style="background-image: url(img/home/team/pp-4.jpg);"></div>
-								<div class="cdr">
-									<div class="content-text">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">15 ans d’expérience</div>
-									</div>
-								</div>
-							</div>
-							<div class="el">
-								<div class="pp" style="background-image: url(img/home/team/pp-2.jpg);"></div>
-								<div class="cdr">
-									<div class="content-text">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">15 ans d’expérience</div>
-									</div>
-								</div>
-							</div>
-							<div class="el">
-								<div class="pp" style="background-image: url(img/home/team/pp-3.jpg);"></div>
-								<div class="cdr">
-									<div class="content-text">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">15 ans d’expérience</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="el">
-								<div class="pp" style="background-image: url(img/home/team/pp-4.jpg);"></div>
-								<div class="cdr">
-									<div class="content-text">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">15 ans d’expérience</div>
-									</div>
-								</div>
-							</div>
-							<div class="el">
-								<div class="pp" style="background-image: url(img/home/team/pp-3.jpg);"></div>
-								<div class="cdr">
-									<div class="content-text">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">15 ans d’expérience</div>
-									</div>
-								</div>
-							</div>
-							<div class="el">
-								<div class="pp" style="background-image: url(img/home/team/pp-2.jpg);"></div>
-								<div class="cdr">
-									<div class="content-text">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">15 ans d’expérience</div>
-									</div>
-								</div>
-							</div>
-							
+							<?php
+								foreach ($content_page['section-team']['container-el'] as $el) {
+									echo '<div class="el">
+											<div class="pp" style="background-image: url(img/home/team/'.$el['img'].');"></div>
+											<div class="cdr">
+												<div class="content-text">
+													<div class="name">'.$el['name'].'</div>
+													<div class="job">'.$el['job'].'</div>
+												</div>
+											</div>
+										  </div>';
+								}
+							?>
 						</div>
 						<div class="container-nav anim__fade anim__delayMedium_4">
 							<div class="nav">
@@ -1125,11 +1031,11 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<img class="anim__slide anim__delayMedium_1" src="img/home/picto-section-exigez.svg" alt="">
-						<h2 class="anim__slide anim__delayMedium_2">Exigez une nouvelle expérience</h2>
+						<h2 class="anim__slide anim__delayMedium_2"><?php echo $content_page['section-experience']['title']; ?></h2>
 					</div>
 					<div class="container-btn">
 						<div class="btn anim__slide anim__delayMedium_3">
-							<span class="btn-text">Je demande une pré-visite gratuite</span>
+							<?php echo '<a class="btn-text" href="'.$content_page['section-experience']['container-btn'][1].'">'.$content_page['section-experience']['container-btn'][0].'</a>'; ?>
 						</div>
 					</div>
 					<img class="dots anim__fade anim__delayMedium_1" src="img/common/points1.svg" alt="">
@@ -1139,56 +1045,25 @@
 				<div class="background anim__slide anim__delayMedium_1"></div>
 				<div class="wrapper">
 					<div class="container-text">
-						<h2 class="anim__slide anim__delayMedium_2">Ils en parlent le mieux !</h2>
+						<h2 class="anim__slide anim__delayMedium_2"><?php echo $content_page['section-quotes']['title']; ?></h2>
 					</div>
 					<div class="container-el">
-						<div class="el active">
-							<div class="container-logo">
-								<img src="img/home/logo/logo-mashable.svg" alt="">
-							</div>
-							<div class="container-quote">
-								<q>
-									1
-									Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations
-								</q>
-							</div>
-							<div class="cdr">
-								<div class="name">Barthélémy Chalvet</div>
-								<div class="job">CEO @Google</div>
-							</div>
-						</div>
-
-						<div class="el">
-							<div class="container-logo">
-								<img src="img/home/logo/logo-mashable.svg" alt="">
-							</div>
-							<div class="container-quote">
-								<q>
-									2
-									Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations
-								</q>
-							</div>
-							<div class="cdr">
-								<div class="name">Barthélémy Chalvet</div>
-								<div class="job">CEO @Google</div>
-							</div>
-						</div>
-
-						<div class="el">
-							<div class="container-logo">
-								<img src="img/home/logo/logo-mashable.svg" alt="">
-							</div>
-							<div class="container-quote">
-								<q>
-									3
-									Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations
-								</q>
-							</div>
-							<div class="cdr">
-								<div class="name">Barthélémy Chalvet</div>
-								<div class="job">CEO @Google</div>
-							</div>
-						</div>
+						<?php
+							foreach ($content_page['section-quotes']['container-el'] as $el) {
+								echo '<div class="el">
+										<div class="container-logo">
+											<img src="img/home/logo/'.$el['logo'].'" alt="">
+										</div>
+										<div class="container-quote">
+											<q>'.$el['quote'].'</q>
+										</div>
+										<div class="cdr">
+											<div class="name">'.$el['name'].'</div>
+											<div class="job">'.$el['job'].'</div>
+										</div>
+									  </div>';
+							}
+						?>
 					</div>
 					<div class="container-nav anim__fade anim__delayMedium_3">
 						<div class="nav">
