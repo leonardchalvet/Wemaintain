@@ -1,7 +1,13 @@
 <?php
 
-if(empty($_GET['lg'])) $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-else $lang = $_GET['lg'];
+if(!empty($_GET['lg']) || !isset($_SESSION['lg'])) {
+	if(empty($_GET['lg'])) $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+	else {
+		$lang = $_GET['lg'];
+		$_SESSION['lg'] = $lang;
+	}
+}
+else $lang = $_SESSION['lg'];
 
 if($lang != "fr" && $lang != "en") $lang = "en";
 
