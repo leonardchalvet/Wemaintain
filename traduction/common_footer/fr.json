@@ -1,0 +1,57 @@
+{
+	"container-language" : [
+		"FR",
+		"EN"
+	],
+	"container-link" : {
+		"0" : {
+			"0" : [
+				"A propos",
+				"null"
+			],
+			"1" : [
+				"Qui sommes-nous ?",
+				""
+			],
+			"2" : [
+				"Nous recrutons",
+				""
+			],
+			"3" : [
+				"Blog",
+				""
+			]
+		},
+		"1" : {
+			"0" : [
+				"Legal",
+				"null"
+			],
+			"1" : [
+				"Mentions légales",
+				""
+			],
+			"2" : [
+				"CGU",
+				""
+			],
+			"3" : [
+				"Données personnelles",
+				""
+			]
+		}
+	},
+	"container-contact" : {
+		"title":"Restons en contact",
+		"container-rs" : [
+			"",
+			"",
+			""
+		],
+		"container-tel" : [
+			"0176420487",
+			"01 76 42 04 87"
+		],
+		"cpr":"Copyright 2018"
+	}
+}

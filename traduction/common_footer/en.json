@@ -1,0 +1,57 @@
+{
+	"container-language" : [
+		"FR",
+		"EN"
+	],
+	"container-link" : {
+		"0" : {
+			"0" : [
+				"Lorem Impsum",
+				"null"
+			],
+			"1" : [
+				"Lorem Impsum",
+				""
+			],
+			"2" : [
+				"Lorem Impsum",
+				""
+			],
+			"3" : [
+				"Lorem Impsum",
+				""
+			]
+		},
+		"1" : {
+			"0" : [
+				"Lorem Impsum",
+				"null"
+			],
+			"1" : [
+				"Lorem Impsum",
+				""
+			],
+			"2" : [
+				"Lorem Impsum",
+				""
+			],
+			"3" : [
+				"Lorem Impsum",
+				""
+			]
+		}
+	},
+	"container-contact" : {
+		"title":"Lorem Impsum",
+		"container-rs" : [
+			"",
+			"",
+			""
+		],
+		"container-tel" : [
+			"0176420487",
+			"01 76 42 04 87"
+		],
+		"cpr":"Copyright 2018"
+	}
+}

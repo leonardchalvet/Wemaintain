@@ -6,35 +6,40 @@
 			</a>
 			<div class="container-language">
 				<select name="" id="">
-					<option value="">FR</option>
-					<option value="">EN</option>
+					<?php
+						foreach ($content_footer['container-language'] as $language) {
+						    echo '<option value="" '. (strtoupper($lang)==$language?"selected":"") .' >'.$language.'</option>';
+						 }
+					?>
 				</select>
 			</div>
 		</div>
 		<div class="container-link">
-			<ul>
-				<li>A propos</li>
-				<li><a href="">Qui sommes-nous ?</a></li>
-				<li><a href=""></a>Nous recrutons</li>
-				<li><a href="">Blog</a></li>
-			</ul>
-			<ul>
-				<li>Legal</li>
-				<li><a href="">Mentions légales</a></li>
-				<li><a href=""></a>CGU</li>
-				<li><a href="">Données personnelles</a></li>
-			</ul>
+			<?php
+				foreach ($content_footer['container-link'] as $link) {
+					echo '<ul>';
+					foreach ($link as $content) {
+						echo '<li>';
+						if($content[1]=="null")
+							echo $content[0];
+						else 
+							echo '<a href="'.$content[1].'">'.$content[0].'</a>';
+						echo '</li>';
+					}
+					echo '</ul>';
+				}
+			?>
 		</div>
 		<div class="container-contact">
-			<div class="title">Restons en contact</div>
+			<div class="title"><?php echo $content_footer['container-contact']['title']; ?></div>
 			<div class="container-rs">
-				<a href="">
+				<?php echo '<a href="'.$content_footer['container-contact']['container-rs'][0].'"?>'; ?>
 					<img src="img/footer/icn-facebook.svg" alt="">
 				</a>
-				<a href="">
+				<?php echo '<a href="'.$content_footer['container-contact']['container-rs'][1].'"?>'; ?>
 					<img src="img/footer/icn-linkedin.svg" alt="">
 				</a>
-				<a href="">
+				<?php echo '<a href="'.$content_footer['container-contact']['container-rs'][2].'"?>'; ?>
 					<img src="img/footer/icn-twitter.svg" alt="">
 				</a>
 			</div>
@@ -42,11 +47,11 @@
 				<div class="icn">
 					<img src="img/footer/icn-phone.svg" alt="">
 				</div>
-				<a href="tel:0176420487">01 76 42 04 87</a>
+				<?php echo '<a href="tel:'.$content_footer['container-contact']['container-tel'][0].'">'.$content_footer['container-contact']['container-tel'][1].'</a>'; ?>
 			</div>
 		</div>
 	</div>
 	<div class="cpr">
-		Copyright 2018
+		<?php echo $content_footer['container-contact']['cpr']; ?>
 	</div>
 </footer>
