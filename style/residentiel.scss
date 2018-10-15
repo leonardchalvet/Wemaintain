@@ -342,6 +342,9 @@ main{
 			}
 			.btn{
 				@include styleButton;
+				a {
+					text-decoration: none;
+				}
 			}
 		}
 		.container-li{
@@ -507,6 +510,9 @@ main{
 			text-align: center;
 			.btn{
 				@include styleButton;
+				a {
+					text-decoration: none;
+				}
 			}
 		}
 		.dots{
