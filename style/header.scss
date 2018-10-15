@@ -365,39 +365,8 @@
 	}
 }
 
-@media screen and (min-width: 1000px) and (max-width: $breakPoint_tablet){
-	#header-desktop .wrapper .logo {
-		margin-right: 40px;
-	}
-	#header-desktop .wrapper .container-action {
-		right: 20px;
-	}
-}
 
-@media screen and (min-width: $breakPoint_mobile) and (max-width: 1000px){
-	#header-desktop {
-		height: 150px;
-	}
-	#header-desktop .wrapper {
-		flex-direction: column;
-		align-items: start;
-	}
-	#header-desktop .wrapper .container-link {
-		margin-top: 10px;
-	}
-	#header-desktop .wrapper .container-action {
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: flex-end;
-		right: 40px;
-		height: 80px;
-	}
-	#header-desktop .wrapper .container-action .sep {
-		margin-right: 0;
-	}
-}
-
-@media screen and (max-width: $breakPoint_mobile) {
+@media screen and (max-width: $breakPoint_tablet) {
   #header-desktop
   {
     display:none;
