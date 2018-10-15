@@ -11,7 +11,7 @@ $(window).on('load', function() {
 		})
 	}
 	else {
-		let numFeatures = 1;
+		let numFeatures = 2;
 		let pauseFeatures = 0;
 
 		function animFeatures(el) {

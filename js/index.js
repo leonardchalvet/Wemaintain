@@ -127,7 +127,7 @@ $(window).on('load', function() {
 	let lengthTeam = 3;
 	if (window.matchMedia("(max-width: 700px)").matches) {
 		lengthTeam = 1;
-		numTeam = 0;
+		numTeam = 2;
 
 		$('#section-team .wrapper .container-carousel .container-el .el:nth-child(2)').removeClass('active').hide();
 		$('#section-team .wrapper .container-carousel .container-el .el:nth-child(3)').removeClass('active').hide();

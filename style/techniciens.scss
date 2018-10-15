@@ -315,20 +315,21 @@ main{
 					.triangle-left, .triangle-right {
 						display: none;
 						position: absolute;
-						width: 6px;
-						height: 6px;
+						width: 10px;
+						height: 10px;
+						margin: 10px;
 						border-right: 1.5px solid #171A3B;
 						border-bottom: 1.5px solid #171A3B;
 					}
 
 					.triangle-left {
-						left: -10%;
-						transform: translateY(-40%) rotate(135deg);
+						left: -12%;
+						transform: translateY(-130%) rotate(135deg);
 					}
 
 					.triangle-right {
-						right: -10%;
-						transform: translateY(-40%) rotate(-45deg);
+						right: -12%;
+						transform: translateY(-130%) rotate(-45deg);
 					}
 				}
 			}
@@ -745,13 +746,13 @@ main{
 	    transform: translateX(-50%);
 	}
 	#section-cover .wrapper .container-illu .obj-1 {
-		right: 0;
+		right: calc(50% - 175px);
 		top: 50px;
 		width: 80px;
 	}
 	#section-cover .wrapper .container-illu .obj-2 {
 		bottom: 5px;
-		left: -35px;
+		left: calc(50% - 200px);
 		width: 115px;
 	}
 	#section-cover .wrapper .container-illu .dots {

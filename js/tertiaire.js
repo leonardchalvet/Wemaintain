@@ -14,7 +14,7 @@ $(window).on('load', function() {
 		})
 	}
 	else {
-		let numSignup = 1;
+		let numSignup = 2;
 		let pauseSignup = 0;
 
 		function animSignup(el) {
