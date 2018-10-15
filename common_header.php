@@ -41,9 +41,7 @@
 					 }
 				?>
 			</ul>
-			<div class="container-action">	
-				<a href="">Se connecter</a>
-				<a href="">S'inscrire</a>
+			<div class="container-action">
 				<?php 
 					echo '<a href="'.$content_header['container-action']['0'][1].'">'.$content_header['container-action']['0'][0].'</a>';
 					echo '<a href="'.$content_header['container-action']['1'][1].'">'.$content_header['container-action']['1'][0].'</a>'; 
