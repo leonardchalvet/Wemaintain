@@ -32,15 +32,15 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h1 class="anim__slide anim__delayMedium_1">
-							Votre bâtiment,<br>votre <span>technicien</span> dédié
+							<?php echo $content_page['section-cover']['title']; ?>
 						</h1>
 						<p class="anim__slide anim__delayMedium_2">
-							Le technicien n’est plus un inconnu. Il connait la copropriété et est disponible pour vous.
+							<?php echo $content_page['section-cover']['text']; ?>
 						</p>
 						<div class="container-btn anim__slide anim__delayMedium_3">
-							<a class="btn">
+							<a class="btn" <?php echo 'href="'.$content_page['section-cover']['container-btn'][1].'"'; ?> >
 								<span class="btn-text">
-									Commencer
+									<?php echo $content_page['section-cover']['container-btn'][0]; ?>
 								</span>
 							</a>
 						</div>
@@ -59,10 +59,10 @@
 				<div class="wrapper">
 					<div class="container-text container__anim">
 						<h2 class="anim__slide anim__delayMedium_1">
-							De la visibilité sur votre ascenseur
+							<?php echo $content_page['section-features']['title']; ?>
 						</h2>
 						<p class="anim__slide anim__delayMedium_2">
-							A chaque intervention et étape, le conseil syndical et le gestionnaire sont informés en temps réel. Fini le manque de transparence.
+							<?php echo $content_page['section-features']['text']; ?>
 						</p>
 					</div>
 					<div class="container-features">
@@ -96,24 +96,18 @@
 								<div class="triangle-right"></div>
 							</div>
 							<div class="li-el-desc">
-								<div class="el-desc" data-illu="1">
-									<h3>Pré-visite gratuite</h3>
-									<p>
-										Cet audit visuel vous sensibilise sur l’état de votre ascenseur. Pas de mauvaise surprise sur les coûts !
-									</p>
-								</div>
-								<div class="el-desc" data-illu="2">
-									<h3>Rapports d’informations</h3>
-									<p>
-										Pour chaque intervention, le technicien vous communique un compte-rendu en temps réel. Photos et commentaires à l’appui.
-									</p>
-								</div>
-								<div class="el-desc" data-illu="3">
-									<h3>Suivi des opérations</h3>
-									<p>
-										Pour toute intervention plus complexe (travaux, panne), vous êtes prévenu et comprenez la situation. 
-									</p>
-								</div>
+								<?php
+									$i = 1;
+									foreach ($content_page['section-features']['container-features'] as $el) {
+										
+										echo '<div class="el-desc" data-illu="'.$i.'">
+												<h3>'.$el[0].'</h3>
+												<p>'.$el[1].'</p>
+											  </div>';
+
+										$i++;
+									}
+								?>
 							</div>
 						</div>
 					</div>
@@ -126,16 +120,16 @@
 					<div class="container-text">
 						<div class="container-desc">
 							<h2 class="anim__slide anim__delayMedium_1">
-								Bénéficiez de tarifs cohérents
+								<?php echo $content_page['section-tarifs']['title']; ?>
 							</h2>
 							<p class="anim__slide anim__delayMedium_2">
-								Chaque ascenseur a sa technologie, ses utilisateurs et son historique. Ils se maintiennent tous différemment.
+								<?php echo $content_page['section-tarifs']['text']; ?>
 							</p>
 						</div>
 						<div class="btn anim__slide anim__delayMedium_3">
-							<span class="btn-text">
-								Je demande une pré-visite gratuite
-							</span>
+							<a class="btn-text" <?php echo 'href="'.$content_page['section-tarifs']['container-btn'][1].'"'; ?> >
+								<?php echo $content_page['section-tarifs']['container-btn'][0]; ?>
+							</a>
 						</div>
 					</div>
 					<div class="container-li">
@@ -143,50 +137,23 @@
 							<img src="img/residentiel/tarifs/Illustration-section2.svg" alt="">
 						</div>
 						<div class="container-el">
-							<div class="el anim__slide anim__delayMedium_5">
-								<div class="icn">
-									<img src="img/residentiel/tarifs/picto1-section2.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Pré-visite gratuite</h3>
-									<p>
-										Le technicien passe environ 45 minute par appareil. Notre algorithme calcule objectivement le prix nécessaire à une bonne maintenance.
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_6">
-								<div class="icn">
-									<img src="img/residentiel/tarifs/picto2-section2.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Transparence sur les coûts</h3>
-									<p>
-										Nous expliquons et justifions nos prix, pas de coûts cachés.
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_7">
-								<div class="icn">
-									<img src="img/residentiel/tarifs/picto3-section2.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Une proposition juste et adaptée </h3>
-									<p>
-										Notre proposition inclue le contrat de maintenance et tous potentiels travaux à venir identifiés.
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_8">
-								<div class="icn">
-									<img src="img/residentiel/tarifs/picto4-section2.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Des pièces détâchées 40% moins cher en moyenne</h3>
-									<p>
-										Des pièces détachées moins cher Nous travaillons main dans la main avec les fournisseurs pour obtenir les meilleurs prix.
-									</p>
-								</div>
-							</div>
+							<?php
+								$i = 5;
+								foreach ($content_page['section-tarifs']['container-el'] as $el) {
+									
+									echo '<div class="el anim__slide anim__delayMedium_'.$i.'">
+											<div class="icn">
+												<img src="img/residentiel/tarifs/'.$el[0].'" alt="">
+											</div>
+											<div class="text">
+												<h3>'.$el[1].'</h3>
+												<p>'.$el[2].'</p>
+											</div>
+										  </div>';
+
+									$i++;
+								}
+							?>
 						</div>
 					</div>
 				</div>
@@ -196,62 +163,50 @@
 				<div class="background anim__slide anim__delayMedium_"></div>
 				<div class="wrapper">
 					<div class="container-text">
-						<h2 class="anim__slide anim__delayMedium_1">Ils nous font confiance</h2>
+						<h2 class="anim__slide anim__delayMedium_1"><?php echo $content_page['section-sponsors']['title']; ?></h2>
 						<p class="anim__slide anim__delayMedium_2">
-							Nos clients témoignent de leur passage à WeMaintain pour simplifier leurs opérations
+							<?php echo $content_page['section-sponsors']['text']; ?>
 						</p>
 					</div>
 					<div class="container-col">
 						<div class="col anim__slide anim__delayMedium_3">
-							<div class="title">Nos clients</div>
+							<div class="title"><?php echo $content_page['section-sponsors']['container-clients']['title']; ?></div>
 							<div class="content">
 								<div class="container-logo">
-									<div class="logo">
-										<img src="img/residentiel/logo/logo1-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo2-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo3-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo4-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo5-section3.svg" alt="">
-									</div>
+									<?php
+										foreach ($content_page['section-sponsors']['container-clients']['container-logos'] as $el) {
+											echo '<div class="logo">
+													<img src="img/residentiel/logo/'.$el.'" alt="">
+												  </div>';		
+										}
+									?>
 								</div>
 							</div>
 						</div>
 						<div class="col anim__slide anim__delayMedium_4">
-							<div class="title">Nos fans</div>
+							<div class="title"><?php echo $content_page['section-sponsors']['container-fans']['title']; ?></div>
 							<div class="content">
 								<div class="container-quote">
-									<q>
-										Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations
-									</q>
+									<q><?php echo $content_page['section-sponsors']['container-fans']['quote']; ?></q>
 									<div class="author">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">CEO @Google</div>
-										<img src="img/common/Twitter-black.svg" alt="">
+										<div class="name"><?php echo $content_page['section-sponsors']['container-fans']['name']; ?></div>
+										<div class="job"><?php echo $content_page['section-sponsors']['container-fans']['job']; ?></div>
+										<?php echo '<img src="img/common/'.$content_page['section-sponsors']['container-fans']['img'].'" alt="">'; ?>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col anim__slide anim__delayMedium_5">
-							<div class="title">Nos Distinctions</div>
+							<div class="title"><?php echo $content_page['section-sponsors']['container-distinction']['title']; ?></div>
 							<div class="content">
 								<div class="container-logo">
-									<div class="logo">
-										<img src="img/residentiel/logo/logo1-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo2-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo3-section3.svg" alt="">
-									</div>
+									<?php
+										foreach ($content_page['section-sponsors']['container-distinction']['container-logos'] as $el) {
+											echo '<div class="logo">
+													<img src="img/residentiel/logo/'.$el.'" alt="">
+												  </div>';		
+										}
+									?>
 								</div>
 							</div>
 						</div>
@@ -263,11 +218,13 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<img class="anim__slide anim__delayMedium_1" src="img/home/picto-section-exigez.svg" alt="">
-						<h2 class="anim__slide anim__delayMedium_2">Exigez une nouvelle expérience</h2>
+						<h2 class="anim__slide anim__delayMedium_2"><?php echo $content_page['section-experience']['title']; ?></h2>
 					</div>
 					<div class="container-btn">
 						<div class="btn anim__slide anim__delayMedium_3">
-							<span class="btn-text">Je demande une pré-visite gratuite</span>
+							<a class="btn-text" <?php echo 'href="'.$content_page['section-experience']['container-btn'][1].'"'; ?> >
+								<?php echo $content_page['section-experience']['container-btn'][0]; ?>
+							</a>
 						</div>
 					</div>
 					<img class="dots anim__fade anim__delayMedium_1" src="img/common/points1.svg" alt="">

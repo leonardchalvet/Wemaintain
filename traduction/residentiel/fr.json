@@ -1,0 +1,95 @@
+{
+	"section-cover" : {
+		"title" : "Votre bâtiment,<br>votre <span>technicien</span> dédié",
+		"text" : "Le technicien n’est plus un inconnu. Il connait la copropriété et est disponible pour vous.",
+		"container-btn" : [
+			"Commencer",
+			""
+		]
+	},
+	"section-features" : {
+		"title" : "De la visibilité sur votre ascenseur",
+		"text" : "A chaque intervention et étape, le conseil syndical et le gestionnaire sont informés en temps réel. Fini le manque de transparence.",
+		"container-features" : {
+			"0" : [
+				"Pré-visite gratuite",
+				"Cet audit visuel vous sensibilise sur l’état de votre ascenseur. Pas de mauvaise surprise sur les coûts !"
+			],
+			"1" : [
+				"Rapports d’informations",
+				"Pour chaque intervention, le technicien vous communique un compte-rendu en temps réel. Photos et commentaires à l’appui."
+			],
+			"2" : [
+				"Suivi des opérations",
+				"Pour toute intervention plus complexe (travaux, panne), vous êtes prévenu et comprenez la situation."
+			]
+		}
+
+	},
+	"section-tarifs" : {
+		"title" : "Bénéficiez de tarifs cohérents",
+		"text" : "Chaque ascenseur a sa technologie, ses utilisateurs et son historique. Ils se maintiennent tous différemment.",
+		"container-btn" : [
+			"Je demande une pré-visite gratuite",
+			""
+		],
+		"container-el" : {
+			"0" : [
+				"picto1-section2.svg",
+				"Pré-visite gratuite",
+				"Le technicien passe environ 45 minute par appareil. Notre algorithme calcule objectivement le prix nécessaire à une bonne maintenance."
+			],
+			"1" : [
+				"picto2-section2.svg",
+				"Transparence sur les coûts",
+				"Nous expliquons et justifions nos prix, pas de coûts cachés."
+			], 
+			"2" : [
+				"picto3-section2.svg",
+				"Une proposition juste et adaptée",
+				"Notre proposition inclue le contrat de maintenance et tous potentiels travaux à venir identifiés."
+			],
+			"3" : [
+				"picto4-section2.svg",
+				"Des pièces détâchées 40% moins cher en moyenne",
+				"Des pièces détachées moins cher Nous travaillons main dans la main avec les fournisseurs pour obtenir les meilleurs prix."
+			]
+		}
+	},
+	"section-sponsors" : {
+		"title" : "Ils nous font confiance",
+		"text" : "Nos clients témoignent de leur passage à WeMaintain pour simplifier leurs opérations",
+		"container-clients" : {
+			"title" : "Nos clients",
+			"container-logos" : [
+				"logo1-section3.svg",
+				"logo2-section3.svg",
+				"logo3-section3.svg",
+				"logo4-section3.svg",
+				"logo5-section3.svg"
+			]
+		},
+		"container-fans" : {
+			"title" : "Nos fans",
+			"quote" : "Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations",
+			"name" : "Barthélémy Chalvet",
+			"job" : "CEO @Google",
+			"img" : "twitter-black.svg"
+		},
+		"container-distinction" : {
+			"title" : "Nos Distinctions",
+			"container-logos" : [
+				"logo1-section3.svg",
+				"logo2-section3.svg",
+				"logo3-section3.svg"
+			]
+		}
+	},
+	"section-experience" : {
+		"title" : "Exigez une nouvelle expérience",
+		"container-btn" : [
+			"Je demande une pré-visite gratuite",
+			""
+		]
+	}
+}
