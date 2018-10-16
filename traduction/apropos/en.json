@@ -1,0 +1,94 @@
+{
+	"section-cover" : {
+		"title" : "Lorem We rise by lifting others",
+		"text" : "Lorem WeMaintain a été fondé en 2017 et est présent sur le marché depuis le 15 septembre 2017."
+	},
+	"section-valeurs" : {
+		"title" : "Lorem Nos valeurs",
+		"text" : "Lorem L'équipe partage ces trois valeurs et nous avons à coeur que notre service les reflète.",
+		"container-el" : {
+			"0" : [
+				"picto1-section1.svg",
+				"Lorem Singularité",
+				"Lorem Chaque membre de l'équipe est aligné dans ce qu'il est, fait et pense. Au quotidien, cela donne des personnes qui aiment ce qu'elles font et font ce qu'elles aiment."
+			],
+			"1" : [
+				"picto2-section1.svg",
+				"Lorem Détermination",
+				"Lorem Nous connaissons nos concurrents, leur emprise et taille et emprise et savons que la différence se fera sur l'exigence et la détermination de l'équipe."
+			],
+			"2" : [
+				"picto3-section1.svg",
+				"Lorem Attention aux autres",
+				"Lorem Les autres ne sont pas négociables. Nous faisons le choix de les considérer pleinement et d'y faire attention quotidiennement."
+			]
+		}
+	},
+	"section-numbers" : {
+		"0" : [
+			"Lorem 2017",
+			"Lorem L'aventure s'est vraiment lancée en <span>septembre 2017</span>"
+		],
+		"1" : [
+			"Lorem 13",
+			"Lorem L'équipe est composée de <span>13 salariés</span> aux expériences diverses et aux compétences variés."
+		],
+		"2" : [
+			"Lorem 2M",
+			"Lorem WeMaintain a fait une première levée de fonds de <span>2Millions</span> de dollars en février 2018 auprès de family offices."
+		]
+	},
+	"section-team" : {
+		"title" : "Lorem Notre équipe au service de l’industrie !",
+		"text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum.",
+		"container-col" : {
+			"0" : [
+				"Lorem Sous-titre 1",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt lobortis sagittis. Phasellus quis iaculis orci. Proin in interdum odio. Proin dignissim dictum luctus. Morbi nulla orci, fringilla in consectetur eget, luctus non augue. Sed interdum felis nulla, at tincidunt purus egestas quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean at nisl auctor, dignissim nisl eu, porta urna. Mauris blandit nunc non ante aliquet, eget tristique diam rutrum. Praesent non tincidunt ligula."
+			],
+			"1" : [
+				"Lorem Sous-titre 2",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt lobortis sagittis. Phasellus quis iaculis orci. Proin in interdum odio. Proin dignissim dictum luctus. Morbi nulla orci, fringilla in consectetur eget, luctus non augue. Sed interdum felis nulla, at tincidunt purus egestas quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean at nisl auctor, dignissim nisl eu, porta urna. Mauris blandit nunc non ante aliquet, eget tristique diam rutrum. Praesent non tincidunt ligula."
+			]
+		},
+		"container-grid" : {
+			"title" : "Lorem Rejoignez-nous !",
+			"text" : "Lorem Nous sommes à la recherche de profils qui partagent les mêmes valeurs et l'envie de bouger les lignes de l'industrie.",
+			"container-btn" : [
+				"Lorem Je postule",
+				""
+			]
+		}
+	},
+	"section-fondateur" : {
+		"title" : "Lorem Les trois fondateurs",
+		"text" : "Lorem Expatriés de longue date, les trois fondateurs de WeMaintain sont rentrés en France pour y lancer l'aventure.",
+		"container-el" : {
+			"0" : [
+				"andrew-bartholomew-500w.png",
+				"Lorem Benoit Dupont",
+				"Lorem CEO",
+				"Lorem Après avoir grandi entre l'Afrique, l'Allemagne et la France, Benoit a commencé sa carrière chez le leader de l'ascenseur. Il y a travaillé 10 ans, dont 2 en France et 8 en Chine. Son dernier poste l'a amené à gérer le service dans la Zone Asie du Nord.<br><br>En 2015, direction l'université de Harvard où les prémices de WeMaintain naîtront.<br> <br>En 2017, redirection la France pour montrer que l'Europe a sa place dans la compétition internationale des startups."
+			],
+			"1" : [
+				"nicole-anasenes-500w@2x.png",
+				"Lorem Tristan Foureur",
+				"Lorem CTO",
+				"Lorem Après quatre ans d'expatriation en Angleterre, Inde et États-unis à travailler sur des architectures à haut volume (Trading à haute fréquence, VoIP…). Tristan se retrouve à vivre en France et à enchaîner les allers-retours à Bangalore, en Inde, et aux Etats-Unis.<br><br>Au vu de son expérience technique, il rejoint WeMaintain en tant que CTO (Chief Technology Officer). Au quotidien, il dirige les développeurs qui compose la moitié de l'équipe de WeMaintain."
+			],
+			"2" : [
+				"kinjil-mathur-500w@2x.png",
+				"Lorem Jade Francine",
+				"Lorem COO",
+				"Lorem Suite à des études en France et à un LLM en droit chinois à l'Université de Pékin, Jade rentre en cabinet d'avocats d'affaires à Shanghai où elle accompagne des entrepreneurs à monter leur business, lever des fonds et se développer sur le marché asiatique.<br><br>Elle rejoint WeMaintain en tant que COO (Chief Operating Officer). Au quotidien, elle s'assure que tout le monde soit aligné autour de l'exécution du projet."
+			]
+		}
+	},
+	"section-joinus" : {
+		"title" : "Lorem Rejoignez l’aventure WeMaintain",
+		"container-btn" : [
+			"Lorem Candidatez",
+			""
+		]
+	}
+}

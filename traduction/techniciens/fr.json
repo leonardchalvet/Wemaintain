@@ -1,0 +1,93 @@
+{
+	"section-cover" : {
+		"title" : "<span>Techniciens</span>, captez la valeur de votre travail",
+		"text" : "Devenez indépendant grâce à la technologie et rejoignez une communauté qui vous ressemble",
+		"container-btn" : [
+			"Commencer",
+			""
+		]
+	},
+	"section-features" : {
+		"title": "Rejoignez la communauté WeMaintain",
+		"text" : "Aux Etats-Unis un technicien gagne en moyenne [63 000€/an]. Et si on revalorisait votre métier en France?",
+		"container-el" : {
+			"0" : [
+				"picto1-section1.svg",
+				"Devenez votre propre patron",
+				"Nous vous accompagnons dans toutes les démarches"
+			],
+			"1" : [
+				"picto2-section1.svg",
+				"La technologie à votre service",
+				"Une application adaptée à vos besoins vous accompagne pour gérer votre activité au quotidien."
+			],
+			"2" : [
+				"picto3-section1.svg",
+				"Vous êtes entouré",
+				"Exigence, compétences et valeurs lient la communauté"
+			]
+		},
+		"container-btn" : [
+			"Je veux en savoir plus",
+			""
+		]
+	},
+	"section-signup" : {
+		"title" : "Une solution pensée pour vous",
+		"text" : "Notre but: vous faire gagner du temps et simplifier chaque étape.",
+		"container-nav" : [
+			"Création de votre société",
+			"Vos premiers pas",
+			"Votre parc",
+			"Communauté"
+		],
+		"container-desc" : [
+			"WeMaintain vous accompagne dans la création de votre statut pour devenir indépendant",
+			"Vous êtes maintenant indépendant, mais pas seul. WeMaintain vous forme à la prise en main de l'application et à la relation client.",
+			"Lorsqu'un client créé une demande de maintenance dans le périmètre que vous avez défini, vous pouvez y répondre. Ainsi vous choisissez et maintenez vos ascenseurs.",
+			"Vous faîtes en relation continue avec les autres techniciens de la communauté WeMaintain via des outils de communication et des rencontres chaque semaine."			
+		]
+	},
+	"section-ots" : {
+		"title" : "Comment ça marche ?",
+		"text" : "Créez votre première demande de maintenance en seulement trois minutes",
+		"container-el" : {
+			"0" : [
+				"Des outils métiers pour vous accompagner",
+				"Notre application vous permet de gérer votre activité en phase avec la réglementation et d’effectuer efficacement vos visites de maintenance."
+			],
+			"1" : [
+				"Gérez votre emploi du temps",
+				"Notre technologie gère et optimise votre emploi du temps, mais vous contrôlez tout : vous choisissez vos immeubles et vos horaires de travail, nous nous occupons du reste."
+			]
+		}
+	},
+	"section-services" : {
+		"title" : "Sécurité",
+		"text" : "Vous exercez un métier à risque : votre sécurité n'a pas de prix",
+		"container-el" : {
+			"0" : [
+				"picto1-section4.svg",
+				"SOS",
+				"Une fonction SOS intégrée à votre application est activable à tout moment"
+			],
+			"1" : [
+				"picto2-section4.svg",
+				"Protection du travailleur isolé",
+				"Nos équipes interviennent lorsque vous restez hors ligne trop longtemps lors d’une visite."
+			],
+			"2" : [
+				"picto3-section4.svg",
+				"EPI",
+				"Nous vous fournissons tout l’équipement nécessaire pour travailler en sécurité"
+			]
+		}
+	},
+	"section-experience" : {
+		"title" : "Rien ne vous retient, vivez autrement votre métier",
+		"container-btn" : [
+			"Je veux rencontrer WeMaintain",
+			""
+		]
+	}
+}

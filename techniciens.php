@@ -31,15 +31,15 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h1 class="anim__slide anim__delayMedium_1">	
-							<span>Techniciens</span>, captez la valeur de votre travail
+							<?php echo $content_page['section-cover']['title']; ?>
 						</h1>
 						<p class="anim__slide anim__delayMedium_2">
-							Devenez indépendant grâce à la technologie et rejoignez une communauté qui vous ressemble
+							<?php echo $content_page['section-cover']['text']; ?>
 						</p>
 						<div class="container-btn anim__slide anim__delayMedium_3">
-							<a class="btn">
+							<a class="btn" <?php echo 'href="'.$content_page['section-cover']['container-btn'][1].'"'; ?> >
 								<span class="btn-text">
-									Commencer
+									<?php echo $content_page['section-cover']['container-btn'][0]; ?>
 								</span>
 							</a>
 						</div>
@@ -58,51 +58,33 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h2 class="anim__slide anim__delayMedium_1">
-							Rejoignez la communauté WeMaintain
+							<?php echo $content_page['section-features']['title']; ?>
 						</h2>
 						<p class="anim__slide anim__delayMedium_2">
-							Aux Etats-Unis un technicien gagne en moyenne [63 000€/an]. Et si on revalorisait votre métier en France?
+							<?php echo $content_page['section-features']['text']; ?>
 						</p>
 					</div>
 					<div class="container-el">
-						<div class="el anim__slide anim__delayMedium_3">
-							<div class="icn">
-								<img src="img/techniciens/features/picto1-section1.svg" alt="">
-							</div>
-							<h3>
-								Devenez votre propre patron
-							</h3>
-							<p>
-								Nous vous accompagnons dans toutes les démarches
-							</p>
-						</div>
-						<div class="el anim__slide anim__delayMedium_4">
-							<div class="icn">
-								<img src="img/techniciens/features/picto2-section1.svg" alt="">
-							</div>
-							<h3>
-								La technologie à votre service
-							</h3>
-							<p>
-								Une application adaptée à vos besoins vous accompagne pour gérer votre activité au quotidien.
-							</p>
-						</div>
-						<div class="el anim__slide anim__delayMedium_5">
-							<div class="icn">
-								<img src="img/techniciens/features/picto3-section1.svg" alt="">
-							</div>
-							<h3>
-								Vous êtes entouré
-							</h3>
-							<p>
-								Exigence, compétences et valeurs lient la communauté
-							</p>
-						</div>
+						<?php
+							$i = 5;
+							foreach ($content_page['section-features']['container-el'] as $el) {
+								
+								echo '<div class="el anim__slide anim__delayMedium_'.$i.'">
+										<div class="icn">
+											<img src="img/techniciens/features/'.$el[0].'" alt="">
+										</div>
+										<h3>'.$el[1].'</h3>
+										<p>'.$el[2].'</p>
+									  </div>';
+
+								$i++;
+							}
+						?>
 					</div>
 					<div class="container-action anim__slide anim__delayMedium_7">
-						<a href="" class="btn">
+						<a class="btn" <?php echo 'href="'.$content_page['section-features']['container-btn'][1].'"'; ?> >
 							<span class="btn-text">
-								Je veux en savoir plus
+								<?php echo $content_page['section-features']['container-btn'][0]; ?>
 							</span>
 						</a>
 					</div>
@@ -113,10 +95,10 @@
 				<div class="wrapper">
 					<div class="container-text container__anim">
 						<h2 class="anim__slide anim__delayMedium_1">
-							Une solution pensée pour vous
+							<?php echo $content_page['section-signup']['title']; ?>
 						</h2>
 						<p class="anim__slide anim__delayMedium_2">
-							Notre but: vous faire gagner du temps et simplifier chaque étape.
+							<?php echo $content_page['section-signup']['text']; ?>
 						</p>
 					</div>
 					<div class="container-tsr">
@@ -146,10 +128,10 @@
 						</div>
 						<div class="container-nav">
 							<div class="container-el">
-								<div class="el" data-illu="1" >Création de votre société</div>
-								<div class="el" data-illu="2">Vos premiers pas</div>
-								<div class="el" data-illu="3">Votre parc</div>
-								<div class="el" data-illu="4">Communauté</div>
+								<div class="el" data-illu="1" ><?php echo $content_page['section-signup']['container-nav'][0]; ?></div>
+								<div class="el" data-illu="2"><?php echo $content_page['section-signup']['container-nav'][1]; ?></div>
+								<div class="el" data-illu="3"><?php echo $content_page['section-signup']['container-nav'][2]; ?></div>
+								<div class="el" data-illu="4"><?php echo $content_page['section-signup']['container-nav'][3]; ?></div>
 							</div>
 							<div class="container-bar">
 								<div class="triangle-left"></div>
@@ -158,16 +140,16 @@
 						</div>
 						<div class="container-desc">
 							<p class="desc-1">
-								WeMaintain vous accompagne dans la création de votre statut pour devenir indépendant
+								<?php echo $content_page['section-signup']['container-desc'][0]; ?>
 							</p>
 							<p class="desc-2">
-								Vous êtes maintenant indépendant, mais pas seul. WeMaintain vous forme à la prise en main de l'application et à la relation client.
+								<?php echo $content_page['section-signup']['container-desc'][1]; ?>
 							</p>
 							<p class="desc-3">
-								Lorsqu'un client créé une demande de maintenance dans le périmètre que vous avez défini, vous pouvez y répondre. Ainsi vous choisissez et maintenez vos ascenseurs.
+								<?php echo $content_page['section-signup']['container-desc'][2]; ?>
 							</p>
 							<p class="desc-4">
-								Vous faîtes en relation continue avec les autres techniciens de la communauté WeMaintain via des outils de communication et des rencontres chaque semaine.
+								<?php echo $content_page['section-signup']['container-desc'][3]; ?>
 							</p>
 						</div>
 					</div>
@@ -178,19 +160,19 @@
 				<div class="background"></div>
 				<div class="wrapper">
 					<div class="container-head container__anim">
-						<h2 class="anim__slide anim__delayMedium_1">Comment ça marche ?</h2>
+						<h2 class="anim__slide anim__delayMedium_1"><?php echo $content_page['section-ots']['title']; ?></h2>
 						<p class="anim__slide anim__delayMedium_2">
-							Créez votre première demande de maintenance en seulement trois minutes
+							<?php echo $content_page['section-ots']['text']; ?>
 						</p>
 					</div>
 					<div class="container-el">
 						<div class="el container__anim">
 							<div class="container-text">
 								<h3 class="anim__slide anim__delaySmall_1">
-									Des outils métiers pour vous accompagner
+									<?php echo $content_page['section-ots']['container-el']['0'][0]; ?>
 								</h3>
 								<p class="anim__slide anim__delaySmall_2">
-									Notre application vous permet de gérer votre activité en phase avec la réglementation et d’effectuer efficacement vos visites de maintenance.
+									<?php echo $content_page['section-ots']['container-el']['0'][1]; ?>
 								</p>
 							</div>
 							<div class="container-illu">
@@ -203,10 +185,10 @@
 						<div class="el container__anim">
 							<div class="container-text">
 								<h3 class="anim__slide anim__delaySmall_1">
-									Gérez votre emploi du temps
+									<?php echo $content_page['section-ots']['container-el']['1'][0]; ?>
 								</h3>
 								<p class="anim__slide anim__delaySmall_2">
-									Notre technologie gère et optimise votre emploi du temps, mais vous contrôlez tout : vous choisissez vos immeubles et vos horaires de travail, nous nous occupons du reste.
+									<?php echo $content_page['section-ots']['container-el']['1'][1]; ?>
 								</p>
 							</div>
 							<div class="container-illu">
@@ -224,10 +206,10 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h2 class="anim__slide anim__delayMedium_1">
-							Sécurité
+							<?php echo $content_page['section-services']['title']; ?>
 						</h2>
 						<p class="anim__slide anim__delayMedium_2">
-							Vous exercez un métier à risque : votre sécurité n'a pas de prix
+							<?php echo $content_page['section-services']['text']; ?>
 						</p>
 					</div>
 					<div class="container-li">
@@ -235,39 +217,23 @@
 							<img src="img/techniciens/services/Illustration.svg" alt="">
 						</div>
 						<div class="container-el">
-							<div class="el anim__slide anim__delayMedium_5">
-								<div class="icn">
-									<img src="img/techniciens/services/picto1-section4.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>SOS</h3>
-									<p>
-										Une fonction SOS intégrée à votre application est activable à tout moment
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_6">
-								<div class="icn">
-									<img src="img/techniciens/services/picto2-section4.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Protection du travailleur isolé</h3>
-									<p>
-										Nos équipes interviennent lorsque vous restez hors ligne trop longtemps lors d’une visite.
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_7">
-								<div class="icn">
-									<img src="img/techniciens/services/picto3-section4.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>EPI</h3>
-									<p>
-										Nous vous fournissons tout l’équipement nécessaire pour travailler en sécurité
-									</p>
-								</div>
-							</div>
+							<?php
+								$i = 5;
+								foreach ($content_page['section-services']['container-el'] as $el) {
+	
+									echo '<div class="el anim__slide anim__delayMedium_'.$i.'">
+											<div class="icn">
+												<img src="img/techniciens/services/'.$el[0].'" alt="">
+											</div>
+											<div class="text">
+												<h3>'.$el[1].'</h3>
+												<p>'.$el[2].'</p>
+											</div>
+										  </div>';
+
+									$i++;
+								}
+							?>
 						</div>
 					</div>
 				</div>
@@ -277,11 +243,13 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<img class="anim__slide anim__delayMedium_1" src="img/home/picto-section-exigez.svg" alt="">
-						<h2 class="anim__slide anim__delayMedium_2">Rien ne vous retient, vivez autrement votre métier</h2>
+						<h2 class="anim__slide anim__delayMedium_2"><?php echo $content_page['section-experience']['title']; ?></h2>
 					</div>
 					<div class="container-btn">
 						<div class="btn anim__slide anim__delayMedium_3">
-							<span class="btn-text">Je veux rencontrer WeMaintain</span>
+							<a class="btn-text" <?php echo 'href="'.$content_page['section-experience']['container-btn'][1].'"'; ?> >
+								<?php echo $content_page['section-experience']['container-btn'][0]; ?>
+							</a>
 						</div>
 					</div>
 					<img class="dots anim__fade anim__delayMedium_1" src="img/common/points1.svg" alt="">

@@ -1,0 +1,93 @@
+{
+	"section-cover" : {
+		"title" : "<span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit",
+		"text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"container-btn" : [
+			"Lorem",
+			""
+		]
+	},
+	"section-features" : {
+		"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"container-el" : {
+			"0" : [
+				"picto1-section1.svg",
+				"Lorem ipsum dolor sit amet",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			],
+			"1" : [
+				"picto2-section1.svg",
+				"Lorem ipsum dolor sit amet",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			],
+			"2" : [
+				"picto3-section1.svg",
+				"Lorem ipsum dolor sit amet",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			]
+		},
+		"container-btn" : [
+			"Lorem ipsum",
+			""
+		]
+	},
+	"section-signup" : {
+		"title" : "Lorem ipsum dolor sit amet",
+		"text" : "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+		"container-nav" : [
+			"Lorem ipsum dolor sit amet",
+			"Lorem ipsum dolor sit amet",
+			"Lorem ipsum dolor sit amet",
+			"Lorem ipsum dolor sit amet"
+		],
+		"container-desc" : [
+			"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+			"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+			"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+			"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"			
+		]
+	},
+	"section-ots" : {
+		"title" : "Lorem ipsum",
+		"text" : "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+		"container-el" : {
+			"0" : [
+				"Lorem ipsum dolor sit amet",
+				"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+			],
+			"1" : [
+				"Lorem ipsum dolor sit amet",
+				"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+			]
+		}
+	},
+	"section-services" : {
+		"title" : "Lorem",
+		"text" : "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+		"container-el" : {
+			"0" : [
+				"picto1-section4.svg",
+				"Lorem",
+				"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+			],
+			"1" : [
+				"picto2-section4.svg",
+				"Lorem ipsum dolor sit amet",
+				"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+			],
+			"2" : [
+				"picto3-section4.svg",
+				"Lorem",
+				"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"
+			]
+		}
+	},
+	"section-experience" : {
+		"title" : "Lorem ipsum dolor sit ametr",
+		"container-btn" : [
+			"Lorem ipsum dolor sit amet",
+			""
+		]
+	}
+}

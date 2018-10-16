@@ -1,0 +1,118 @@
+{
+	"section-cover" : {
+		"title" : "Lorem ipsum dolor sit amet, <span>Lorem</span>",
+		"text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"container-btn" : [
+			"Lorem",
+			""
+		]
+	},
+	"section-features" : {
+		"title" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"container-el" : {
+			"0" : [
+				"picto1-section1.svg",
+				"Lorem",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			],
+			"1" : [
+				"picto2-section1.svg",
+				"Lorem",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+			],
+			"2" : [
+				"picto3-section1.svg",
+				"Lorem",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			],
+			"3" : [
+				"picto4-section1.svg",
+				"Lorem",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			]
+		},
+		"container-btn" : [
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			""
+		]
+	},
+	"section-signup" : {
+		"title" : "Lorem ipsum dolor sit amet",
+		"text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"container-nav" : [
+			"Lorem ipsum",
+			"Lorem impsum",
+			"Lorem impsum",
+			"Lorem impsum"
+		],
+		"container-desc" : [
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+		]
+	},
+	"section-services" : {
+		"title" : "Lorem ipsum dolor sit amet",
+		"text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"container-el" : {
+			"0" : [
+				"picto1-section3.svg",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			],
+			"1" : [
+				"picto2-section3.svg",
+				"Lorem ipsum dolor sit amet",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			],
+			"2" : [
+				"picto3-section3.svg",
+				"Lorem",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			],
+			"3" : [
+				"picto4-section3.svg",
+				"Lorem",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+			]
+		}
+	},
+	"section-sponsors" : {
+		"title" : "Lorem ipsum dolor sit amet",
+		"text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"container-clients" : {
+			"title" : "Lorem",
+			"container-logos" : [
+				"logo1-section3.svg",
+				"logo2-section3.svg",
+				"logo3-section3.svg",
+				"logo4-section3.svg",
+				"logo5-section3.svg"
+			]
+		},
+		"container-fans" : {
+			"title" : "Lorem",
+			"quote" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+			"name" : "Lorem impsum",
+			"job" : "Lorem impsum",
+			"img" : "twitter-black.svg"
+		},
+		"container-distinction" : {
+			"title" : "Lorem impsum",
+			"container-logos" : [
+				"logo1-section3.svg",
+				"logo2-section3.svg",
+				"logo3-section3.svg"
+			]
+		}
+	},
+	"section-experience" : {
+		"title" : "Lorem ipsum dolor sit amet",
+		"container-btn" : [
+			"Lorem ipsum dolor sit amet",
+			""
+		]
+	}
+}

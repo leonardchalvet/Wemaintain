@@ -32,15 +32,15 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h1 class="anim__slide anim__delayMedium_1">
-							Simplifiez la gestion de vos <span>ascenseurs</span>
+							<?php echo $content_page['section-cover']['title']; ?>
 						</h1>
 						<p class="anim__slide anim__delayMedium_2">
-							Notre plateforme vous offre tous les outils pour contrôler et suivre l'état de votre parc.
+							<?php echo $content_page['section-cover']['text']; ?>
 						</p>
 						<div class="container-btn anim__slide anim__delayMedium_3">
-							<a class="btn">
+							<a class="btn" <?php echo 'href="'.$content_page['section-cover']['container-btn'][1].'"'; ?> >
 								<span class="btn-text">
-									Commencer
+									<?php echo $content_page['section-cover']['container-btn'][0]; ?>
 								</span>
 							</a>
 						</div>
@@ -58,62 +58,33 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h2 class="anim__slide anim__delayMedium_1">
-							Un modèle innovant pour des prestations de qualité
+							<?php echo $content_page['section-features']['title']; ?>
 						</h2>
 						<p class="anim__slide anim__delayMedium_2">
-							WeMaintain combine l'expertise des meilleurs techniciens et une plateforme de suivi pour simplifier votre quotidien
+							<?php echo $content_page['section-features']['text']; ?>
 						</p>
 					</div>
 					<div class="container-el">
-						<div class="el anim__slide anim__delayMedium_3">
-							<div class="icn">
-								<img src="img/tertiaire/features/picto1-section1.svg" alt="">
-							</div>
-							<h3>
-								Simplicité
-							</h3>
-							<p>
-								Demandes de maintenance et de travaux, signature en ligne des contrats, suivi des prestations
-							</p>
-						</div>
-						<div class="el anim__slide anim__delayMedium_4">
-							<div class="icn">
-								<img src="img/tertiaire/features/picto2-section1.svg" alt="">
-							</div>
-							<h3>
-								Réactivité
-							</h3>
-							<p>
-								Des techniciens proches et des pièces détachées disponibles.
-							</p>
-						</div>
-						<div class="el anim__slide anim__delayMedium_5">
-							<div class="icn">
-								<img src="img/tertiaire/features/picto3-section1.svg" alt="">
-							</div>
-							<h3>
-								Sécurité
-							</h3>
-							<p>
-								Un technicien responsabilisé par site, pour moins de pannes et davantage de sécurité 
-							</p>
-						</div>
-						<div class="el anim__slide anim__delayMedium_6">
-							<div class="icn">
-								<img src="img/tertiaire/features/picto4-section1.svg" alt="">
-							</div>
-							<h3>
-								Transparence
-							</h3>
-							<p>
-								Prix, opérations et suivi. Vous savez tout !
-							</p>
-						</div>
+						<?php
+							$i = 3;
+							foreach ($content_page['section-features']['container-el'] as $el) {
+								
+								echo '<div class="el anim__slide anim__delayMedium_'.$i.'">
+										<div class="icn">
+											<img src="img/tertiaire/features/'.$el[0].'" alt="">
+										</div>
+										<h3>'.$el[1].'</h3>
+										<p>'.$el[2].'</p>
+									  </div>';
+
+								$i++;
+							}
+						?>
 					</div>
 					<div class="container-action anim__slide anim__delayMedium_7">
-						<a href="" class="btn">
+						<a class="btn" <?php echo 'href="'.$content_page['section-features']['container-btn'][1].'"'; ?> >
 							<span class="btn-text">
-								Je demande une pré-visite gratuite
+								<?php echo $content_page['section-features']['container-btn'][0]; ?>
 							</span>
 						</a>
 					</div>
@@ -124,10 +95,10 @@
 				<div class="wrapper">
 					<div class="container-text container__anim">
 						<h2 class="anim__slide anim__delayMedium_1">
-							Une solution pensée pour vous
+							<?php echo $content_page['section-signup']['title']; ?>
 						</h2>
 						<p class="anim__slide anim__delayMedium_2">
-							Notre but: vous faire gagner du temps et simplifier chaque étape.
+							<?php echo $content_page['section-signup']['text']; ?>
 						</p>
 					</div>
 					<div class="container-tsr">
@@ -159,10 +130,10 @@
 						</div>
 						<div class="container-nav">
 							<div class="container-el">
-								<div class="el" data-illu="1" >Créez un compte</div>
-								<div class="el" data-illu="2">Bénéficiez d’une pré-visite</div>
-								<div class="el" data-illu="3">Signature du contrat</div>
-								<div class="el" data-illu="4">Suivi en temps réel</div>
+								<div class="el" data-illu="1" ><?php echo $content_page['section-signup']['container-nav'][0]; ?></div>
+								<div class="el" data-illu="2"><?php echo $content_page['section-signup']['container-nav'][1]; ?></div>
+								<div class="el" data-illu="3"><?php echo $content_page['section-signup']['container-nav'][2]; ?></div>
+								<div class="el" data-illu="4"><?php echo $content_page['section-signup']['container-nav'][3]; ?></div>
 							</div>
 							<div class="container-bar">
 								<div class="triangle-left"></div>
@@ -171,16 +142,16 @@
 						</div>
 						<div class="container-desc">
 							<p class="desc-1">
-								Créez votre compte sur WeMaintain, renseignez vos premiers ascenseurs et effectuez votre première demande de maintenance en quelques minutes seulement.
+								<?php echo $content_page['section-signup']['container-desc'][0]; ?>
 							</p>
 							<p class="desc-2">
-								Un expert de la communauté WeMaintain se déplace et effectue une pré-visite entièrement gratuite sur votre site qui vous donne un état des lieux complet de l'état de vos appareils. Nous vous transmettons ensuite une proposition commerciale compétitive et transparente.
+								<?php echo $content_page['section-signup']['container-desc'][1]; ?>
 							</p>
 							<p class="desc-3">
-								Signez en ligne si vous le souhaitez et recevez une copie du contrat directement dans votre boîte mail.
+								<?php echo $content_page['section-signup']['container-desc'][2]; ?>
 							</p>
 							<p class="desc-4">
-								Restez informés en temps réel de l'évolution de l'état de votre parc, des incidents, des coûts et des opérations.
+								<?php echo $content_page['section-signup']['container-desc'][3]; ?>
 							</p>
 						</div>
 					</div>
@@ -193,59 +164,32 @@
 					<div class="container-text">
 						<div class="container-desc">
 							<h2 class="anim__slide anim__delayMedium_1">
-								Un service sur mesure
+								<?php echo $content_page['section-services']['title']; ?>
 							</h2>
 							<p class="anim__slide anim__delayMedium_2">
-								Foncières, Asset / Property / Facility managers, Hôtels, Commerces, nous savons répondre à vos attentes
+								<?php echo $content_page['section-services']['text']; ?>
 							</p>
 						</div>
 					</div>
 					<div class="container-li">
 						<div class="container-el">
-							<div class="el anim__slide anim__delayMedium_5">
-								<div class="icn">
-									<img src="img/tertiaire/services/picto1-section3.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Accompagnement du bureau de contrôle</h3>
-									<p>
-										WeMaintain travaille main dans la main avec les acteurs de l'industrie
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_6">
-								<div class="icn">
-									<img src="img/tertiaire/services/picto2-section3.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Temps de dépannage personnalisé</h3>
-									<p>
-										Nous garantissons des temps d'intervention réduits pour vos sites stratégiques
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_7">
-								<div class="icn">
-									<img src="img/tertiaire/services/picto3-section3.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Reporting</h3>
-									<p>
-										Une vue claire sur votre patrimoine en gestion
-									</p>
-								</div>
-							</div>
-							<div class="el anim__slide anim__delayMedium_8">
-								<div class="icn">
-									<img src="img/tertiaire/services/picto4-section3.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Grands comptes</h3>
-									<p>
-										Adaptation aux conditions de vos contrats-cadres
-									</p>
-								</div>
-							</div>
+							<?php
+								$i = 5;
+								foreach ($content_page['section-services']['container-el'] as $el) {
+									
+									echo '<div class="el anim__slide anim__delayMedium_'.$i.'">
+											<div class="icn">
+												<img src="img/tertiaire/services/'.$el[0].'" alt="">
+											</div>
+											<div class="text">
+												<h3>'.$el[1].'</h3>
+												<p>'.$el[2].'</p>
+											</div>
+										  </div>';
+
+									$i++;
+								}
+							?>
 						</div>
 						<div class="container_illu anim__slide anim__delayMedium_4">
 							<img src="img/tertiaire/services/Illustration.svg" alt="">
@@ -258,62 +202,50 @@
 				<div class="background anim__slide anim__delayMedium_"></div>
 				<div class="wrapper">
 					<div class="container-text">
-						<h2 class="anim__slide anim__delayMedium_1">Ils nous font confiance</h2>
+						<h2 class="anim__slide anim__delayMedium_1"><?php echo $content_page['section-sponsors']['title']; ?></h2>
 						<p class="anim__slide anim__delayMedium_2">
-							Nos clients témoignent de leur passage à WeMaintain pour simplifier leurs opérations
+							<?php echo $content_page['section-sponsors']['text']; ?>
 						</p>
 					</div>
 					<div class="container-col">
 						<div class="col anim__slide anim__delayMedium_3">
-							<div class="title">Nos clients</div>
+							<div class="title"><?php echo $content_page['section-sponsors']['container-clients']['title']; ?></div>
 							<div class="content">
 								<div class="container-logo">
-									<div class="logo">
-										<img src="img/residentiel/logo/logo1-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo2-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo3-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo4-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo5-section3.svg" alt="">
-									</div>
+									<?php
+										foreach ($content_page['section-sponsors']['container-clients']['container-logos'] as $el) {
+											echo '<div class="logo">
+													<img src="img/residentiel/logo/'.$el.'" alt="">
+												  </div>';		
+										}
+									?>
 								</div>
 							</div>
 						</div>
 						<div class="col anim__slide anim__delayMedium_4">
-							<div class="title">Nos fans</div>
+							<div class="title"><?php echo $content_page['section-sponsors']['container-fans']['title']; ?></div>
 							<div class="content">
 								<div class="container-quote">
-									<q>
-										Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations
-									</q>
+									<q><?php echo $content_page['section-sponsors']['container-fans']['quote']; ?></q>
 									<div class="author">
-										<div class="name">Barthélémy Chalvet</div>
-										<div class="job">CEO @Google</div>
-										<img src="img/common/Twitter-black.svg" alt="">
+										<div class="name"><?php echo $content_page['section-sponsors']['container-fans']['name']; ?></div>
+										<div class="job"><?php echo $content_page['section-sponsors']['container-fans']['job']; ?></div>
+										<?php echo '<img src="img/common/'.$content_page['section-sponsors']['container-fans']['img'].'" alt="">'; ?>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col anim__slide anim__delayMedium_5">
-							<div class="title">Nos Distinctions</div>
+							<div class="title"><?php echo $content_page['section-sponsors']['container-distinction']['title']; ?></div>
 							<div class="content">
 								<div class="container-logo">
-									<div class="logo">
-										<img src="img/residentiel/logo/logo1-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo2-section3.svg" alt="">
-									</div>
-									<div class="logo">
-										<img src="img/residentiel/logo/logo3-section3.svg" alt="">
-									</div>
+									<?php
+										foreach ($content_page['section-sponsors']['container-distinction']['container-logos'] as $el) {
+											echo '<div class="logo">
+													<img src="img/residentiel/logo/'.$el.'" alt="">
+												  </div>';		
+										}
+									?>
 								</div>
 							</div>
 						</div>
@@ -325,17 +257,19 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<img class="anim__slide anim__delayMedium_1" src="img/home/picto-section-exigez.svg" alt="">
-						<h2 class="anim__slide anim__delayMedium_2">Exigez une nouvelle expérience</h2>
+						<h2 class="anim__slide anim__delayMedium_2"><?php echo $content_page['section-experience']['title']; ?></h2>
 					</div>
 					<div class="container-btn">
 						<div class="btn anim__slide anim__delayMedium_3">
-							<span class="btn-text">Je demande une pré-visite gratuite</span>
+							<a class="btn-text" <?php echo 'href="'.$content_page['section-experience']['container-btn'][1].'"'; ?> >
+								<?php echo $content_page['section-experience']['container-btn'][0]; ?>
+							</a>
 						</div>
 					</div>
 					<img class="dots anim__fade anim__delayMedium_1" src="img/common/points1.svg" alt="">
 				</div>
 			</section>
-
+			
 		</main>
 
 		<?php

@@ -1,0 +1,118 @@
+{
+	"section-cover" : {
+		"title" : "Simplifiez la gestion de vos <span>ascenseurs</span>",
+		"text" : "Notre plateforme vous offre tous les outils pour contrôler et suivre l'état de votre parc.",
+		"container-btn" : [
+			"Commencer",
+			""
+		]
+	},
+	"section-features" : {
+		"title" : "Un modèle innovant pour des prestations de qualité",
+		"text" : "WeMaintain combine l'expertise des meilleurs techniciens et une plateforme de suivi pour simplifier votre quotidien",
+		"container-el" : {
+			"0" : [
+				"picto1-section1.svg",
+				"Simplicité",
+				"Demandes de maintenance et de travaux, signature en ligne des contrats, suivi des prestations"
+			],
+			"1" : [
+				"picto2-section1.svg",
+				"Réactivité",
+				"Des techniciens proches et des pièces détachées disponibles."
+			],
+			"2" : [
+				"picto3-section1.svg",
+				"Sécurité",
+				"Un technicien responsabilisé par site, pour moins de pannes et davantage de sécurité "
+			],
+			"3" : [
+				"picto4-section1.svg",
+				"Transparence",
+				"Prix, opérations et suivi. Vous savez tout !"
+			]
+		},
+		"container-btn" : [
+			"Je demande une pré-visite gratuite",
+			""
+		]
+	},
+	"section-signup" : {
+		"title" : "Une solution pensée pour vous",
+		"text" : "Notre but: vous faire gagner du temps et simplifier chaque étape.",
+		"container-nav" : [
+			"Créez un compte",
+			"Bénéficiez d’une pré-visite",
+			"Signature du contrat",
+			"Suivi en temps réel"
+		],
+		"container-desc" : [
+			"Créez votre compte sur WeMaintain, renseignez vos premiers ascenseurs et effectuez votre première demande de maintenance en quelques minutes seulement.",
+			"Un expert de la communauté WeMaintain se déplace et effectue une pré-visite entièrement gratuite sur votre site qui vous donne un état des lieux complet de l'état de vos appareils. Nous vous transmettons ensuite une proposition commerciale compétitive et transparente.",
+			"Signez en ligne si vous le souhaitez et recevez une copie du contrat directement dans votre boîte mail.",
+			"Restez informés en temps réel de l'évolution de l'état de votre parc, des incidents, des coûts et des opérations."
+		]
+	},
+	"section-services" : {
+		"title" : "Un service sur mesure",
+		"text" : "Foncières, Asset / Property / Facility managers, Hôtels, Commerces, nous savons répondre à vos attentes",
+		"container-el" : {
+			"0" : [
+				"picto1-section3.svg",
+				"Accompagnement du bureau de contrôle",
+				"WeMaintain travaille main dans la main avec les acteurs de l'industrie"
+			],
+			"1" : [
+				"picto2-section3.svg",
+				"Temps de dépannage personnalisé",
+				"Nous garantissons des temps d'intervention réduits pour vos sites stratégiques"
+			],
+			"2" : [
+				"picto3-section3.svg",
+				"Reporting",
+				"Une vue claire sur votre patrimoine en gestion"
+			],
+			"3" : [
+				"picto4-section3.svg",
+				"Grands compte",
+				"Adaptation aux conditions de vos contrats-cadres"
+			]
+		}
+	},
+	"section-sponsors" : {
+		"title" : "Ils nous font confiance",
+		"text" : "Nos clients témoignent de leur passage à WeMaintain pour simplifier leurs opérations",
+		"container-clients" : {
+			"title" : "Nos clients",
+			"container-logos" : [
+				"logo1-section3.svg",
+				"logo2-section3.svg",
+				"logo3-section3.svg",
+				"logo4-section3.svg",
+				"logo5-section3.svg"
+			]
+		},
+		"container-fans" : {
+			"title" : "Nos fans",
+			"quote" : "Grâce à l’application mobile, je ne perds plus mon temps à gérer la paperasse. La plateforme s’adapte en temps réel à mon emploi du temps et ma localisations",
+			"name" : "Barthélémy Chalvet",
+			"job" : "CEO @Google",
+			"img" : "twitter-black.svg"
+		},
+		"container-distinction" : {
+			"title" : "Nos Distinctions",
+			"container-logos" : [
+				"logo1-section3.svg",
+				"logo2-section3.svg",
+				"logo3-section3.svg"
+			]
+		}
+	},
+	"section-experience" : {
+		"title" : "Exigez une nouvelle expérience",
+		"container-btn" : [
+			"Je demande une pré-visite gratuite",
+			""
+		]
+	}
+}

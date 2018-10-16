@@ -597,6 +597,9 @@ main{
 			text-align: center;
 			.btn{
 				@include styleButton;
+				a {
+					text-decoration: none;
+				}
 			}
 		}
 		.dots{
