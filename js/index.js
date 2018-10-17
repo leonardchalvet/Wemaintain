@@ -21,8 +21,9 @@ $(window).on('load', function() {
 				}
 			}
 
-			$(container + ':nth-child('+num+')').addClass('active');
-
+			setTimeout(function(){
+				$(container + ':nth-child('+num+')').addClass('active');
+			}, 500);
 		}, 500)
 	}
 	
@@ -99,14 +100,16 @@ $(window).on('load', function() {
 					}
 				}
 
-				if(md == 3) {
-					for( let pos = num ; pos >= (num - 2) ; pos-- ) {
-						$(container + ':nth-child('+pos+')').addClass('active');
+				setTimeout(function(){
+					if(md == 3) {
+						for( let pos = num ; pos >= (num - 2) ; pos-- ) {
+							$(container + ':nth-child('+pos+')').addClass('active');
+						}
 					}
-				}
-				else if(md = 1) {
-					$(container + ':nth-child('+num+')').addClass('active');
-				}
+					else if(md = 1) {
+						$(container + ':nth-child('+num+')').addClass('active');
+					}
+				}, 250);
 
 			}, 1000)
 		}
@@ -174,27 +177,4 @@ $(window).on('load', function() {
 	});
 
 	/* END TEAM ANIM */
-
-	/* SCROLL */
-	$window.scroll(function() {
-
-	    const offsetTopSectonTeam  = $('#section-team').offset().top;
-	    const offsetTopSectonQuote = $('#section-quotes').offset().top;
-		const wHeight = $( window ).height();
-
-		/* A FINIR 
-	    if ( $window.scrollTop() + (wHeight/2) >= offsetTopSectonTeam ) {
-	    	if(!$('#section-team').hasClass('reach') || !firstanimTeam) {
-	    		animTeam(numTeam); 
-	    		firstanimTeam = 1;
-	    	}
-	    }
-
-	    if ( $window.scrollTop() + (wHeight/2) >= offsetTopSectonQuote ) {
-	    	if(!$('#section-quotes').hasClass('reach') || !firstAnimQuote) {
-	    		animQuote(numQuote);
-	    		firstAnimQuote = 1;
-	    	}
-	    }*/
-	});
 })
