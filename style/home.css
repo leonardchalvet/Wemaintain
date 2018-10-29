@@ -585,6 +585,7 @@ main {
       #section-home .wrapper .container-text h1 {
         font-family: SanFrancisco-Semibold;
         color: #171A3B;
+        font-weight: 600;
         color: #FFF; }
         @media screen and (min-width: 700px) {
           #section-home .wrapper .container-text h1 {
@@ -809,7 +810,8 @@ main {
         font-family: SanFrancisco-Semibold;
         color: #171A3B;
         font-size: 36px;
-        line-height: 43px; }
+        line-height: 43px;
+        font-weight: 600; }
       #section-avantage .wrapper .container-text .container-el {
         margin-top: 55px; }
         #section-avantage .wrapper .container-text .container-el .el {
@@ -829,7 +831,8 @@ main {
               font-family: SanFrancisco-Semibold;
               color: #171A3B;
               font-size: 20px;
-              line-height: 24px; }
+              line-height: 24px;
+              font-weight: 600; }
             #section-avantage .wrapper .container-text .container-el .el .text p {
               font-family: SanFrancisco-Regular;
               color: #171A3B;
@@ -888,7 +891,8 @@ main {
         font-family: SanFrancisco-Semibold;
         color: #171A3B;
         font-size: 36px;
-        line-height: 43px; }
+        line-height: 43px;
+        font-weight: 600; }
       #section-features .wrapper .container-head p {
         margin-top: 10px;
         font-family: SanFrancisco-Regular;
@@ -912,7 +916,8 @@ main {
             font-family: SanFrancisco-Semibold;
             color: #171A3B;
             font-size: 20px;
-            line-height: 24px; }
+            line-height: 24px;
+            font-weight: 600; }
           #section-features .wrapper .container-el .el .container-text p {
             margin-top: 20px;
             font-family: SanFrancisco-Regular;
@@ -1073,6 +1078,7 @@ main {
       color: #171A3B;
       font-size: 36px;
       line-height: 43px;
+      font-weight: 600;
       color: #FFF; }
     #section-team .wrapper .container-text p {
       margin-top: 30px;
@@ -1132,7 +1138,8 @@ main {
               font-family: SanFrancisco-Semibold;
               color: #171A3B;
               font-size: 19px;
-              line-height: 16px; }
+              line-height: 16px;
+              font-weight: 600; }
             #section-team .wrapper .container-carousel .container-el .el .cdr .job {
               font-family: SanFrancisco-Regular;
               color: #171A3B;
@@ -1216,7 +1223,8 @@ main {
       font-family: SanFrancisco-Semibold;
       color: #171A3B;
       font-size: 36px;
-      line-height: 43px; }
+      line-height: 43px;
+      font-weight: 600; }
     #section-experience .wrapper .container-btn {
       margin-top: 45px;
       position: relative;
@@ -1295,6 +1303,7 @@ main {
         color: #171A3B;
         font-size: 20px;
         line-height: 24px;
+        font-weight: 600;
         color: #FFF; }
     #section-quotes .wrapper .container-el {
       width: 100%; }
@@ -1600,6 +1609,7 @@ footer {
           color: #171A3B;
           font-size: 20px;
           line-height: 24px;
+          font-weight: 600;
           margin-bottom: 15px; }
         footer .wrapper .container-link ul li:not(:nth-child(1)) {
           font-family: SanFrancisco-Regular;
@@ -1619,7 +1629,8 @@ footer {
       font-family: SanFrancisco-Semibold;
       color: #171A3B;
       font-size: 20px;
-      line-height: 24px; }
+      line-height: 24px;
+      font-weight: 600; }
     footer .wrapper .container-contact .container-rs {
       margin-top: 15px;
       display: flex;
